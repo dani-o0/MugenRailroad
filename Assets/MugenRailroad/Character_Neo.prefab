@@ -946,6 +946,8 @@ MonoBehaviour:
   m_StartingItems:
   - {fileID: 6339930185543889722, guid: 767d333935f5095498b2c98b028434b1, type: 3}
   - {fileID: 114235257556039404, guid: ab24071e22a652e4dbc48ed117444ac7, type: 3}
+  - {fileID: 6683438678609504921, guid: 5b137f82059c04e4da2a331a2972709e, type: 3}
+  - {fileID: 114491831698022604, guid: 4e7829f40914c0f4a8fb1fc66df42120, type: 3}
   m_DuplicateBehaviour: 0
 --- !u!114 &7737180592788707092
 MonoBehaviour:

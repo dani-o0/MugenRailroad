@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7481815557860036912
+--- !u!114 &-9075255173247404213
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,32 +9,81 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b430502fe5afc014889fb40104cc22c5, type: 3}
-  m_Name: shooter(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: 5b056f0a91971704a9576dd913005a71, type: 3}
+  m_Name: root(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   wizard: {fileID: 11400000}
-  shooterStyle: 0
-  shotGrouping: 0
-  muzzleTip: {fileID: 5863238691043053767, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  minAccuracySpread: 0.5
-  maxAccuracySpread: 10
-  bulletCount: 20
-  cone: 5
-  shotsPerTracer: 2
-  pooledTracer: {fileID: 7221158435157611235, guid: e9ad03ead8311bc49a62fb73ccb300be, type: 3}
-  tracerSize: 0.025
-  tracerDuration: 0.025
-  projectilePrefab: {fileID: 0}
-  muzzleSpeed: 100
-  gravity: 9.8
-  patternPoints:
-  - {x: 0, y: 0}
-  - {x: 0.5, y: 0}
-  - {x: -0.5, y: 0}
-  - {x: 0, y: 0.5}
-  - {x: 0, y: -0.5}
-  patternDistance: 50
---- !u!114 &-5195385338623482316
+  inventoryType: 2
+  maxQuantity: 1
+  displayImage: {fileID: 21300008, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
+  itemKey: -845682173
+  slotIndex: 4
+  inventoryStackIndex: 0
+  inventoryStackPriority: 0
+  category:
+    m_Value: 0
+  prefabName: Scar
+  autoPrefix: 1
+  overwriteExisting: 1
+  viewModel: {fileID: 4219611715079642977, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  allowNonModelPrefabs: 1
+  weaponObject: {fileID: 2127736664205673599, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  animationController: {fileID: 9100000, guid: 0612cd7b2b40363479e87ad698acd27d, type: 2}
+  usesAnimationEvents: 0
+  cameraObject: {fileID: 7859182611510246387, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  cameraIsAnimated: 0
+  sprintingStyle: 1
+  fullStrengthSpeed: 12
+  maxSpeed: 15
+  blendZeroSpeed: 5
+  blendFullSpeed: 10
+  sprintActionOnAim: 1
+  sprintActionOnReload: 1
+  sprintActionOnFire: 2
+  minSprintInterrupt: 0.5
+  aimingFatigue: 0
+  staminaLoss: 10
+  staminaTarget: 25
+  staminaFalloff: 25
+  overheat: 0
+  glowRenderer: {fileID: 0}
+  glowMaterial: {fileID: 0}
+  glowThreshold: 0.25
+  hazePrefab: {fileID: 3924164848158945999, guid: 62f14d7f561f0c144b1411baa7b1b97f, type: 3}
+  hazeThreshold: 0.1
+  heatPerShot: 0.02
+  heatLostPerSecond: 0.2
+  damping: 0.5
+  doOverheat: 1
+  coolingThreshold: 0.25
+  overheatSound: {fileID: 0}
+--- !u!114 &-8863476831027897074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0886c758ecb677449a382e9958cf499b, type: 3}
+  m_Name: shellEject(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  m_ShellEject: 1
+  shellEjectPoint: {fileID: 5129047500283912017, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  shellPrefab: {fileID: 114279792979514160, guid: 07db6962b56d34a45802aafd290b2f44, type: 3}
+  delay: 0
+  outSpeed: 5
+  backSpeed: 1
+  inheritVelocity: 0.25
+  particleSystemsPrefab: {fileID: 0}
+  m_PreviousPrefab: {fileID: 0}
+  objectToReplace: {fileID: 0}
+  ejectOnFire: 0
+  objectsToReplace: []
+  swapInactive: 0
+--- !u!114 &-8702815109181058352
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,41 +111,7 @@ MonoBehaviour:
   sprintSpeedFloat: SprintSpeed
   sprintBlendFloat: SprintBlend
   m_FoldoutAnimatorKeys: 1
---- !u!114 &-3995910463377266452
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7a8d00f9da5c234f8904d84dea25924, type: 3}
-  m_Name: aiming(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  wizard: {fileID: 11400000}
-  m_AimerType: 0
-  m_Instant: 0
-  aimUpAudio: {fileID: 8300000, guid: e900513d446e494419d05fb5bef3f55f, type: 3}
-  aimDownAudio: {fileID: 8300000, guid: 06f431d6438fef74cb42133b81509829, type: 3}
-  hipAccuracyCap: 1
-  aimedAccuracyCap: 1
-  canAimWhileReloading: 0
-  aimPositionOption: 0
-  aimTarget: {fileID: 4502612226896781984, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  aimPosition: {x: 0, y: 0, z: 0}
-  aimRotation: {x: 0, y: 0, z: 0}
-  fovMultiplier: 0.3
-  aimTime: 0.25
-  blockTrigger: 1
-  hudScopeKey: 
-  positionSpringMultiplier: 0.25
-  rotationSpringMultiplier: 0.5
-  crosshairAiming:
-    m_Value: 1
-  crosshairHipFire:
-    m_Value: 0
---- !u!114 &-2081962705550664186
+--- !u!114 &-5751931335251078361
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -460,6 +475,74 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+--- !u!114 &-5747374870818065885
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b522abfb14ca0774793421c7d0137050, type: 3}
+  m_Name: muzzleEffect(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  m_MuzzleEffect: 0
+  muzzleEffectObjectType: 1
+  muzzleFlashPrefab: {fileID: 0}
+  muzzleFlashPrefabs: []
+  muzzleFlashObject: {fileID: 7253364107288170308, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  muzzleFlashObjects: []
+  muzzleFlashMesh: {fileID: 0}
+  muzzleFlashMaterial: {fileID: 0}
+  muzzleFlashMeshes: []
+  muzzleFlashDuration: 0.05
+  particleSystem: {fileID: 0}
+  particleSystemOption: -1
+  effectTransform: {fileID: 0}
+  followDuration: 0
+  advancedParticleSystemPrefab: {fileID: 0}
+  m_PreviousPrefab: {fileID: 0}
+  particleSystems: []
+  firingSounds:
+  - {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
+  - {fileID: 8300000, guid: 5f1b80a08747b6741bd5ffb1748278f1, type: 3}
+  - {fileID: 8300000, guid: 91241f96a55b9e34ab65c43800129f82, type: 3}
+--- !u!114 &-4424604524592472960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a8d00f9da5c234f8904d84dea25924, type: 3}
+  m_Name: aiming(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  m_AimerType: 0
+  m_Instant: 0
+  aimUpAudio: {fileID: 8300000, guid: e900513d446e494419d05fb5bef3f55f, type: 3}
+  aimDownAudio: {fileID: 8300000, guid: 06f431d6438fef74cb42133b81509829, type: 3}
+  hipAccuracyCap: 1
+  aimedAccuracyCap: 1
+  canAimWhileReloading: 0
+  aimPositionOption: 0
+  aimTarget: {fileID: 8954677281951994012, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  aimPosition: {x: 0, y: 0, z: 0}
+  aimRotation: {x: 0, y: 0, z: 0}
+  fovMultiplier: 0.75
+  aimTime: 0.25
+  blockTrigger: 1
+  hudScopeKey: 
+  positionSpringMultiplier: 0.25
+  rotationSpringMultiplier: 0.5
+  crosshairAiming:
+    m_Value: 1
+  crosshairHipFire:
+    m_Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,16 +556,16 @@ MonoBehaviour:
   m_Name: Scar
   m_EditorClassIdentifier: 
   m_StepValues:
-  - {fileID: 6476242722423382558}
-  - {fileID: -7481815557860036912}
-  - {fileID: 2070352200038433237}
-  - {fileID: 529805398910478134}
-  - {fileID: -2081962705550664186}
-  - {fileID: 5233801596311314040}
-  - {fileID: 4369226127083627545}
-  - {fileID: 7715830425090929925}
-  - {fileID: -3995910463377266452}
-  - {fileID: -5195385338623482316}
+  - {fileID: -9075255173247404213}
+  - {fileID: 2697196831316698538}
+  - {fileID: 7663528493426677579}
+  - {fileID: 4979951123874738821}
+  - {fileID: -5751931335251078361}
+  - {fileID: -5747374870818065885}
+  - {fileID: 6564781234869848948}
+  - {fileID: -8863476831027897074}
+  - {fileID: -4424604524592472960}
+  - {fileID: -8702815109181058352}
   m_StepKeys:
   - root
   - shooter
@@ -494,7 +577,41 @@ MonoBehaviour:
   - shellEject
   - aiming
   - animations
---- !u!114 &529805398910478134
+--- !u!114 &2697196831316698538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b430502fe5afc014889fb40104cc22c5, type: 3}
+  m_Name: shooter(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  wizard: {fileID: 11400000}
+  shooterStyle: 0
+  shotGrouping: 0
+  muzzleTip: {fileID: 4692801088909028226, guid: d1ad250cb16dcad499b70e0d9de1e42b, type: 3}
+  minAccuracySpread: 0.5
+  maxAccuracySpread: 10
+  bulletCount: 20
+  cone: 5
+  shotsPerTracer: 2
+  pooledTracer: {fileID: 7221158435157611235, guid: e9ad03ead8311bc49a62fb73ccb300be, type: 3}
+  tracerSize: 0.025
+  tracerDuration: 0.025
+  projectilePrefab: {fileID: 0}
+  muzzleSpeed: 100
+  gravity: 9.8
+  patternPoints:
+  - {x: 0, y: 0}
+  - {x: 0.5, y: 0}
+  - {x: -0.5, y: 0}
+  - {x: 0, y: 0.5}
+  - {x: 0, y: -0.5}
+  patternDistance: 50
+--- !u!114 &4979951123874738821
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -556,52 +673,7 @@ MonoBehaviour:
   maxRicochetScatter: 30
   maxPenetrationDeflect: 15
   recursive: 1
---- !u!114 &2070352200038433237
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baf6fe1872b75084b89dde4a659c1e5a, type: 3}
-  m_Name: trigger(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  wizard: {fileID: 11400000}
-  m_TriggerType: 1
-  cooldown: 0
-  repeatDelay: 0
-  shotSpacing: 5
-  burstSize: 3
-  burstSpacing: 5
-  minRepeatDelay: 8
-  repeatOnTriggerHold: 0
-  holdRepeatDelay: 50
-  cancelOnRelease: 0
-  chargeDuration: 0.5
-  unchargeDuration: 0.5
-  canRepeat: 0
-  triggerAudioCharge: {fileID: 0}
-  triggerAudioRelease: {fileID: 0}
-  queueSpacing: 25
-  delayFirst: 0
-  maxQueueSize: 6
-  detectionTag: AI
-  detectionLayers:
-    serializedVersion: 2
-    m_Bits: 67117056
-  lockOnTime: 2
-  detectionConeAngle: 10
-  detectionRange: 200
-  requireLineOfSight: 1
-  blockingLayers:
-    serializedVersion: 2
-    m_Bits: 26416129
-  memory: 0.1
-  lockSpacing: 50
-  lockRetrySpacing: 25
---- !u!114 &4369226127083627545
+--- !u!114 &6564781234869848948
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -648,7 +720,7 @@ MonoBehaviour:
   - clip: {fileID: 0}
     volume: 0
   extendSequence: 0
---- !u!114 &5233801596311314040
+--- !u!114 &7663528493426677579
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -657,111 +729,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b522abfb14ca0774793421c7d0137050, type: 3}
-  m_Name: muzzleEffect(Clone)(Clone)(Clone)(Clone)(Clone)
+  m_Script: {fileID: 11500000, guid: baf6fe1872b75084b89dde4a659c1e5a, type: 3}
+  m_Name: trigger(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   wizard: {fileID: 11400000}
-  m_MuzzleEffect: 0
-  muzzleEffectObjectType: 1
-  muzzleFlashPrefab: {fileID: 0}
-  muzzleFlashPrefabs: []
-  muzzleFlashObject: {fileID: 7079683293474976122, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  muzzleFlashObjects: []
-  muzzleFlashMesh: {fileID: 0}
-  muzzleFlashMaterial: {fileID: 0}
-  muzzleFlashMeshes: []
-  muzzleFlashDuration: 0.05
-  particleSystem: {fileID: 0}
-  particleSystemOption: -1
-  effectTransform: {fileID: 0}
-  followDuration: 0
-  advancedParticleSystemPrefab: {fileID: 0}
-  m_PreviousPrefab: {fileID: 0}
-  particleSystems: []
-  firingSounds:
-  - {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
-  - {fileID: 8300000, guid: 5f1b80a08747b6741bd5ffb1748278f1, type: 3}
-  - {fileID: 8300000, guid: 91241f96a55b9e34ab65c43800129f82, type: 3}
---- !u!114 &6476242722423382558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b056f0a91971704a9576dd913005a71, type: 3}
-  m_Name: root(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  wizard: {fileID: 11400000}
-  inventoryType: 2
-  maxQuantity: 1
-  displayImage: {fileID: 21300008, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
-  itemKey: -845682173
-  slotIndex: 4
-  inventoryStackIndex: 0
-  inventoryStackPriority: 0
-  category:
-    m_Value: 0
-  prefabName: Scar
-  autoPrefix: 1
-  overwriteExisting: 1
-  viewModel: {fileID: 5364538764267056725, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  allowNonModelPrefabs: 1
-  weaponObject: {fileID: 2011604100948650385, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  animationController: {fileID: 9100000, guid: edaa766d3d50a334ba2f913218d44062, type: 2}
-  usesAnimationEvents: 0
-  cameraObject: {fileID: 6526096556407429549, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  cameraIsAnimated: 0
-  sprintingStyle: 1
-  fullStrengthSpeed: 12
-  maxSpeed: 15
-  blendZeroSpeed: 5
-  blendFullSpeed: 10
-  sprintActionOnAim: 1
-  sprintActionOnReload: 1
-  sprintActionOnFire: 2
-  minSprintInterrupt: 0.5
-  aimingFatigue: 0
-  staminaLoss: 10
-  staminaTarget: 25
-  staminaFalloff: 25
-  overheat: 0
-  glowRenderer: {fileID: 0}
-  glowMaterial: {fileID: 0}
-  glowThreshold: 0.25
-  hazePrefab: {fileID: 3924164848158945999, guid: 62f14d7f561f0c144b1411baa7b1b97f, type: 3}
-  hazeThreshold: 0.1
-  heatPerShot: 0.02
-  heatLostPerSecond: 0.2
-  damping: 0.5
-  doOverheat: 1
-  coolingThreshold: 0.25
-  overheatSound: {fileID: 0}
---- !u!114 &7715830425090929925
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0886c758ecb677449a382e9958cf499b, type: 3}
-  m_Name: shellEject(Clone)(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  wizard: {fileID: 11400000}
-  m_ShellEject: 1
-  shellEjectPoint: {fileID: 4061556555411989616, guid: afe032c08d83aa349bb5f588cf090774, type: 3}
-  shellPrefab: {fileID: 114279792979514160, guid: 07db6962b56d34a45802aafd290b2f44, type: 3}
-  delay: 0
-  outSpeed: 5
-  backSpeed: 1
-  inheritVelocity: 0.25
-  particleSystemsPrefab: {fileID: 0}
-  m_PreviousPrefab: {fileID: 0}
-  objectToReplace: {fileID: 0}
-  ejectOnFire: 0
-  objectsToReplace: []
-  swapInactive: 0
+  m_TriggerType: 1
+  cooldown: 0
+  repeatDelay: 0
+  shotSpacing: 5
+  burstSize: 3
+  burstSpacing: 5
+  minRepeatDelay: 8
+  repeatOnTriggerHold: 0
+  holdRepeatDelay: 50
+  cancelOnRelease: 0
+  chargeDuration: 0.5
+  unchargeDuration: 0.5
+  canRepeat: 0
+  triggerAudioCharge: {fileID: 0}
+  triggerAudioRelease: {fileID: 0}
+  queueSpacing: 25
+  delayFirst: 0
+  maxQueueSize: 6
+  detectionTag: AI
+  detectionLayers:
+    serializedVersion: 2
+    m_Bits: 67117056
+  lockOnTime: 2
+  detectionConeAngle: 10
+  detectionRange: 200
+  requireLineOfSight: 1
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 26416129
+  memory: 0.1
+  lockSpacing: 50
+  lockRetrySpacing: 25
