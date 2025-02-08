@@ -460,7 +460,6 @@ GameObject:
   - component: {fileID: 587852395540465792}
   - component: {fileID: 3930744816106238929}
   - component: {fileID: 6457858699269334718}
-  - component: {fileID: 4881307431177172578}
   - component: {fileID: 4366253835032208641}
   - component: {fileID: 7512147854429442272}
   - component: {fileID: 6339930185543889722}
@@ -660,8 +659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_Cooldown: 0
-  m_RepeatDelay: 0
+  m_Cooldown: 33
+  m_RepeatDelay: 33
   m_TriggerPressAnimKey: 
 --- !u!114 &4984628235316362378
 MonoBehaviour:
@@ -709,8 +708,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_MagazineSize: 30
-  m_StartingMagazine: 30
+  m_MagazineSize: 6
+  m_StartingMagazine: 6
   m_CanInterrupt: 1
   m_RoundsPerIncrement: 1
   m_UseExternalTriggers: 0
@@ -750,8 +749,8 @@ MonoBehaviour:
   m_AdditiveTransform: {fileID: 0}
   m_HipFireRecoil:
     expanded: 1
-    recoilAngle: 0.5
-    wander: 0.2
+    recoilAngle: 10
+    wander: 0.5
     horizontalMultiplier: 1
     verticalDivergence: 0.05
     horizontalDivergence: 0.2
@@ -923,8 +922,8 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_AimedRecoil:
     expanded: 1
-    recoilAngle: 0.5
-    wander: 0.2
+    recoilAngle: 8
+    wander: 0.5
     horizontalMultiplier: 1
     verticalDivergence: 0.05
     horizontalDivergence: 0.2
@@ -1115,31 +1114,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: feba6df7ef1c9e7428716d831b68eb21, type: 3}
   - {fileID: 8300000, guid: d255f8153dbe7ae4e9c251b18edfbc34, type: 3}
   m_ShotVolume: 1
---- !u!114 &4881307431177172578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664252001153048080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c86f404f1b36b47bc8e5e229039f9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StartActive: 1
-  m_ActivationMode: 0
-  m_ShellEjectProxy: {fileID: 3815801074057417110}
-  m_ShellPrefab: {fileID: 114279524432533146, guid: 6946dc7ecc4de6d4a8e5ad01f7a3748d, type: 3}
-  m_DelayType: 0
-  m_Delay: 0
-  m_OutSpeed: 5
-  m_BackSpeed: 1
-  m_InheritVelocity: 0.25
-  m_AngularVelocityA: {x: 0, y: 0, z: 0}
-  m_AngularVelocityB: {x: 0, y: 0, z: 0}
-  m_DirectionSpread: 0
-  m_ShellScale: 1
 --- !u!114 &4366253835032208641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,8 +1195,8 @@ MonoBehaviour:
   m_ItemKey:
     m_Value: 0
   m_InventoryID: 1014509881
-  m_DisplayImage: {fileID: 21300008, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
-  m_QuickSlot: 0
+  m_DisplayImage: {fileID: 21300006, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
+  m_QuickSlot: 10
   m_MaxQuantity: 1
   m_DeselectAction: 0
   m_OnSelect:
@@ -1289,11 +1263,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 5763706567186924551}
     m_GameObject: {fileID: 5472943315904311765}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 1595808045
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: 767d333935f5095498b2c98b028434b1
 --- !u!1 &669936408395137932
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,11 +3297,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 2867816813887243598}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 1595808045
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: 767d333935f5095498b2c98b028434b1
 --- !u!1 &2373193901783673826
 GameObject:
   m_ObjectHideFlags: 0
@@ -8202,11 +8176,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 2867816813887243598}
     m_GameObject: {fileID: 5763706567186924551}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 1595808045
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: 767d333935f5095498b2c98b028434b1
 --- !u!1 &7699960763055006611
 GameObject:
   m_ObjectHideFlags: 0
