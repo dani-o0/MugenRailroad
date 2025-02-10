@@ -5,6 +5,6 @@
     "m_Fullscreen": true,
     "m_Quality": 0,
     "m_VSync": 0,
-    "m_FrameRateCap": -1,
-    "m_VerticalFOV": 58.71550750732422
+    "m_FrameRateCap": 144,
+    "m_VerticalFOV": 60.9451904296875
 }
