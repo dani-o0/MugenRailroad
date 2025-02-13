@@ -3833,7 +3833,7 @@ MonoBehaviour:
   m_StartActive: 1
   m_ActivationMode: 0
   m_Cooldown: 10
-  m_RepeatDelay: 10
+  m_RepeatDelay: 9999
   m_TriggerPressAnimKey: 
 --- !u!114 &592044402375028698
 MonoBehaviour:
@@ -3913,7 +3913,7 @@ MonoBehaviour:
   m_AdditiveTransform: {fileID: 0}
   m_HipFireRecoil:
     expanded: 1
-    recoilAngle: 0.5
+    recoilAngle: 1
     wander: 0.2
     horizontalMultiplier: 1
     verticalDivergence: 0.05
