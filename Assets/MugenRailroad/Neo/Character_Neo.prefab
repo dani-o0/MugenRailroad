@@ -944,6 +944,8 @@ MonoBehaviour:
   m_AutoSwitchStyle: 0
   m_BackupItem: {fileID: 114220906628037716, guid: fea32a3c49938a24c86df8b49a457398, type: 3}
   m_StartingItems:
+  - {fileID: 4992860669244042449, guid: 651f38418f0781646b8e1b762c30cbcc, type: 3}
+  - {fileID: 114720571942937776, guid: dfe46eefaa9a7544ca7ee5e668df212c, type: 3}
   - {fileID: 6339930185543889722, guid: 767d333935f5095498b2c98b028434b1, type: 3}
   - {fileID: 114235257556039404, guid: 64f2a695fbc7afe4cb28f1ba66c2b64d, type: 3}
   - {fileID: 6683438678609504921, guid: 5b137f82059c04e4da2a331a2972709e, type: 3}
