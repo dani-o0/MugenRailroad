@@ -98,7 +98,7 @@ namespace EmeraldAI
                 Health -= CalculatedDamage;
 
             //Display the damage dealt through the Combat Text System, given that it's enabled.
-            if (CalculatedDamage > 0) CombatTextSystem.Instance.CreateCombatTextAI(CalculatedDamage, EmeraldComponent.CombatComponent.DamagePosition(), CriticalHit, false);
+//            if (CalculatedDamage > 0) CombatTextSystem.Instance.CreateCombatTextAI(CalculatedDamage, EmeraldComponent.CombatComponent.DamagePosition(), CriticalHit, false);
 
             //In order to have the most reliable On Do Damage events, simply invoke the attacker's OnDoDoamage callback through a public function, given it is an Emerald AI agent.
             if (AttackerTransform != null)
