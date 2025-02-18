@@ -25,18 +25,18 @@ MonoBehaviour:
   RunFoldout: 0
   TurnFoldout: 0
   NonCombatDeathFoldout: 0
-  NonCombatAnimationsFoldout: 0
+  NonCombatAnimationsFoldout: 1
   NonCombatIdleFoldout: 0
   NonCombatHitFoldout: 0
   EmotesFoldout: 0
   Type1IdleFoldout: 0
   Type2IdleFoldout: 0
-  Type1AttacksFoldout: 1
+  Type1AttacksFoldout: 0
   Type2AttacksFoldout: 0
   Type1EquipsFoldout: 0
   Type2EquipsFoldout: 0
-  Type1CombatAnimationsFoldout: 0
-  Type2CombatAnimationsFoldout: 0
+  Type1CombatAnimationsFoldout: 1
+  Type2CombatAnimationsFoldout: 1
   Type1DeathFoldout: 0
   Type2DeathFoldout: 0
   Type1HitFoldout: 0
@@ -115,7 +115,10 @@ MonoBehaviour:
     - AnimationSpeed: 1
       AnimationClip: {fileID: 7400000, guid: b916c7135382f9f49bb29681f2617d59, type: 2}
       Mirror: 0
-    DeathList: []
+    DeathList:
+    - AnimationSpeed: 1
+      AnimationClip: {fileID: 7400000, guid: 648174837004c8d4680d67bdb45263e0, type: 2}
+      Mirror: 0
     StrafeLeft:
       AnimationSpeed: 0
       AnimationClip: {fileID: 0}
@@ -216,7 +219,10 @@ MonoBehaviour:
       AnimationClip: {fileID: 0}
       Mirror: 0
     HitList: []
-    DeathList: []
+    DeathList:
+    - AnimationSpeed: 1
+      AnimationClip: {fileID: 7400000, guid: 648174837004c8d4680d67bdb45263e0, type: 2}
+      Mirror: 0
     StrafeLeft:
       AnimationSpeed: 1
       AnimationClip: {fileID: 0}
@@ -320,7 +326,10 @@ MonoBehaviour:
       AnimationClip: {fileID: 0}
       Mirror: 0
     HitList: []
-    DeathList: []
+    DeathList:
+    - AnimationSpeed: 1
+      AnimationClip: {fileID: 7400000, guid: 648174837004c8d4680d67bdb45263e0, type: 2}
+      Mirror: 0
     StrafeLeft:
       AnimationSpeed: 0
       AnimationClip: {fileID: 0}

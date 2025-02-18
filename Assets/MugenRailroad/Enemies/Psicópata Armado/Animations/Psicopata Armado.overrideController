@@ -1745,6 +1745,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -3910916058849424318}
     m_Position: {x: 264, y: 348, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 473961558473683645}
+    m_Position: {x: 0, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
@@ -1812,7 +1815,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 648174837004c8d4680d67bdb45263e0, type: 2}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -4489,10 +4492,7 @@ AnimatorStateMachine:
     m_Position: {x: 500, y: -570, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5280302929918326542}
-    m_Position: {x: 900, y: -540, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 473961558473683645}
-    m_Position: {x: 900, y: -690, z: 0}
+    m_Position: {x: 900, y: -560, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6273223036711688317}
     m_Position: {x: 900, y: -640, z: 0}
@@ -4529,10 +4529,10 @@ AnimatorStateMachine:
     m_Position: {x: -900, y: -840, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: -5594405325034120979}
-    m_Position: {x: 900, y: -740, z: 0}
+    m_Position: {x: 950, y: -820, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: -693023484102994451}
-    m_Position: {x: 900, y: -840, z: 0}
+    m_Position: {x: 790, y: -1040, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 725845434030458568}
     m_Position: {x: 900, y: -890, z: 0}
@@ -4581,19 +4581,19 @@ AnimatorStateMachine:
   - {fileID: -6968109290720300354}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: -2536665884750146237}
-    second: []
-  - first: {fileID: 730600788866330539}
-    second: []
+  - first: {fileID: 1107813755197954376}
+    second:
+    - {fileID: 1109675832954616432}
   - first: {fileID: 1107246348514381348}
     second:
     - {fileID: 1109954754794497168}
     - {fileID: 1109057389074400838}
     - {fileID: 1109172535629312834}
-  - first: {fileID: 1107813755197954376}
-    second:
-    - {fileID: 1109675832954616432}
   - first: {fileID: 1107970555804621890}
+    second: []
+  - first: {fileID: 730600788866330539}
+    second: []
+  - first: {fileID: -2536665884750146237}
     second: []
   - first: {fileID: 7552781969873743478}
     second:
@@ -5875,7 +5875,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 648174837004c8d4680d67bdb45263e0, type: 2}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -11681,7 +11681,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 648174837004c8d4680d67bdb45263e0, type: 2}
   m_Tag: Death
   m_SpeedParameter: 
   m_MirrorParameter: 
