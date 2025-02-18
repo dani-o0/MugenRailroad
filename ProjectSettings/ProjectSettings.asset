@@ -831,7 +831,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: NEOFPS
+    Standalone: NEOFPS;EMERALD_AI_2024_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
