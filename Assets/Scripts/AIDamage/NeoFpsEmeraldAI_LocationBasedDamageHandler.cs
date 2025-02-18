@@ -80,8 +80,8 @@ namespace NeoFPS.EmeraldAI
             GetDamageValues(damage, out int scaledDamage, out int reportedDamage, out int force);
 
             // Show the damage text
-            if (CombatTextSystem.Instance != null)
-                CombatTextSystem.Instance.CreateCombatTextAI(reportedDamage, transform.position, m_Critical, false);
+//            if (CombatTextSystem.Instance != null)
+//                CombatTextSystem.Instance.CreateCombatTextAI(reportedDamage, transform.position, m_Critical, false);
 
             // Apply the damage
             ApplyDamage(scaledDamage, force, null);
@@ -103,8 +103,8 @@ namespace NeoFPS.EmeraldAI
                 GetDamageValues(damage, out int intDamage, out int reportedDamage, out int force);
 
                 // Show the damage text
-                if (CombatTextSystem.Instance != null)
-					CombatTextSystem.Instance.CreateCombatTextAI(reportedDamage, transform.position, m_Critical, false);
+//                if (CombatTextSystem.Instance != null)
+//					CombatTextSystem.Instance.CreateCombatTextAI(reportedDamage, transform.position, m_Critical, false);
 
                 // Was the damage source a character controller
                 if (source.controller != null)
