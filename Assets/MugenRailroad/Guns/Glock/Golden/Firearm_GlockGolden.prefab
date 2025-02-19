@@ -3832,13 +3832,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_QueueSpacing: 25
+  m_QueueSpacing: 3
   m_DelayFirst: 0
   m_MaxQueueSize: 25
   m_BurstSpacing: 1
   m_RepeatDelay: 1
-  m_TriggerHoldAnimKey: 
-  m_QueueCountAnimKey: 
+  m_TriggerHoldAnimKey: Hold
+  m_QueueCountAnimKey: Count
 --- !u!114 &592044402375028698
 MonoBehaviour:
   m_ObjectHideFlags: 0
