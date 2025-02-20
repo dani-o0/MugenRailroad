@@ -3884,8 +3884,8 @@ MonoBehaviour:
   m_MagazineSize: 17
   m_StartingMagazine: 17
   m_ReloadDelayType: 1
-  m_ReloadDuration: 1.15
-  m_BlockingDuration: 2
+  m_ReloadDuration: 2.5
+  m_BlockingDuration: 2.75
   m_ReloadAnimTrigger: Reload
   m_ReloadAudio: {fileID: 8300000, guid: 08d0a938691a1d44eb628388e16da3df, type: 3}
   m_Volume: 1
