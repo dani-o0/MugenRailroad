@@ -3632,7 +3632,6 @@ GameObject:
   - component: {fileID: 9128590363771551867}
   - component: {fileID: 9195795540446475977}
   - component: {fileID: 2530166834823447778}
-  - component: {fileID: 592044402375028698}
   - component: {fileID: 252565031335108323}
   - component: {fileID: 9009025082525179985}
   - component: {fileID: 2387922560439354667}
@@ -3853,26 +3852,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 4
-  m_Explosion: {fileID: 114938665606157914, guid: 7ddbf654edde0cd4a8ba2c5f2fc92de2, type: 3}
+  m_Explosion: {fileID: 114048289010296272, guid: 5dc982c5a92afcb4daebbeb20ca5ca6b, type: 3}
   m_Damage: 15
-  m_MaxForce: 15
+  m_MaxForce: 30
   m_NormalOffset: 0
---- !u!114 &592044402375028698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4533913157568236369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64fd394f479190a46829796d6f6bffd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_DamageType: 1
-  m_Damage: 5
-  m_BulletSize: 1
-  m_ImpactForce: 20
 --- !u!114 &252565031335108323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3887,7 +3870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_Effect: {fileID: 592044402375028698}
+  m_Effect: {fileID: 2530166834823447778}
   m_AmmoType: {fileID: 11400000, guid: 4fb2c395a5857654cbe9e8f7e9d870c9, type: 2}
 --- !u!114 &9009025082525179985
 MonoBehaviour:
