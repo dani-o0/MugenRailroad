@@ -20,6 +20,7 @@ namespace NeoFPS
 
         private QueuedTrigger m_QueuedTrigger = null;
         private FpsInventoryBase m_InventoryBase = null;
+        private float targetScale = 0f;
 
         protected override void OnDestroy()
         {
@@ -84,26 +85,28 @@ namespace NeoFPS
 
         protected virtual void OnChargeValueChanged(int charge)
         {
-            if (m_BarRect != null)
+            if (m_MaxChargeMarkerRect != null)
             {
-                var localScale = m_MaxChargeMarkerRect.localScale;
-
                 if (m_QueuedTrigger != null && m_QueuedTrigger.currentQueueCount > 0)
                 {
-                    float targetScale = Mathf.Clamp01((float)charge / m_QueuedTrigger.firearm.reloader.currentMagazine); // 25 es el valor máximo de carga
-                    localScale.x = Mathf.MoveTowards(localScale.x, targetScale, Time.deltaTime * 10f); // Mantiene una velocidad constante
+                    targetScale = Mathf.Clamp01((float)charge / m_QueuedTrigger.firearm.reloader.currentMagazine); // 25 es el valor máximo de carga
                 }
                 else
                 {
-                    localScale.x = 0f; // Reiniciar si no hay carga
+                    targetScale = 0f; // Reiniciar si no hay carga
                 }
+            }            
+        }
 
-                m_MaxChargeMarkerRect.localScale = localScale;
-            }
+        private void Update()
+        {
+            var localScale = m_MaxChargeMarkerRect.localScale;
+            localScale.x = Mathf.MoveTowards(localScale.x, targetScale, Time.deltaTime * 10f); // Mantiene una velocidad constante
+            m_MaxChargeMarkerRect.localScale = localScale;
 
             if (m_QueuedTrigger != null && m_FullyChargedWarning != null)
             {
-                m_FullyChargedWarning.SetActive(charge >= m_QueuedTrigger.firearm.reloader.currentMagazine); // Aviso cuando la carga esté completa
+                m_FullyChargedWarning.SetActive(m_QueuedTrigger.currentQueueCount == m_QueuedTrigger.firearm.reloader.currentMagazine); // Aviso cuando la carga esté completa
             }
         }
     }
