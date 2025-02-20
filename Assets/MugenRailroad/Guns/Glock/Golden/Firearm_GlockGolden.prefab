@@ -3834,7 +3834,7 @@ MonoBehaviour:
   m_ActivationMode: 0
   m_QueueSpacing: 3
   m_DelayFirst: 0
-  m_MaxQueueSize: 25
+  m_MaxQueueSize: 17
   m_BurstSpacing: 1
   m_RepeatDelay: 1
   m_TriggerHoldAnimKey: Hold
@@ -3885,8 +3885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_MagazineSize: 25
-  m_StartingMagazine: 25
+  m_MagazineSize: 17
+  m_StartingMagazine: 17
   m_ReloadDelayType: 1
   m_ReloadDuration: 1.15
   m_BlockingDuration: 2
@@ -4362,7 +4362,7 @@ MonoBehaviour:
       m_Calls: []
   m_ItemKey:
     m_Value: 0
-  m_InventoryID: -1790531922
+  m_InventoryID: 1289321253
   m_DisplayImage: {fileID: 21300002, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
   m_QuickSlot: 1
   m_MaxQuantity: 1
@@ -4373,7 +4373,7 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
-  m_DropObject: {fileID: 0}
+  m_DropObject: {fileID: 5161898754590840180, guid: 325c6a78515e8b64eb94d65477423df6, type: 3}
 --- !u!114 &6043875281145020242
 MonoBehaviour:
   m_ObjectHideFlags: 0
