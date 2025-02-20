@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Health: 100
   m_HealthMax: 100
-  m_CanDamageSelf: 1
+  m_CanDamageSelf: 0
   m_OnHealthChanged:
     m_PersistentCalls:
       m_Calls: []
