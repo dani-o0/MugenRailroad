@@ -7,12 +7,12 @@ public class PantalloteCargoteTextacoEnTuAno : MonoBehaviour
     public Text loadingText; // Referencia al Text UI
     public string[] loadingMessages =
     {
-        "Cargando mundos...",
-        "Generando paisajes...",
-        "Preparando sorpresas...",
-        "Optimización en proceso...",
-        "Ajustando detalles...",
-        "Comprobando integridad..."
+        "Los enemigos son enemigos...",
+        "Cuando caminas andas hacia delante...",
+        "Las armas disparan...",
+        "Los enemigos hacen daño al atacar...",
+        "Si no sabes jugar eres un PULLASTRE...",
+        "1 + 1 son dos..."
     };
 
     public float textChangeInterval = 2f; // Intervalo de cambio de texto
