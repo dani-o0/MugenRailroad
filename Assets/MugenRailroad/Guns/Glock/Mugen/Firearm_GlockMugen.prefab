@@ -2524,11 +2524,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 173333598669781914}
     m_GameObject: {fileID: 2408352081974747991}
-  m_PrefabStrongID: -1270538394
+  m_PrefabStrongID: -967643798
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: a4264ba2ad29dd646b4e9467705fd51c
+  prefabGuid: 4c3bf235fe0d51640989a1a726b64196
 --- !u!1 &3052752962043293573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,11 +2818,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 173333598669781914}
-  m_PrefabStrongID: -1270538394
+  m_PrefabStrongID: -967643798
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: a4264ba2ad29dd646b4e9467705fd51c
+  prefabGuid: 4c3bf235fe0d51640989a1a726b64196
 --- !u!1 &3740975060661193665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,7 +3000,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a5c559c5f7a361e42911b5df3c5dcadd, type: 2}
+  - {fileID: 2100000, guid: 46e5f6bfd5d20b64887a9086e9c2e7b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3408,7 +3408,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 865e35c9ba1ad424fb8fa36178794f39, type: 2}
+  - {fileID: 2100000, guid: 46e5f6bfd5d20b64887a9086e9c2e7b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3630,7 +3630,8 @@ GameObject:
   - component: {fileID: 5633420143184019154}
   - component: {fileID: 2662397722414139771}
   - component: {fileID: 9128590363771551867}
-  - component: {fileID: 4399756481670943742}
+  - component: {fileID: 9195795540446475977}
+  - component: {fileID: 2530166834823447778}
   - component: {fileID: 592044402375028698}
   - component: {fileID: 252565031335108323}
   - component: {fileID: 9009025082525179985}
@@ -3818,7 +3819,7 @@ MonoBehaviour:
   m_TracerPrototype: {fileID: 7221158435157611235, guid: e9ad03ead8311bc49a62fb73ccb300be, type: 3}
   m_TracerSize: 0.025
   m_TracerDuration: 0.025
---- !u!114 &4399756481670943742
+--- !u!114 &9195795540446475977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3827,14 +3828,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 4533913157568236369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3816b05e892dbb4ea235ebe3055ad3d, type: 3}
+  m_Script: {fileID: 11500000, guid: cfd7be0bd5687364e92d465a664af055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_Cooldown: 10
-  m_RepeatDelay: 9999
-  m_TriggerPressAnimKey: 
+  m_QueueSpacing: 3
+  m_DelayFirst: 0
+  m_MaxQueueSize: 17
+  m_BurstSpacing: 1
+  m_RepeatDelay: 1
+  m_TriggerHoldAnimKey: Hold
+  m_QueueCountAnimKey: Count
+--- !u!114 &2530166834823447778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533913157568236369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d6b0f7d24f6fc45ad5dbfaf9344f4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DamageType: 4
+  m_Explosion: {fileID: 114938665606157914, guid: 7ddbf654edde0cd4a8ba2c5f2fc92de2, type: 3}
+  m_Damage: 15
+  m_MaxForce: 15
+  m_NormalOffset: 0
 --- !u!114 &592044402375028698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4358,9 +4380,9 @@ MonoBehaviour:
       m_Calls: []
   m_ItemKey:
     m_Value: 0
-  m_InventoryID: -1790531922
+  m_InventoryID: -1956825884
   m_DisplayImage: {fileID: 21300002, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
-  m_QuickSlot: 0
+  m_QuickSlot: 2
   m_MaxQuantity: 1
   m_DeselectAction: 0
   m_OnSelect:
@@ -4369,7 +4391,7 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
-  m_DropObject: {fileID: 0}
+  m_DropObject: {fileID: 5161898754590840180, guid: d14afdf39c008524aa43c61ee150ca5b, type: 3}
 --- !u!114 &6043875281145020242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4427,11 +4449,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 2408352081974747991}
     m_GameObject: {fileID: 5410477094902440983}
-  m_PrefabStrongID: -1270538394
+  m_PrefabStrongID: -967643798
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: a4264ba2ad29dd646b4e9467705fd51c
+  prefabGuid: 4c3bf235fe0d51640989a1a726b64196
 --- !u!1 &4587085115383448235
 GameObject:
   m_ObjectHideFlags: 0
