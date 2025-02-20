@@ -240,11 +240,11 @@ MonoBehaviour:
     - {fileID: 425693331570884023}
     - {fileID: 1809177241467170962}
     m_GameObject: {fileID: 4252335199978609366}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!1 &1299934034343764102
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,11 +461,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 6830796061278419018}
     m_GameObject: {fileID: 2016930627524440628}
-  m_PrefabStrongID: 1510059426
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: f30cb197b04b8094fafdb1a4a6a82cf2
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!114 &6962156282601899517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,11 +847,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 4252335199978609366}
     m_GameObject: {fileID: 4384827216869029815}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!1 &3319396599042761438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,13 +1291,15 @@ MonoBehaviour:
   m_DropVelocity: {x: 0, y: 2, z: 3}
   m_HolsterAction: 0
   m_EmptyAsBackup: 0
-  m_SlotCount: 30
+  m_SlotCount: 50
   m_StartingSlotChoice: 0
-  m_StartingOrder: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d000000
+  m_StartingOrder: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f0000003000000031000000
   m_AutoSwitchStyle: 0
   m_BackupItem: {fileID: 114220906628037716, guid: fea32a3c49938a24c86df8b49a457398, type: 3}
   m_StartingItems:
+  - {fileID: 4992860669244042449, guid: a4264ba2ad29dd646b4e9467705fd51c, type: 3}
   - {fileID: 4992860669244042449, guid: 0ad97a05cb51ec644b19968854a6ebc6, type: 3}
+  - {fileID: 4992860669244042449, guid: 4c3bf235fe0d51640989a1a726b64196, type: 3}
   - {fileID: 114720571942937776, guid: dfe46eefaa9a7544ca7ee5e668df212c, type: 3}
   - {fileID: 6339930185543889722, guid: 767d333935f5095498b2c98b028434b1, type: 3}
   - {fileID: 114235257556039404, guid: 64f2a695fbc7afe4cb28f1ba66c2b64d, type: 3}
@@ -1404,11 +1406,11 @@ MonoBehaviour:
     - {fileID: 835505466575575039}
     - {fileID: 2016930627524440628}
     m_GameObject: {fileID: 6240462431350759796}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!114 &5086948722811910815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,11 +1684,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 1809177241467170962}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!1 &5802973905232669224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,11 +1834,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 4384827216869029815}
     m_GameObject: {fileID: 835505466575575039}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!1 &6430846605574562222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,11 +2045,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 425693331570884023}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!1 &7175510356244820612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,11 +2791,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 6830796061278419018}
-  m_PrefabStrongID: 1510059426
+  m_PrefabStrongID: -1276085926
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: f30cb197b04b8094fafdb1a4a6a82cf2
+  prefabGuid: f4a7105917d3b3a4190b72ebaa95b357
 --- !u!1 &8991156427602915339
 GameObject:
   m_ObjectHideFlags: 0
