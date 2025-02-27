@@ -187,6 +187,15 @@ MonoBehaviour:
   - {fileID: 1730031350390664749, guid: d70a0169b5a7ca0499cffda45940c9c2, type: 3}
   - {fileID: 6106306442657084342, guid: 5d708ecf02313a247a4fae7d0e533aad, type: 3}
   - {fileID: 4401949002050065272, guid: 62a434e0617dfed49bf82a62d4dd2119, type: 3}
+  - {fileID: 5472943315904311765, guid: 767d333935f5095498b2c98b028434b1, type: 3}
+  - {fileID: 5472943315904311765, guid: 3338b39bade23cd4d883dd0ab2d9ef4f, type: 3}
+  - {fileID: 5472943315904311765, guid: be0ca0bc118d44844b0fa237b6f8e583, type: 3}
+  - {fileID: 5535218929275245483, guid: 5b137f82059c04e4da2a331a2972709e, type: 3}
+  - {fileID: 5535218929275245483, guid: d17bd77727cd58a4eaef393e3a37b36f, type: 3}
+  - {fileID: 5535218929275245483, guid: 4254d41b140d38445a4edeb82a3b43ae, type: 3}
+  - {fileID: 5410477094902440983, guid: a4264ba2ad29dd646b4e9467705fd51c, type: 3}
+  - {fileID: 5410477094902440983, guid: 0ad97a05cb51ec644b19968854a6ebc6, type: 3}
+  - {fileID: 5410477094902440983, guid: 4c3bf235fe0d51640989a1a726b64196, type: 3}
   m_Assets: []
   m_CanQuickSave: 1
   m_QuickLoadAll: 1
@@ -195,14 +204,11 @@ MonoBehaviour:
   m_CanManualSave: 1
   m_ContinueFrom: 1
   m_QuicksaveThumbnail: 3
-  m_QsThumbnailTexture: {fileID: 2800000, guid: 74e0c4abcd77aad45b807507a315ce94,
-    type: 3}
+  m_QsThumbnailTexture: {fileID: 2800000, guid: 74e0c4abcd77aad45b807507a315ce94, type: 3}
   m_AutosaveThumbnail: 3
-  m_AsThumbnailTexture: {fileID: 2800000, guid: 74e0c4abcd77aad45b807507a315ce94,
-    type: 3}
+  m_AsThumbnailTexture: {fileID: 2800000, guid: 74e0c4abcd77aad45b807507a315ce94, type: 3}
   m_ManualSaveThumbnail: 2
-  m_MsThumbnailTexture: {fileID: 2800000, guid: 74e0c4abcd77aad45b807507a315ce94,
-    type: 3}
+  m_MsThumbnailTexture: {fileID: 2800000, guid: 74e0c4abcd77aad45b807507a315ce94, type: 3}
   m_ScreenshotSize: {x: 256, y: 128}
   m_ScreenshotCompression: 1
   m_UsingLinearRendering: 1
