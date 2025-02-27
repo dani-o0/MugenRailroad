@@ -56,3 +56,15 @@ MonoBehaviour:
     m_Id: -1523305906
   - m_DisplayName: Tool - Blink
     m_Id: 350350540
+  - m_DisplayName: Glock
+    m_Id: -668854049
+  - m_DisplayName: GlockGolden
+    m_Id: 1289321253
+  - m_DisplayName: GlockMugen
+    m_Id: -1956825884
+  - m_DisplayName: ScarGolden
+    m_Id: 1588637612
+  - m_DisplayName: ScarMugen
+    m_Id: -1769329840
+  - m_DisplayName: Scar
+    m_Id: -931534637
