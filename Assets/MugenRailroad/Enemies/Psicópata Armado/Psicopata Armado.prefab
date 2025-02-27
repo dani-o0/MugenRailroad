@@ -3006,8 +3006,10 @@ GameObject:
   - component: {fileID: 6827531058198981553}
   - component: {fileID: 4327786988795290549}
   - component: {fileID: 7977401483588594214}
+  - component: {fileID: 4841795803454239447}
   - component: {fileID: 6677202023591264567}
   - component: {fileID: 3476486014557196391}
+  - component: {fileID: 463186056568104585}
   - component: {fileID: 7030830393736156929}
   - component: {fileID: 4142273020431710397}
   - component: {fileID: 8995062977672848218}
@@ -3089,7 +3091,7 @@ MonoBehaviour:
   - No Type 1 Attack Animations
   Type2AttackBlankOptions:
   - No Type 2 Attack Animations
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   AnimationProfileFoldout: 1
 --- !u!114 &7755844084335457768
 MonoBehaviour:
@@ -3138,7 +3140,7 @@ MonoBehaviour:
   - FactionIndex: 1
     RelationType: 0
   AIFactionsList: 
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   DetectionFoldout: 1
   TagFoldout: 1
   FactionFoldout: 1
@@ -3245,7 +3247,7 @@ MonoBehaviour:
     CooldownIgnored: 0
     CooldownTimeStamp: 0
   LastAttacker: {fileID: 0}
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   DamageSettingsFoldout: 1
   CombatActionSettingsFoldout: 1
   SwitchWeaponSettingsFoldout: 0
@@ -3278,7 +3280,7 @@ MonoBehaviour:
   FleeOnLowHealth: 0
   StayNearStartingArea: 0
   BehaviorState: Non Combat
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   BehaviorSettingsFoldout: 1
   CustomSettingsFoldout: 0
 --- !u!114 &4327786988795290549
@@ -3354,7 +3356,7 @@ MonoBehaviour:
   LockTurning: 0
   ReturningToStartInProgress: 0
   AIAgentActive: 0
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   WanderFoldout: 0
   WaypointsFoldout: 0
   WaypointsListFoldout: 0
@@ -3387,8 +3389,89 @@ MonoBehaviour:
   HitEffectsList:
   - {fileID: 163734, guid: 0a5ac034133a7654a8565697adff5548, type: 3}
   - {fileID: 186584, guid: b85ef8139fbcfa746b2954a470627418, type: 3}
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   HealthFoldout: 1
+--- !u!114 &4841795803454239447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612583126686793469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a9deb83781e644a8e353dfbc492941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEnabledEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnemyTargetDetectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartCombatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndCombatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeCritDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDoDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDoCritDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnKilledTargetEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 463186056568104585}
+        m_TargetAssemblyTypeName: EnemyEventsHandler, Assembly-CSharp
+        m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnReachedDestinationEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReachedWaypointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGeneratedWaypointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerDetectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFleeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HideSettingsFoldout: 1
+  GeneralEventsFoldout: 0
+  CombatEventsFoldout: 0
 --- !u!114 &6677202023591264567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3441,6 +3524,19 @@ MonoBehaviour:
   TPMComponent: {fileID: 0}
   LBDComponent: {fileID: 0}
   CoverComponent: {fileID: 0}
+--- !u!114 &463186056568104585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612583126686793469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35952d498c18d1a45bb740e053617beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1.5
 --- !u!95 &7030830393736156929
 Animator:
   serializedVersion: 5

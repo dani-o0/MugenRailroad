@@ -1905,12 +1905,14 @@ GameObject:
   - component: {fileID: 6851141291861992742}
   - component: {fileID: 5244934607845653396}
   - component: {fileID: 6090375217114107038}
+  - component: {fileID: 1445314473314682270}
+  - component: {fileID: 8161575047677138043}
   - component: {fileID: 7071557546230180244}
+  - component: {fileID: 8490560318901888879}
   - component: {fileID: 7020130107313302188}
   - component: {fileID: 1186421557164989261}
   - component: {fileID: 5287134017407669677}
   - component: {fileID: 8289012732540958006}
-  - component: {fileID: 8161575047677138043}
   m_Layer: 16
   m_Name: Psicopata
   m_TagString: AI
@@ -1989,7 +1991,7 @@ MonoBehaviour:
   - No Type 1 Attack Animations
   Type2AttackBlankOptions:
   - No Type 2 Attack Animations
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   AnimationProfileFoldout: 1
 --- !u!114 &7990703605718175775
 MonoBehaviour:
@@ -2038,7 +2040,7 @@ MonoBehaviour:
   - FactionIndex: 1
     RelationType: 0
   AIFactionsList: 
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   DetectionFoldout: 1
   TagFoldout: 1
   FactionFoldout: 1
@@ -2056,7 +2058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundProfile: {fileID: 11400000, guid: fd3a1a85f7fd73940a51851bba5f7f01, type: 2}
   SoundProfileFoldout: 1
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   IdleSoundsSeconds: 0
   IdleSoundsTimer: 0
   m_AudioSource: {fileID: 0}
@@ -2145,7 +2147,7 @@ MonoBehaviour:
     CooldownIgnored: 0
     CooldownTimeStamp: 0
   LastAttacker: {fileID: 0}
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   DamageSettingsFoldout: 1
   CombatActionSettingsFoldout: 0
   SwitchWeaponSettingsFoldout: 0
@@ -2178,7 +2180,7 @@ MonoBehaviour:
   FleeOnLowHealth: 0
   StayNearStartingArea: 0
   BehaviorState: Non Combat
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   BehaviorSettingsFoldout: 1
   CustomSettingsFoldout: 0
 --- !u!114 &5244934607845653396
@@ -2287,8 +2289,103 @@ MonoBehaviour:
   HitEffectsList:
   - {fileID: 163734, guid: 0a5ac034133a7654a8565697adff5548, type: 3}
   - {fileID: 186584, guid: b85ef8139fbcfa746b2954a470627418, type: 3}
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   HealthFoldout: 1
+--- !u!114 &1445314473314682270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184734607746624613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a9deb83781e644a8e353dfbc492941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEnabledEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnemyTargetDetectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartCombatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndCombatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeCritDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDoDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDoCritDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnKilledTargetEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8490560318901888879}
+        m_TargetAssemblyTypeName: EnemyEventsHandler, Assembly-CSharp
+        m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnReachedDestinationEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReachedWaypointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGeneratedWaypointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerDetectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFleeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HideSettingsFoldout: 1
+  GeneralEventsFoldout: 0
+  CombatEventsFoldout: 0
+--- !u!114 &8161575047677138043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184734607746624613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9e1d36d10cb2c41848484ac3d0d3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ForceMultiplier: 10
+  m_Critical: 0
 --- !u!114 &7071557546230180244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,6 +2424,19 @@ MonoBehaviour:
   TPMComponent: {fileID: 0}
   LBDComponent: {fileID: 0}
   CoverComponent: {fileID: 0}
+--- !u!114 &8490560318901888879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184734607746624613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35952d498c18d1a45bb740e053617beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1.5
 --- !u!95 &7020130107313302188
 Animator:
   serializedVersion: 5
@@ -2487,20 +2597,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8161575047677138043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3184734607746624613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa9e1d36d10cb2c41848484ac3d0d3bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ForceMultiplier: 10
-  m_Critical: 0
 --- !u!1 &3228116520620453769
 GameObject:
   m_ObjectHideFlags: 0
