@@ -660,7 +660,7 @@ MonoBehaviour:
   m_StartActive: 1
   m_ActivationMode: 0
   m_Cooldown: 33
-  m_RepeatDelay: 33
+  m_RepeatDelay: 0
   m_TriggerPressAnimKey: 
 --- !u!114 &4984628235316362378
 MonoBehaviour:
@@ -1194,7 +1194,7 @@ MonoBehaviour:
       m_Calls: []
   m_ItemKey:
     m_Value: 0
-  m_InventoryID: 1014509881
+  m_InventoryID: 1494433906
   m_DisplayImage: {fileID: 21300006, guid: c7c2dd9746279004098ca81e023fb910, type: 3}
   m_QuickSlot: 10
   m_MaxQuantity: 1
