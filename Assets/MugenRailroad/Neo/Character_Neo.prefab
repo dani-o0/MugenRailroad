@@ -1285,7 +1285,7 @@ MonoBehaviour:
   m_HeadTransformHandler: {fileID: 638088816079545268}
   m_BodyTransformHandler: {fileID: 5217589742257969056}
   m_DamageAudioThreshold: 10
-  m_ApplyFallDamage: 1
+  m_ApplyFallDamage: 0
   m_LandingMinForce: 10
   m_LandingFullForce: 40
   m_FallDamageHandler: {fileID: 0}
