@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
-  m_DropObject: {fileID: 0}
+  m_DropObject: {fileID: 8943309902868219033, guid: ef5477eba5520a54aa716672e88e31de, type: 3}
 --- !u!114 &7576356738913263322
 MonoBehaviour:
   m_ObjectHideFlags: 0
