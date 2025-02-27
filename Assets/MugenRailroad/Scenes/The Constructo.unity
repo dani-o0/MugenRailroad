@@ -3594,6 +3594,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanque
       objectReference: {fileID: 0}
+    - target: {fileID: 3103562577499314849, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273882216219945511, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: TagFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273882216219945511, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: DetectionFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273882216219945511, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913557226436667500, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913557226436667500, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: WeaponType1SettingsFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913557226436667500, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: CombatActionSettingsFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913557226436667500, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: Type1Attacks.AttackPickType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055805474145845174, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816496213920408223, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: HitEffectFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816496213920408223, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628254820782085952, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628254820782085952, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: AnimationProfileFoldout
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5124,6 +5176,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4621817159049026, guid: f82695530b653b448951a82485eef12f, type: 3}
   m_PrefabInstance: {fileID: 1709575469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1736095664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.389101
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4899716
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419779331677761066, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184734607746624613, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_Name
+      value: Psicopata
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184734607746624613, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
 --- !u!1001 &1807703905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14826,21 +14939,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1987625794748582123, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987625794748582123, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: SoundProfileFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467899437443015912, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.014544428
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467899437443015912, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.003816912
+      objectReference: {fileID: 0}
     - target: {fileID: 3612583126686793469, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: m_Name
       value: Psicopata Armado
       objectReference: {fileID: 0}
+    - target: {fileID: 3612583126686793469, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6586493731524578775, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586493731524578775, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: WeaponType1SettingsFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586493731524578775, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: CombatActionSettingsFoldout
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7030830393736156929, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7755844084335457768, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7977401483588594214, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: HideSettingsFoldout
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7984814663691517873, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65487,3 +65632,4 @@ SceneRoots:
   - {fileID: 980291011}
   - {fileID: 1222992549}
   - {fileID: 621298120}
+  - {fileID: 1736095664}
