@@ -23,7 +23,7 @@ MonoBehaviour:
   AnimatorCullingMode: 0
   WalkFoldout: 0
   RunFoldout: 0
-  TurnFoldout: 0
+  TurnFoldout: 1
   NonCombatDeathFoldout: 0
   NonCombatAnimationsFoldout: 1
   NonCombatIdleFoldout: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   Type2BlockFoldout: 0
   Type1CombatWalkFoldout: 0
   Type1CombatRunFoldout: 0
-  Type1CombatTurnFoldout: 0
+  Type1CombatTurnFoldout: 1
   Type2CombatWalkFoldout: 0
   Type2CombatRunFoldout: 0
   Type2CombatTurnFoldout: 0
@@ -101,12 +101,12 @@ MonoBehaviour:
       AnimationClip: {fileID: 7400000, guid: 98721c310df7cef4ea41a3aa8fdb6e0a, type: 2}
       Mirror: 0
     TurnLeft:
-      AnimationSpeed: 1
-      AnimationClip: {fileID: 0}
+      AnimationSpeed: 1.5
+      AnimationClip: {fileID: 7400000, guid: 68c837ec1430f2c4da2db4380a94cee0, type: 2}
       Mirror: 0
     TurnRight:
-      AnimationSpeed: 1
-      AnimationClip: {fileID: 0}
+      AnimationSpeed: 1.5
+      AnimationClip: {fileID: 7400000, guid: 68c837ec1430f2c4da2db4380a94cee0, type: 2}
       Mirror: 0
     HitList:
     - AnimationSpeed: 1
@@ -211,12 +211,12 @@ MonoBehaviour:
       AnimationClip: {fileID: 7400000, guid: 98721c310df7cef4ea41a3aa8fdb6e0a, type: 2}
       Mirror: 0
     TurnLeft:
-      AnimationSpeed: 1
-      AnimationClip: {fileID: 0}
+      AnimationSpeed: 1.5
+      AnimationClip: {fileID: 7400000, guid: 68c837ec1430f2c4da2db4380a94cee0, type: 2}
       Mirror: 0
     TurnRight:
-      AnimationSpeed: 1
-      AnimationClip: {fileID: 0}
+      AnimationSpeed: 1.5
+      AnimationClip: {fileID: 7400000, guid: 68c837ec1430f2c4da2db4380a94cee0, type: 2}
       Mirror: 0
     HitList: []
     DeathList:
@@ -318,12 +318,12 @@ MonoBehaviour:
       AnimationClip: {fileID: 0}
       Mirror: 0
     TurnLeft:
-      AnimationSpeed: 0
-      AnimationClip: {fileID: 0}
+      AnimationSpeed: 2
+      AnimationClip: {fileID: 7400000, guid: 68c837ec1430f2c4da2db4380a94cee0, type: 2}
       Mirror: 0
     TurnRight:
-      AnimationSpeed: 0
-      AnimationClip: {fileID: 0}
+      AnimationSpeed: 2
+      AnimationClip: {fileID: 7400000, guid: 68c837ec1430f2c4da2db4380a94cee0, type: 2}
       Mirror: 0
     HitList: []
     DeathList:
