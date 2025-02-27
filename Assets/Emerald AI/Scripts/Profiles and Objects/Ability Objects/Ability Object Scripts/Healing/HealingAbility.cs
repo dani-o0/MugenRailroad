@@ -23,7 +23,7 @@ namespace EmeraldAI
             MonoBehaviour OwnerMonoBehaviour = Owner.GetComponent<MonoBehaviour>();
             Transform Target = GetTarget(Owner, AbilityData.TargetTypes.CurrentTarget);
             CreateSettings.SpawnCreateEffect(Owner, AttackTransform);
-            OwnerMonoBehaviour.StartCoroutine(StartHeals(Owner, AttackTransform));
+            OwnerMonoBehaviour.StartCoroutine(StartHeals(Owner, AttackTransform));      
         }
 
         IEnumerator StartHeals (GameObject Owner, Transform AttackTransform = null)

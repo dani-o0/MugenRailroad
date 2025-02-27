@@ -3006,8 +3006,10 @@ GameObject:
   - component: {fileID: 6827531058198981553}
   - component: {fileID: 4327786988795290549}
   - component: {fileID: 7977401483588594214}
+  - component: {fileID: 2138535102504004484}
   - component: {fileID: 6677202023591264567}
   - component: {fileID: 3476486014557196391}
+  - component: {fileID: 4936558009409059976}
   - component: {fileID: 7030830393736156929}
   - component: {fileID: 4142273020431710397}
   - component: {fileID: 8995062977672848218}
@@ -3396,6 +3398,87 @@ MonoBehaviour:
   - {fileID: 186584, guid: b85ef8139fbcfa746b2954a470627418, type: 3}
   HideSettingsFoldout: 1
   HealthFoldout: 0
+--- !u!114 &2138535102504004484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612583126686793469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a9deb83781e644a8e353dfbc492941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEnabledEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnemyTargetDetectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartCombatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndCombatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeCritDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDoDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDoCritDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnKilledTargetEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4936558009409059976}
+        m_TargetAssemblyTypeName: EnemyEventsHandler, Assembly-CSharp
+        m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnReachedDestinationEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReachedWaypointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGeneratedWaypointEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerDetectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFleeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HideSettingsFoldout: 0
+  GeneralEventsFoldout: 0
+  CombatEventsFoldout: 1
 --- !u!114 &6677202023591264567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3448,6 +3531,19 @@ MonoBehaviour:
   TPMComponent: {fileID: 0}
   LBDComponent: {fileID: 0}
   CoverComponent: {fileID: 0}
+--- !u!114 &4936558009409059976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612583126686793469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35952d498c18d1a45bb740e053617beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1.5
 --- !u!95 &7030830393736156929
 Animator:
   serializedVersion: 5
