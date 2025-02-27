@@ -10,21 +10,6 @@ public class EnemyEventsHandler : MonoBehaviour
     private GameObject playerAbilities;
     private AbilitiesManager abilities;
 
-    void Start()
-    {
-        playerAbilities = GameObject.FindGameObjectWithTag("PlayerAbilities");
-
-        if (playerAbilities != null && abilities == null)
-        {
-            abilities = playerAbilities.GetComponent<AbilitiesManager>();
-        }
-
-        if (playerAbilities == null)
-        {
-            Debug.LogWarning("No se pudo encontrar PlayerAbilities en el Start");
-        }
-    }
-
     void Update()
     {
         if (playerAbilities == null)
