@@ -2018,9 +2018,9 @@ MonoBehaviour:
   ObstructionDetectionUpdateTimer: 0
   ObstructionSeconds: 1.5
   StartingDetectionRadius: 0
-  DetectionRadius: 18
+  DetectionRadius: 17
   StartingChaseDistance: 0
-  FieldOfViewAngle: 123
+  FieldOfViewAngle: 129
   StartingFieldOfViewAngle: 0
   CurrentDetectionState: 1
   PickTargetType: 0
@@ -2056,7 +2056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundProfile: {fileID: 11400000, guid: fd3a1a85f7fd73940a51851bba5f7f01, type: 2}
   SoundProfileFoldout: 1
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   IdleSoundsSeconds: 0
   IdleSoundsTimer: 0
   m_AudioSource: {fileID: 0}
@@ -2100,7 +2100,7 @@ MonoBehaviour:
     AttackListIndex: 0
     AttackPickType: 1
     AttackDataList:
-    - AbilityObject: {fileID: 11400000, guid: cf1f106c1794ae949a01004e175cbed9, type: 2}
+    - AbilityObject: {fileID: 11400000, guid: 1b8e1b24f660929428d04c87e3d3b9db, type: 2}
       AttackAnimation: 1
       AttackOdds: 0
       AttackDistance: 1
@@ -2274,8 +2274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4435fe59ad515fd4d94c2dd09006f199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentHealth: 50
-  StartingHealth: 50
+  CurrentHealth: 250
+  StartingHealth: 250
   HealRate: 0
   AttachHitEffects: 0
   Immortal: 0
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   HitEffectsList:
   - {fileID: 163734, guid: 0a5ac034133a7654a8565697adff5548, type: 3}
   - {fileID: 186584, guid: b85ef8139fbcfa746b2954a470627418, type: 3}
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   HealthFoldout: 1
 --- !u!114 &7071557546230180244
 MonoBehaviour:

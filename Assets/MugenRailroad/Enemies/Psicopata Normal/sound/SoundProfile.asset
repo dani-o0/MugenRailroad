@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a67ba0da1c9f644a2a3734305677bf, type: 3}
   m_Name: SoundProfile
   m_EditorClassIdentifier: 
-  IdleSoundsFoldout: 0
+  IdleSoundsFoldout: 1
   FootstepSoundsFoldout: 0
   InteractSoundsFoldout: 0
   EquipAndUnequipSoundsFoldout: 0
-  AttackSoundsFoldout: 0
+  AttackSoundsFoldout: 1
   InjuredSoundsFoldout: 0
   BlockSoundsFoldout: 0
   DeathSoundsFoldout: 0
