@@ -3631,6 +3631,7 @@ GameObject:
   - component: {fileID: 2662397722414139771}
   - component: {fileID: 9128590363771551867}
   - component: {fileID: 9195795540446475977}
+  - component: {fileID: 7684767724378088425}
   - component: {fileID: 2530166834823447778}
   - component: {fileID: 252565031335108323}
   - component: {fileID: 9009025082525179985}
@@ -3839,6 +3840,22 @@ MonoBehaviour:
   m_RepeatDelay: 1
   m_TriggerHoldAnimKey: Hold
   m_QueueCountAnimKey: Count
+--- !u!114 &7684767724378088425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533913157568236369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fd394f479190a46829796d6f6bffd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DamageType: 1
+  m_Damage: 12
+  m_BulletSize: 1
+  m_ImpactForce: 15
 --- !u!114 &2530166834823447778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3853,8 +3870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageType: 4
   m_Explosion: {fileID: 114048289010296272, guid: 5dc982c5a92afcb4daebbeb20ca5ca6b, type: 3}
-  m_Damage: 15
-  m_MaxForce: 30
+  m_Damage: 5
+  m_MaxForce: 10
   m_NormalOffset: 0
 --- !u!114 &252565031335108323
 MonoBehaviour:
