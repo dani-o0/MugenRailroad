@@ -3010,7 +3010,7 @@ GameObject:
   - component: {fileID: 7950177703112629868}
   - component: {fileID: 366853522711640302}
   m_Layer: 0
-  m_Name: Spas
+  m_Name: Model_Spas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
