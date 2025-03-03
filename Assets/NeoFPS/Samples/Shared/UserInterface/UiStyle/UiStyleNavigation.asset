@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HeightSmall: 80
   m_HeightLarge: 110
+  m_IndentSize: 20
+  m_Spacing: 4
   m_Background: {fileID: 21300000, guid: 8ba5b4d1ed71104448e8c61e481806e2, type: 3}
   m_InputPulseDuration: 0.15
   m_Colours:
@@ -22,9 +25,9 @@ MonoBehaviour:
     pressed: {r: 0, g: 1, b: 0.6275861, a: 0.39215687}
     disabled: {r: 0, g: 0, b: 0, a: 0.27450982}
   m_TextInfo:
-    font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
     headerColour: {r: 1, g: 1, b: 1, a: 1}
-    headerFontSize: 32
+    headerFontSize: 64
     descriptionColour: {r: 1, g: 1, b: 1, a: 0.54901963}
     descriptionFontSize: 20
     controlColour: {r: 1, g: 1, b: 1, a: 1}
