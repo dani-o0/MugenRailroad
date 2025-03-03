@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using NeoFPS;
 using UnityEngine;
 
 public class EnemyEventsHandler : MonoBehaviour
@@ -26,9 +24,7 @@ public class EnemyEventsHandler : MonoBehaviour
     public void OnDeath()
     {
         if (abilities.vampiro.GetState())
-        {
             abilities.vampiro.OnKillEnemy();
-        }
         
         StartCoroutine(DelayedShrinkAndDestroy());
     }
