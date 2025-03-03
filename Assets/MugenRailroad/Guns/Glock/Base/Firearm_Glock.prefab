@@ -3833,7 +3833,7 @@ MonoBehaviour:
   m_StartActive: 1
   m_ActivationMode: 0
   m_Cooldown: 10
-  m_RepeatDelay: 9999
+  m_RepeatDelay: 0
   m_TriggerPressAnimKey: 
 --- !u!114 &592044402375028698
 MonoBehaviour:
@@ -3848,7 +3848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 5
+  m_Damage: 10
   m_BulletSize: 1
   m_ImpactForce: 20
 --- !u!114 &252565031335108323
@@ -3884,8 +3884,8 @@ MonoBehaviour:
   m_MagazineSize: 17
   m_StartingMagazine: 17
   m_ReloadDelayType: 1
-  m_ReloadDuration: 2.5
-  m_BlockingDuration: 2.75
+  m_ReloadDuration: 1.25
+  m_BlockingDuration: 1.5
   m_ReloadAnimTrigger: Reload
   m_ReloadAudio: {fileID: 8300000, guid: 08d0a938691a1d44eb628388e16da3df, type: 3}
   m_Volume: 1

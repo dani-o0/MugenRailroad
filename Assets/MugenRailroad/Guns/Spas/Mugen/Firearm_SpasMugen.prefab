@@ -640,7 +640,7 @@ MonoBehaviour:
   m_MinAimOffset: 0.5
   m_MaxAimOffset: 10
   m_UseCameraAim: 0
-  m_BulletCount: 20
+  m_BulletCount: 8
   m_Cone: 5
   m_TracerPrototype: {fileID: 7221158435157611235, guid: e9ad03ead8311bc49a62fb73ccb300be, type: 3}
   m_TracerSize: 0.025
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 5
+  m_Damage: 40
   m_BulletSize: 1
   m_ImpactForce: 20
 --- !u!114 &735076850186961455
