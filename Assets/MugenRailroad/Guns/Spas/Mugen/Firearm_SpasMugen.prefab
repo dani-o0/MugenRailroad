@@ -6394,7 +6394,7 @@ MonoBehaviour:
   m_HipAccuracyRecover: 4
   m_SightedAccuracyKick: 0.05
   m_SightedAccuracyRecover: 1
-  m_AdditiveTransform: {fileID: 0}
+  m_AdditiveTransform: {fileID: 4648882271633068622}
   m_HipFireRecoil:
     expanded: 1
     recoilAngle: 10
