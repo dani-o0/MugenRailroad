@@ -27368,7 +27368,7 @@ MonoBehaviour:
   m_Background: {fileID: 8094119646701948434}
   m_MainMenuScene: 0
   m_HudAlpha: 0.25
-  m_PauseGame: 0
+  m_PauseGame: 1
   m_OnShowMenu:
     m_PersistentCalls:
       m_Calls: []
