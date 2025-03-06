@@ -130,6 +130,7 @@ namespace NeoFPS.Samples
 			cb.highlightedColor = m_Style.colours.highlighted;
 			cb.pressedColor = m_Style.colours.pressed;
 			cb.disabledColor = m_Style.colours.disabled;
+			cb.selectedColor = m_Style.colours.focussed;
 			colors = cb;
 
             if (targetGraphic != null)
