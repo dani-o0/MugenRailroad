@@ -20,9 +20,9 @@ MonoBehaviour:
   m_InputPulseDuration: 0.15
   m_Colours:
     normal: {r: 0, g: 0, b: 0, a: 0.54901963}
-    highlighted: {r: 0, g: 1, b: 0.6275861, a: 0.39215687}
-    focussed: {r: 0, g: 1, b: 0.6275861, a: 0.627451}
-    pressed: {r: 0, g: 1, b: 0.6275861, a: 0.39215687}
+    highlighted: {r: 0.9764706, g: 1, b: 0, a: 0.39215687}
+    focussed: {r: 0.9764706, g: 1, b: 0, a: 0.627451}
+    pressed: {r: 0.9764706, g: 1, b: 0, a: 0.39215687}
     disabled: {r: 0, g: 0, b: 0, a: 0.27450982}
   m_TextInfo:
     font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
