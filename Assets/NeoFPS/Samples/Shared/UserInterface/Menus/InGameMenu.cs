@@ -90,6 +90,7 @@ namespace NeoFPS.Samples
 
 		void OnExitNo ()
 		{
+			ShowNavControls (m_StartingNavControls);
 		}
 
 		void CaptureInput ()
