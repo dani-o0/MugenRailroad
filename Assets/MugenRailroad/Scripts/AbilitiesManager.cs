@@ -5,12 +5,14 @@ public class AbilitiesManager : MonoBehaviour
     public AbilityVampiro vampiro;
     public AbilityDoubleJump doubleJump;
     public AbilityGrappler grappler;
+    public AbilityPorro porro;
 
     void Start()
     {
         vampiro = FindObjectOfType<AbilityVampiro>();
         doubleJump = FindObjectOfType<AbilityDoubleJump>();
         grappler = FindObjectOfType<AbilityGrappler>();
+        porro = FindObjectOfType<AbilityPorro>();
     }
 
     void Update()
@@ -23,6 +25,11 @@ public class AbilitiesManager : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.G))
             grappler.SetState(!grappler.GetState());
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            porro.SetState(!porro.GetState());
+        }
     }
 
     public void UpdateAbilities()
@@ -35,5 +42,8 @@ public class AbilitiesManager : MonoBehaviour
 
         if (grappler == null)
             grappler = FindObjectOfType<AbilityGrappler>();
+
+        if (porro == null)
+            porro = FindObjectOfType<AbilityPorro>();
     }
 }

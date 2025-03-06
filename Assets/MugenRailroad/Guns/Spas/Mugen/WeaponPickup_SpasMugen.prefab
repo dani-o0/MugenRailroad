@@ -794,11 +794,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 4779607909922484338}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 1641249263
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: 8edabd5d308cd5443bafe104f1885e3f
 --- !u!1 &5647611895862093615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be431f23d046cc34ab70572921114d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TooltipName: Spas
+  m_TooltipName: Mugen Spas
   m_TooltipAction: pick up
   m_InteractableOnStart: 1
   m_HoldDuration: 0.5
@@ -1408,8 +1408,8 @@ MonoBehaviour:
     m_Values:
     - {fileID: 4779607909922484338}
     m_GameObject: {fileID: 5591431417833687137}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 1641249263
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: 8edabd5d308cd5443bafe104f1885e3f
