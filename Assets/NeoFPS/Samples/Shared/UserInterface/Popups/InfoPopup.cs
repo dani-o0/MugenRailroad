@@ -34,12 +34,13 @@ namespace NeoFPS.Samples
 
 		public void OnOK ()
 		{
-			if (m_OnOK != null)
-			{
-				m_OnOK.Invoke ();
-				m_OnOK = null;
-			}
+			var callback = m_OnOK;
+			m_OnOK = null;
 			m_Instance.menu.ShowPopup (null);
+			if (callback != null)
+			{
+				callback.Invoke ();
+			}
 		}
 
 		public static void ShowPopup (string message, UnityAction onOK)

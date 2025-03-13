@@ -39,11 +39,14 @@ namespace NeoFPS.Samples
 
 		public void OnConfirmationYes ()
 		{
-			if (m_OnYes != null)
-				m_OnYes.Invoke ();
+			var callback = m_OnYes;
 			m_OnYes = null;
 			m_OnNo = null;
 			m_Instance.menu.ShowPopup (null);
+			if (callback != null)
+			{
+				callback.Invoke ();
+			}
 		}
 
 		public void OnConfirmationNo ()
