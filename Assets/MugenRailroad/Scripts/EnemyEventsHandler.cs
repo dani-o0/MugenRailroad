@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using System;
 
 public class EnemyEventsHandler : MonoBehaviour
 {
+    public event Action<GameObject> OnEnemyDeath;
     public float fadeDuration = 1.5f;
     
     private GameObject playerAbilities;
@@ -26,6 +28,7 @@ public class EnemyEventsHandler : MonoBehaviour
         if (abilities.vampiro.GetState())
             abilities.vampiro.OnKillEnemy();
         
+        OnEnemyDeath?.Invoke(gameObject);
         StartCoroutine(DelayedShrinkAndDestroy());
     }
     
