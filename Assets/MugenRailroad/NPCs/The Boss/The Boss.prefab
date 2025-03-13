@@ -1606,7 +1606,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2145911528841637258}
-  m_Layer: 0
+  - component: {fileID: 3246696745787452484}
+  - component: {fileID: 2748676588033871931}
+  - component: {fileID: 742726403284191142}
+  - component: {fileID: 2174332449132428513}
+  - component: {fileID: 9212236343917466198}
+  m_Layer: 22
   m_Name: The Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1630,6 +1635,128 @@ Transform:
   - {fileID: 4559404519226171603}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3246696745787452484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062180346989101864}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.0758715, z: 1.2871659}
+  m_Center: {x: -0.0000000041335366, y: 0.5270181, z: 0.14358109}
+--- !u!114 &2748676588033871931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062180346989101864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d978487c9d2b68a4d97e32c13e30328f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TooltipName: The Boss
+  m_TooltipAction: to interact
+  m_InteractableOnStart: 1
+  m_HoldDuration: 0
+  m_OnUsed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 742726403284191142}
+        m_TargetAssemblyTypeName: NeoFPS.Samples.SinglePlayer.DemoInfoLaptop, NeoFPS
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DANIPOLLAGORDA
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_OnCursorEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnCursorExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &742726403284191142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062180346989101864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7d4557444680a43908ca71671ae853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DialogSequence:
+  - text: Hola
+    dialogType: 0
+    onConfirmed:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: Adios
+    dialogType: 0
+    onConfirmed:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "\xBFQuieres jugar?"
+    dialogType: 1
+    onConfirmed:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &2174332449132428513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062180346989101864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f991b9f1d4fe5b40bb73e3d9a54a29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoxColliders:
+  - {fileID: 3246696745787452484}
+  m_CornerObject: {fileID: 1792054534762134, guid: b0c5328a0f7ef8e43be6068b33fa0de9, type: 3}
+--- !u!95 &9212236343917466198
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062180346989101864}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95a12c2ba1c623f448e3675c2352cc7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4137097833883291656
 GameObject:
   m_ObjectHideFlags: 0
