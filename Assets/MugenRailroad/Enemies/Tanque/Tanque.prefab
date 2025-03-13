@@ -1272,6 +1272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 1.5
+  enemyXp: 200
 --- !u!95 &4055805474145845174
 Animator:
   serializedVersion: 5

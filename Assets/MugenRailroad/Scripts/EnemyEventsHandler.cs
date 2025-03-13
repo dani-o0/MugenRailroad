@@ -1,12 +1,17 @@
 using System.Collections;
 using UnityEngine;
+using System;
 
 public class EnemyEventsHandler : MonoBehaviour
 {
+    public event Action<GameObject> OnEnemyDeath;
     public float fadeDuration = 1.5f;
+    public int enemyXp;
     
     private GameObject playerAbilities;
     private AbilitiesManager abilities;
+    private GameObject xpManager;
+    private XpManager xpM;
 
     void Update()
     {
@@ -19,13 +24,25 @@ public class EnemyEventsHandler : MonoBehaviour
         {
             abilities = playerAbilities.GetComponent<AbilitiesManager>();
         }
+
+        if (xpManager == null)
+        {
+            xpManager = GameObject.FindGameObjectWithTag("PlayerXP");
+        }
+        
+        if (xpManager != null && xpM == null)
+        {
+            xpM = xpManager.GetComponent<XpManager>();
+        }
     }
 
     public void OnDeath()
     {
+        xpM.OnKillEnemy(enemyXp);
         if (abilities.vampiro.GetState())
             abilities.vampiro.OnKillEnemy();
         
+        OnEnemyDeath?.Invoke(gameObject);
         StartCoroutine(DelayedShrinkAndDestroy());
     }
     
