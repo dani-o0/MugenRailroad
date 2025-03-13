@@ -18,41 +18,39 @@ public class XpManager : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton pattern
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Mantener el objeto al cambiar de escena
+            DontDestroyOnLoad(gameObject);
+            InitializeComponents();
         }
         else
         {
-            Destroy(gameObject); // Si ya existe una instancia, destruir la nueva
+            Destroy(gameObject);
             return;
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (HudXpBar == null)
-        {
-            HudXpBar = GameObject.FindGameObjectWithTag("HudXP");
-        }
-        
-        if (HudXpBar != null && hudXpBar == null)
-        {
-            hudXpBar = HudXpBar.GetComponent<HudXpBar>();
-        }
 
+    private void Start()
+    {
+        InitializeComponents();
         xp = 0;
         playerLevel = 1;
         xpToLevelUp = initialXpToLevelUp;
         hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        /* 
+            Comprobamos si los componentes estan inicializados en todo momento,
+            en caso de que no, los inicializamos. Esto se hace para cuando cambie de escena, volver a inicializar las referencias,
+            ya que se pierden al cambiar de escena.
+        */
+        if (!IsComponenetsInitialized())
+        {
+            InitializeComponents();
+        }
     }
 
     public void OnKillEnemy(int xp)
@@ -71,5 +69,25 @@ public class XpManager : MonoBehaviour
             hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
         }
         Debug.Log("Nivel: " + playerLevel);
+    }
+
+    // Funcion para inicializar los componentes
+    private void InitializeComponents()
+    {
+        if (HudXpBar == null)
+        {
+            HudXpBar = GameObject.FindGameObjectWithTag("HudXP");
+        }
+
+        if (HudXpBar!= null && hudXpBar == null)
+        {
+            hudXpBar = HudXpBar.GetComponent<HudXpBar>();
+        }
+    }
+
+    // Funcion para comprobar si los componentes han sido inicializados
+    private bool IsComponenetsInitialized()
+    {
+        return HudXpBar != null && hudXpBar != null;
     }
 }

@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using System;
-using System.Collections.Generic;
+using NeoSaveGames.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,32 +14,20 @@ public class GameManager : MonoBehaviour
 
     private GameState currentState;
     private int currentWagonNumber = 0;
-    [SerializeField, Tooltip("Numero maximo de vagones haste el boss")]
-    private int MaxWagons = 5;
-
-    [Serializable]
-    public class EnemySpawnConfig
-    {
-        public GameObject enemyPrefab;
-        [SerializeField, Tooltip("Cantidad de enemigos que apareceran")]
-        public int spawnCount;
-        public Transform[] spawnPoints;
-    }
-
-    [Serializable]
-    public class WaveConfig
-    {
-        public EnemySpawnConfig[] enemies;
-    }
-
     [SerializeField]
-    private WaveConfig[] wagonWaves;
-    private List<GameObject> activeEnemies = new List<GameObject>();
+    private int maxWagons = 5;
 
     public GameState CurrentState => currentState;
     public int CurrentWagonNumber => currentWagonNumber;
-    public bool IsWaveInProgress => activeEnemies.Count > 0;
-    public int RemainingEnemiesCount => activeEnemies.Count;
+    public int MaxWagons => maxWagons;
+
+    public void IncrementWagonNumber()
+    {
+        if (currentWagonNumber < maxWagons)
+        {
+            currentWagonNumber++;
+        }
+    }
 
     private void Awake()
     {
@@ -71,80 +57,14 @@ public class GameManager : MonoBehaviour
             currentWagonNumber = 1;
 
             // TODO: Hacer que cargue diferentes vagones segun el currentVagonNumber.
-            SceneManager.LoadScene("WagonBase");
-            StartWave();
+            NeoSceneManager.LoadScene("WagonBase");
         }
     }
-
-    // TODO: Mover todo lo relacionado con spawnear enemigos a otro script llamado EnemySpawnManager.
-    private void StartWave()
-    {
-        Debug.Log("Starting wave " + currentWagonNumber);
-
-        if (currentWagonNumber > MaxWagons || currentWagonNumber > wagonWaves.Length)
-        {
-            StartBossFight();
-            return;
-        }
-
-        WaveConfig currentWave = wagonWaves[currentWagonNumber - 1];
-        activeEnemies.Clear();
-
-        foreach (var enemyConfig in currentWave.enemies)
-        {
-            List<Transform> availableSpawnPoints = new List<Transform>(enemyConfig.spawnPoints);
-            
-            for (int i = 0; i < enemyConfig.spawnCount && availableSpawnPoints.Count > 0; i++)
-            {
-                int randomIndex = UnityEngine.Random.Range(0, availableSpawnPoints.Count);
-                Transform selectedSpawnPoint = availableSpawnPoints[randomIndex];
-                
-                GameObject enemy = Instantiate(enemyConfig.enemyPrefab, selectedSpawnPoint.position, selectedSpawnPoint.rotation);
-                activeEnemies.Add(enemy);
-
-                var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
-                if (enemyHealth != null)
-                {
-                    enemyHealth.OnEnemyDeath += HandleEnemyDeath;
-                }
-
-                availableSpawnPoints.RemoveAt(randomIndex);
-            }
-        }
-    }
-
-    private void HandleEnemyDeath(GameObject enemy)
-    {
-        if (activeEnemies.Contains(enemy))
-        {
-            activeEnemies.Remove(enemy);
-
-            var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
-            if (enemyHealth != null)
-            {
-                enemyHealth.OnEnemyDeath -= HandleEnemyDeath;
-            }
-
-            if (activeEnemies.Count == 0)
-            {
-                WaveCompleted();
-            }
-        }
-    }
-
-    private void WaveCompleted()
-    {
-        if (currentWagonNumber < MaxWagons)
-        {
-            currentWagonNumber++;
-        }
-        
-        EnableExitDoor();
-    }
-
-    private void EnableExitDoor()
+    
+    public void EnableExitDoor()
     {
         // TODO: Que se active la puerta de salida (Hay que hacer que por defecto la puerta no se abra).
+        Debug.Log("Wagon " + currentWagonNumber + " completed. Enabled door.");
     }
 
     private void OnEnterExitDoor()
@@ -156,16 +76,5 @@ public class GameManager : MonoBehaviour
     private void OnExitShop()
     {
         // TODO: Que pase al siguiente vagon.
-    }
-
-    private void StartBossFight()
-    {
-        // TODO: Spawnear el boss y sus cosas.
-    }
-
-    private void HandleBossDeath()
-    {
-        // TODO: Hacer todo el sistema del boss. Si tendra fases o lo que sea.
-        // Dejamos pendiente por decidir.
     }
 }
