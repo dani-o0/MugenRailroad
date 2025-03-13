@@ -76,8 +76,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // TODO: Mover todo lo relacionado con spawnear enemigos a otro script llamado EnemySpawnManager.
     private void StartWave()
     {
+        Debug.Log("Starting wave " + currentWagonNumber);
+
         if (currentWagonNumber > MaxWagons || currentWagonNumber > wagonWaves.Length)
         {
             StartBossFight();
