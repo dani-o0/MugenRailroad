@@ -11,8 +11,7 @@ public class GameManager : MonoBehaviour
     {
         TrainStation,
         WagonFight,
-        Shop,
-        BossFight
+        Shop
     }
 
     private GameState currentState;
@@ -62,9 +61,6 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.TrainStation;
         currentWagonNumber = 0;
-        currentState = GameState.WagonFight;
-        currentWagonNumber = 1;
-        StartWave();
     }
 
     public void StartWagonMission()
@@ -73,6 +69,8 @@ public class GameManager : MonoBehaviour
         {
             currentState = GameState.WagonFight;
             currentWagonNumber = 1;
+
+            // TODO: Hacer que cargue diferentes vagones segun el currentVagonNumber.
             SceneManager.LoadScene("WagonBase");
             StartWave();
         }
@@ -136,18 +134,35 @@ public class GameManager : MonoBehaviour
         if (currentWagonNumber < MaxWagons)
         {
             currentWagonNumber++;
-            currentState = GameState.Shop;
-            SceneManager.LoadScene("ShopScene");
         }
-        else
-        {
-            StartBossFight();
-        }
+        
+        EnableExitDoor();
+    }
+
+    private void EnableExitDoor()
+    {
+        // TODO: Que se active la puerta de salida (Hay que hacer que por defecto la puerta no se abra).
+    }
+
+    private void OnEnterExitDoor()
+    {
+        // TOOD: Que pase a la shop para comprar. 
+        // En caso de ser el ultimo vagon (el del boss) dar la opcion a ir a la TrainStation o volver a empezar el bucle.
+    }
+
+    private void OnExitShop()
+    {
+        // TODO: Que pase al siguiente vagon.
     }
 
     private void StartBossFight()
     {
-        currentState = GameState.BossFight;
-        SceneManager.LoadScene("BossFightScene");
+        // TODO: Spawnear el boss y sus cosas.
+    }
+
+    private void HandleBossDeath()
+    {
+        // TODO: Hacer todo el sistema del boss. Si tendra fases o lo que sea.
+        // Dejamos pendiente por decidir.
     }
 }
