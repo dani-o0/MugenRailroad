@@ -18,18 +18,18 @@ public class GameManager : MonoBehaviour
     private GameState currentState;
     private int currentWagonNumber = 0;
     [SerializeField, Tooltip("Numero maximo de vagones haste el boss")]
-    private const int MaxWagons = 5;
+    private int MaxWagons = 5;
 
-    [System.Serializable]
+    [Serializable]
     public class EnemySpawnConfig
     {
         public GameObject enemyPrefab;
-        [Range(0, 100)]
-        public float spawnProbability;
+        [SerializeField, Tooltip("Cantidad de enemigos que apareceran")]
+        public int spawnCount;
         public Transform[] spawnPoints;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class WaveConfig
     {
         public EnemySpawnConfig[] enemies;
@@ -62,6 +62,9 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.TrainStation;
         currentWagonNumber = 0;
+        currentState = GameState.WagonFight;
+        currentWagonNumber = 1;
+        StartWave();
     }
 
     public void StartWagonMission()
@@ -70,7 +73,7 @@ public class GameManager : MonoBehaviour
         {
             currentState = GameState.WagonFight;
             currentWagonNumber = 1;
-            SceneManager.LoadScene("WagonScene");
+            SceneManager.LoadScene("WagonBase");
             StartWave();
         }
     }
@@ -86,23 +89,25 @@ public class GameManager : MonoBehaviour
         WaveConfig currentWave = wagonWaves[currentWagonNumber - 1];
         activeEnemies.Clear();
 
-        // Spawn all enemies based on their probability
         foreach (var enemyConfig in currentWave.enemies)
         {
-            foreach (var spawnPoint in enemyConfig.spawnPoints)
+            List<Transform> availableSpawnPoints = new List<Transform>(enemyConfig.spawnPoints);
+            
+            for (int i = 0; i < enemyConfig.spawnCount && availableSpawnPoints.Count > 0; i++)
             {
-                if (UnityEngine.Random.Range(0f, 100f) < enemyConfig.spawnProbability)
-                {
-                    GameObject enemy = Instantiate(enemyConfig.enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-                    activeEnemies.Add(enemy);
+                int randomIndex = UnityEngine.Random.Range(0, availableSpawnPoints.Count);
+                Transform selectedSpawnPoint = availableSpawnPoints[randomIndex];
+                
+                GameObject enemy = Instantiate(enemyConfig.enemyPrefab, selectedSpawnPoint.position, selectedSpawnPoint.rotation);
+                activeEnemies.Add(enemy);
 
-                    // Subscribe to enemy death event
-                    var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
-                    if (enemyHealth != null)
-                    {
-                        enemyHealth.OnEnemyDeath += HandleEnemyDeath;
-                    }
+                var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.OnEnemyDeath += HandleEnemyDeath;
                 }
+
+                availableSpawnPoints.RemoveAt(randomIndex);
             }
         }
     }
@@ -113,7 +118,6 @@ public class GameManager : MonoBehaviour
         {
             activeEnemies.Remove(enemy);
 
-            // Unsubscribe from the event
             var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
             if (enemyHealth != null)
             {
