@@ -1986,6 +1986,8 @@ MonoBehaviour:
   Type1AttackEnumAnimations:
   - atack1
   - atack2
+  - atack1
+  - atack2
   Type2AttackEnumAnimations: []
   Type1AttackBlankOptions:
   - No Type 1 Attack Animations
@@ -2369,9 +2371,9 @@ MonoBehaviour:
   OnFleeEvent:
     m_PersistentCalls:
       m_Calls: []
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   GeneralEventsFoldout: 0
-  CombatEventsFoldout: 0
+  CombatEventsFoldout: 1
 --- !u!114 &8161575047677138043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2437,6 +2439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 1.5
+  enemyXp: 50
 --- !u!95 &7020130107313302188
 Animator:
   serializedVersion: 5

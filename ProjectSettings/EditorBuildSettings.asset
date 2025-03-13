@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/MugenRailroad/Scenes/LoadingScreen/Loading.unity
     guid: e9083c194375d3341a8b261d1aa1365e
   - enabled: 1
+    path: Assets/MugenRailroad/Scenes/The Constructo.unity
+    guid: 492c5fe94630d4043ba7e248421c55c9
+  - enabled: 1
+    path: Assets/MugenRailroad/Scenes/Shooting Range.unity
+    guid: 60bd2f3f9e4bb054ba8fd6afa3007695
+  - enabled: 1
+    path: Assets/MugenRailroad/Scenes/TrainStation.unity
+    guid: 62cabd4df288bbd489a6165a6a32bf16
+  - enabled: 1
+    path: Assets/MugenRailroad/Scenes/Wagons/WagonBase.unity
+    guid: 7ad0d757cfc24d1498b2caa36f754f2d
+  - enabled: 1
     path: Assets/NeoFPS/Samples/SinglePlayer/Scenes/DemoFacility/DemoFacility_Scene.unity
     guid: 7bf5c9ff45d591a47ae9fd2c838c63e8
   - enabled: 1

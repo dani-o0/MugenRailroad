@@ -19838,6 +19838,18 @@ MonoBehaviour:
         m_CallState: 2
   m_PrototypeEntry: {fileID: 114418147096491688}
   m_Levels:
+  - displayName: The Constructo
+    loadName: The Constructo
+    description: Escena de pruebas
+    screenshot: {fileID: 21300000, guid: 70321f8a21d5cee468d1228775bd507b, type: 3}
+  - displayName: Shooting Range
+    loadName: Shooting Range
+    description: Escena de prueba de armas.
+    screenshot: {fileID: 21300000, guid: 70321f8a21d5cee468d1228775bd507b, type: 3}
+  - displayName: TrainStation
+    loadName: TrainsStation
+    description: La estacion de tren.
+    screenshot: {fileID: 21300000, guid: 70321f8a21d5cee468d1228775bd507b, type: 3}
   - displayName: Demo Facility
     loadName: DemoFacility_Scene
     description: This level ties together a number of features on NeoFPS into a single
