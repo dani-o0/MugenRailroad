@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7d4557444680a43908ca71671ae853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Info: Enter text here
+  m_Info: Niki Nicole Yes or No?
 --- !u!4 &82946370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4553920935712960, guid: 8b548da18ce178244a2b7d9431966e55, type: 3}
