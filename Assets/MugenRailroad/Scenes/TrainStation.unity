@@ -1052,7 +1052,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7d4557444680a43908ca71671ae853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Info: Niki Nicole Yes or No?
+  m_DialogSequence:
+  - text: Hola
+    dialogType: 0
+    onConfirmed:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: aaaaaaaah!
+    dialogType: 1
+    onConfirmed:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: Me vengo
+    dialogType: 1
+    onConfirmed:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &82946370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4553920935712960, guid: 8b548da18ce178244a2b7d9431966e55, type: 3}
@@ -5030,6 +5045,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4861672736953889001, guid: 50bc0bea6630cf24ab7af7dd3a02036a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861839033683305723, guid: 50bc0bea6630cf24ab7af7dd3a02036a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862537092189175873, guid: 50bc0bea6630cf24ab7af7dd3a02036a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4863204920091063259, guid: 50bc0bea6630cf24ab7af7dd3a02036a, type: 3}
       propertyPath: m_Name
       value: InfoWeapon
@@ -7827,7 +7854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176301613014190011, guid: c0c023ff0518f544abdc0ab2807c0d4f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8968474533837436696, guid: c0c023ff0518f544abdc0ab2807c0d4f, type: 3}
       propertyPath: m_AnchorMax.y
