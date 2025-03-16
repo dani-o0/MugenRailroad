@@ -64,6 +64,8 @@ public class GameManager : MonoBehaviour
     public void EnableExitDoor()
     {
         // TODO: Que se active la puerta de salida (Hay que hacer que por defecto la puerta no se abra).
+        GameObject exitDoor = GameObject.FindGameObjectWithTag("ExitDoor");
+        exitDoor.GetComponent<BoxCollider>().enabled = true;
         Debug.Log("Wagon " + currentWagonNumber + " completed. Enabled door.");
     }
 

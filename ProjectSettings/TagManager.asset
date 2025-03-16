@@ -9,6 +9,7 @@ TagManager:
   - UICamera
   - PlayerXP
   - HudXP
+  - ExitDoor
   layers:
   - Default
   - TransparentFX

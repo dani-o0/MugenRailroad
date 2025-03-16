@@ -43,6 +43,11 @@ public class EnemySpawnManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        StartWave();
+    }
+
     public void StartWave()
     {
         Debug.Log("Starting wave " + GameManager.Instance.CurrentWagonNumber);
