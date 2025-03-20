@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/MugenRailroad/Scenes/Wagons/wagonsLevels/Wagon1.unity
     guid: 7ad0d757cfc24d1498b2caa36f754f2d
   - enabled: 1
+    path: Assets/MugenRailroad/Scenes/Wagons/MerchantWagon/WagonMerchant.unity
+    guid: 03b94beff28dc3b40b4db969af14e2b8
+  - enabled: 1
+    path: Assets/MugenRailroad/Scenes/Wagons/wagonsLevels/Wagon2.unity
+    guid: 06009eae9cfeff44684cad488d650725
+  - enabled: 1
     path: Assets/NeoFPS/Samples/SinglePlayer/Scenes/DemoFacility/DemoFacility_Scene.unity
     guid: 7bf5c9ff45d591a47ae9fd2c838c63e8
   - enabled: 1
