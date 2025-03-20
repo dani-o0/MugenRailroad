@@ -6,12 +6,17 @@ public class EnemyEventsHandler : MonoBehaviour
 {
     public event Action<GameObject> OnEnemyDeath;
     public float fadeDuration = 1.5f;
+    [Tooltip("La experiencia que da el enemigo")]
     public int enemyXp;
+    [Tooltip("El dinero que suelta el enemigo")]
+    public int enemyMoney;
     
     private GameObject playerAbilities;
     private AbilitiesManager abilities;
     private GameObject xpManager;
     private XpManager xpM;
+    private GameObject moneyManager;
+    private MoneyManager moneyM;
 
     void Update()
     {
@@ -34,11 +39,22 @@ public class EnemyEventsHandler : MonoBehaviour
         {
             xpM = xpManager.GetComponent<XpManager>();
         }
+
+        if (moneyManager == null)
+        {
+            moneyManager = GameObject.FindGameObjectWithTag("PlayerMoney");
+        }
+        
+        if (moneyManager != null && moneyM == null)
+        {
+            moneyM = moneyManager.GetComponent<MoneyManager>();
+        }
     }
 
     public void OnDeath()
     {
         xpM.OnKillEnemy(enemyXp);
+        moneyM.OnKillEnemy(enemyMoney);
         if (abilities.vampiro.GetState())
             abilities.vampiro.OnKillEnemy();
         

@@ -10,6 +10,8 @@ TagManager:
   - PlayerXP
   - HudXP
   - ExitDoor
+  - PlayerMoney
+  - HudMoney
   layers:
   - Default
   - TransparentFX

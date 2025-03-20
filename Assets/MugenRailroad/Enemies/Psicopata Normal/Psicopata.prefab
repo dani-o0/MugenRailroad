@@ -1986,8 +1986,6 @@ MonoBehaviour:
   Type1AttackEnumAnimations:
   - atack1
   - atack2
-  - atack1
-  - atack2
   Type2AttackEnumAnimations: []
   Type1AttackBlankOptions:
   - No Type 1 Attack Animations
@@ -2440,6 +2438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 1.5
   enemyXp: 50
+  enemyMoney: 25
 --- !u!95 &7020130107313302188
 Animator:
   serializedVersion: 5
