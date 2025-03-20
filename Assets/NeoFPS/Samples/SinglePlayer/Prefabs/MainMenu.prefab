@@ -19847,7 +19847,7 @@ MonoBehaviour:
     description: Escena de prueba de armas.
     screenshot: {fileID: 21300000, guid: 70321f8a21d5cee468d1228775bd507b, type: 3}
   - displayName: TrainStation
-    loadName: TrainsStation
+    loadName: TrainStation
     description: La estacion de tren.
     screenshot: {fileID: 21300000, guid: 70321f8a21d5cee468d1228775bd507b, type: 3}
   - displayName: Demo Facility
