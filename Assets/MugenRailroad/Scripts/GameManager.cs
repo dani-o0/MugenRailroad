@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using System;
-using System.Collections.Generic;
+using NeoSaveGames.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,38 +9,25 @@ public class GameManager : MonoBehaviour
     {
         TrainStation,
         WagonFight,
-        Shop,
-        BossFight
+        Shop
     }
 
     private GameState currentState;
     private int currentWagonNumber = 0;
-    [SerializeField, Tooltip("Numero maximo de vagones haste el boss")]
-    private const int MaxWagons = 5;
-
-    [System.Serializable]
-    public class EnemySpawnConfig
-    {
-        public GameObject enemyPrefab;
-        [Range(0, 100)]
-        public float spawnProbability;
-        public Transform[] spawnPoints;
-    }
-
-    [System.Serializable]
-    public class WaveConfig
-    {
-        public EnemySpawnConfig[] enemies;
-    }
-
     [SerializeField]
-    private WaveConfig[] wagonWaves;
-    private List<GameObject> activeEnemies = new List<GameObject>();
+    private int maxWagons = 5;
 
     public GameState CurrentState => currentState;
     public int CurrentWagonNumber => currentWagonNumber;
-    public bool IsWaveInProgress => activeEnemies.Count > 0;
-    public int RemainingEnemiesCount => activeEnemies.Count;
+    public int MaxWagons => maxWagons;
+
+    public void IncrementWagonNumber()
+    {
+        if (currentWagonNumber < maxWagons)
+        {
+            currentWagonNumber++;
+        }
+    }
 
     private void Awake()
     {
@@ -70,80 +55,28 @@ public class GameManager : MonoBehaviour
         {
             currentState = GameState.WagonFight;
             currentWagonNumber = 1;
-            SceneManager.LoadScene("WagonScene");
-            StartWave();
+
+            // TODO: Hacer que cargue diferentes vagones segun el currentVagonNumber.
+            NeoSceneManager.LoadScene("WagonBase");
         }
     }
-
-    private void StartWave()
+    
+    public void EnableExitDoor()
     {
-        if (currentWagonNumber > MaxWagons || currentWagonNumber > wagonWaves.Length)
-        {
-            StartBossFight();
-            return;
-        }
-
-        WaveConfig currentWave = wagonWaves[currentWagonNumber - 1];
-        activeEnemies.Clear();
-
-        // Spawn all enemies based on their probability
-        foreach (var enemyConfig in currentWave.enemies)
-        {
-            foreach (var spawnPoint in enemyConfig.spawnPoints)
-            {
-                if (UnityEngine.Random.Range(0f, 100f) < enemyConfig.spawnProbability)
-                {
-                    GameObject enemy = Instantiate(enemyConfig.enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-                    activeEnemies.Add(enemy);
-
-                    // Subscribe to enemy death event
-                    var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
-                    if (enemyHealth != null)
-                    {
-                        enemyHealth.OnEnemyDeath += HandleEnemyDeath;
-                    }
-                }
-            }
-        }
+        // TODO: Que se active la puerta de salida (Hay que hacer que por defecto la puerta no se abra).
+        GameObject exitDoor = GameObject.FindGameObjectWithTag("ExitDoor");
+        exitDoor.GetComponent<BoxCollider>().enabled = true;
+        Debug.Log("Wagon " + currentWagonNumber + " completed. Enabled door.");
     }
 
-    private void HandleEnemyDeath(GameObject enemy)
+    private void OnEnterExitDoor()
     {
-        if (activeEnemies.Contains(enemy))
-        {
-            activeEnemies.Remove(enemy);
-
-            // Unsubscribe from the event
-            var enemyHealth = enemy.GetComponent<EnemyEventsHandler>();
-            if (enemyHealth != null)
-            {
-                enemyHealth.OnEnemyDeath -= HandleEnemyDeath;
-            }
-
-            if (activeEnemies.Count == 0)
-            {
-                WaveCompleted();
-            }
-        }
+        // TOOD: Que pase a la shop para comprar. 
+        // En caso de ser el ultimo vagon (el del boss) dar la opcion a ir a la TrainStation o volver a empezar el bucle.
     }
 
-    private void WaveCompleted()
+    private void OnExitShop()
     {
-        if (currentWagonNumber < MaxWagons)
-        {
-            currentWagonNumber++;
-            currentState = GameState.Shop;
-            SceneManager.LoadScene("ShopScene");
-        }
-        else
-        {
-            StartBossFight();
-        }
-    }
-
-    private void StartBossFight()
-    {
-        currentState = GameState.BossFight;
-        SceneManager.LoadScene("BossFightScene");
+        // TODO: Que pase al siguiente vagon.
     }
 }
