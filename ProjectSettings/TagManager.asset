@@ -12,6 +12,7 @@ TagManager:
   - ExitDoor
   - PlayerMoney
   - HudMoney
+  - Ability
   layers:
   - Default
   - TransparentFX
