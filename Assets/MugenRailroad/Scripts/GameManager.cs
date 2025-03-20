@@ -12,6 +12,18 @@ public class GameManager : MonoBehaviour
         Shop
     }
 
+    public enum Scenes
+    {
+        TrainStation,
+        WagonMerchant,
+        Wagon1,
+        Wagon2,
+        Wagon3,
+        Wagon4,
+        Wagon5,
+        WagonBoss,
+    }
+
     private GameState currentState;
     private int currentWagonNumber = 0;
     [SerializeField]
@@ -56,27 +68,57 @@ public class GameManager : MonoBehaviour
             currentState = GameState.WagonFight;
             currentWagonNumber = 1;
 
-            // TODO: Hacer que cargue diferentes vagones segun el currentVagonNumber.
-            NeoSceneManager.LoadScene("WagonBase");
+            Scenes wagonScene = (Scenes)System.Enum.Parse(typeof(Scenes), "Wagon" + currentWagonNumber);
+            NeoSceneManager.LoadScene(wagonScene.ToString());
+        }
+
+        if (currentState == GameState.Shop)
+        {
+            currentState = GameState.WagonFight;
+            currentWagonNumber++;
+
+            // En caso de que sea el ultimo vagon (Wagon5) cargamos el vagon del boss (WagonBoss) en vez de el siguiente wagon.
+            if (currentWagonNumber == maxWagons)
+            {
+                NeoSceneManager.LoadScene(Scenes.WagonBoss.ToString());
+            }
+            else
+            {
+                Scenes wagonScene = (Scenes)System.Enum.Parse(typeof(Scenes), "Wagon" + currentWagonNumber);
+                NeoSceneManager.LoadScene(wagonScene.ToString());
+            }
         }
     }
     
     public void EnableExitDoor()
     {
-        // TODO: Que se active la puerta de salida (Hay que hacer que por defecto la puerta no se abra).
         GameObject exitDoor = GameObject.FindGameObjectWithTag("ExitDoor");
         exitDoor.GetComponent<BoxCollider>().enabled = true;
+
+        GameObject goNextLevelDoor = GameObject.FindGameObjectWithTag("DoorGoNextLevel");
+        goNextLevelDoor.GetComponent<BoxCollider>().enabled = true;
+
         Debug.Log("Wagon " + currentWagonNumber + " completed. Enabled door.");
     }
 
-    private void OnEnterExitDoor()
+    public void OnExitDoor()
     {
-        // TOOD: Que pase a la shop para comprar. 
-        // En caso de ser el ultimo vagon (el del boss) dar la opcion a ir a la TrainStation o volver a empezar el bucle.
+        if (currentWagonNumber < maxWagons)
+        {
+            currentState = GameState.Shop;
+            NeoSceneManager.LoadScene(Scenes.WagonMerchant.ToString());
+        }
+        else
+        {
+            // TODO: dar la opcion a ir a la TrainStation o volver a empezar
+            currentState = GameState.TrainStation;
+            currentWagonNumber = 0;
+            NeoSceneManager.LoadScene(Scenes.TrainStation.ToString());
+        }
     }
 
-    private void OnExitShop()
+    public void OnExitShop()
     {
-        // TODO: Que pase al siguiente vagon.
+        StartWagonMission();
     }
 }
