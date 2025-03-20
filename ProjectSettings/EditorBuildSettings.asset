@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MugenRailroad/Scenes/MainMenu.unity
+    path: Assets/MugenRailroad/Scenes/Main Menu/MainMenu.unity
     guid: 245ae7ca41c2a5b43b77d526598b4dcf
   - enabled: 1
     path: Assets/MugenRailroad/Scenes/LoadingScreen/Loading.unity
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/MugenRailroad/Scenes/TrainStation.unity
     guid: 62cabd4df288bbd489a6165a6a32bf16
   - enabled: 1
-    path: Assets/MugenRailroad/Scenes/Wagons/WagonBase.unity
+    path: Assets/MugenRailroad/Scenes/Wagons/WagonBase/scene.unity
     guid: 7ad0d757cfc24d1498b2caa36f754f2d
   - enabled: 1
     path: Assets/NeoFPS/Samples/SinglePlayer/Scenes/DemoFacility/DemoFacility_Scene.unity
