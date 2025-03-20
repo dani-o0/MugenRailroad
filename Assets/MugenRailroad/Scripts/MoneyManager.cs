@@ -32,7 +32,6 @@ public class MoneyManager : MonoBehaviour
     {
         InitializeComponents();
         money = 0;
-        hudMoneyCounter.UpdateMoneyCounter(money);
     }
 
     private void Update()
@@ -69,6 +68,7 @@ public class MoneyManager : MonoBehaviour
         if (HudMoneyCounter!= null && hudMoneyCounter == null)
         {
             hudMoneyCounter = HudMoneyCounter.GetComponent<HudMoneyCounter>();
+            hudMoneyCounter.UpdateMoneyCounter(money);
         }
     }
 

@@ -37,7 +37,6 @@ public class XpManager : MonoBehaviour
         xp = 0;
         playerLevel = 1;
         xpToLevelUp = initialXpToLevelUp;
-        hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
     }
 
     private void Update()
@@ -82,6 +81,7 @@ public class XpManager : MonoBehaviour
         if (HudXpBar!= null && hudXpBar == null)
         {
             hudXpBar = HudXpBar.GetComponent<HudXpBar>();
+            hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
         }
     }
 
