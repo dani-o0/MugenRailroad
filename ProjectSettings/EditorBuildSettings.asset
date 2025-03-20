@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/MugenRailroad/Scenes/TrainStation.unity
     guid: 62cabd4df288bbd489a6165a6a32bf16
   - enabled: 1
-    path: Assets/MugenRailroad/Scenes/Wagons/WagonBase/BaseWagon.unity
+    path: Assets/MugenRailroad/Scenes/Wagons/WagonBase/WagonBase.unity
     guid: 7ad0d757cfc24d1498b2caa36f754f2d
   - enabled: 1
     path: Assets/NeoFPS/Samples/SinglePlayer/Scenes/DemoFacility/DemoFacility_Scene.unity
