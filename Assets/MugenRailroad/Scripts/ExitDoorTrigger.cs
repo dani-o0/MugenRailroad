@@ -8,8 +8,7 @@ public class ExitDoorTrigger : MonoBehaviour
         {
             if (GameManager.Instance.CurrentState == GameManager.GameState.WagonFight)
                 GameManager.Instance.OnExitDoor();
-
-            if (GameManager.Instance.CurrentState == GameManager.GameState.Shop)
+            else if (GameManager.Instance.CurrentState == GameManager.GameState.Shop)
                 GameManager.Instance.OnExitShop();
         }
     }

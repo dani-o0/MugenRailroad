@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
         WagonBoss,
     }
 
-    private GameState currentState;
-    private int currentWagonNumber = 0;
+    public GameState currentState;
+    public int currentWagonNumber = 0;
     [SerializeField]
     private int maxWagons = 5;
 
@@ -72,11 +72,8 @@ public class GameManager : MonoBehaviour
             NeoSceneManager.LoadScene(wagonScene.ToString());
         }
 
-        if (currentState == GameState.Shop)
+        if (currentState == GameState.WagonFight)
         {
-            currentState = GameState.WagonFight;
-            currentWagonNumber++;
-
             // En caso de que sea el ultimo vagon (Wagon5) cargamos el vagon del boss (WagonBoss) en vez de el siguiente wagon.
             if (currentWagonNumber == maxWagons)
             {
@@ -105,7 +102,9 @@ public class GameManager : MonoBehaviour
     {
         if (currentWagonNumber < maxWagons)
         {
+            Debug.Log($"[GameManager] Transitioning from state {currentState} to Shop");
             currentState = GameState.Shop;
+            Debug.Log($"[GameManager] Current state is now {currentState}");
             NeoSceneManager.LoadScene(Scenes.WagonMerchant.ToString());
         }
         else
@@ -119,6 +118,7 @@ public class GameManager : MonoBehaviour
 
     public void OnExitShop()
     {
+        currentState = GameState.WagonFight;
         StartWagonMission();
     }
 }
