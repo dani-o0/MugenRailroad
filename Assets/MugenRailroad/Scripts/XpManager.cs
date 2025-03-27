@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NeoFPS;
+using NeoFPS.Samples;
 using UnityEngine;
 
 
@@ -15,6 +16,12 @@ public class XpManager : MonoBehaviour
 
     private GameObject HudXpBar;
     private HudXpBar hudXpBar;
+    private GameObject playerAbilities;
+    private AbilitiesManager abilities;
+    private GameObject prototype;
+    private AbilityCard prototypeEntry;
+    
+    
 
     private void Awake()
     {
@@ -33,7 +40,6 @@ public class XpManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeComponents();
         xp = 0;
         playerLevel = 1;
         xpToLevelUp = initialXpToLevelUp;
@@ -54,20 +60,18 @@ public class XpManager : MonoBehaviour
 
     public void OnKillEnemy(int xp)
     {
-        Debug.Log("XP conseguida: " + xp);
         this.xp += xp;
         if (this.xp >= xpToLevelUp)
         {
-            Debug.Log("Has subido de nivel!");
             playerLevel++;
             this.xp -= xpToLevelUp;
             xpToLevelUp *= 2;
+            abilities.SelectAbilities(prototypeEntry);
         }
         if (hudXpBar != null)
         {
             hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
         }
-        Debug.Log("Nivel: " + playerLevel);
     }
 
     // Funcion para inicializar los componentes
@@ -82,6 +86,27 @@ public class XpManager : MonoBehaviour
         {
             hudXpBar = HudXpBar.GetComponent<HudXpBar>();
             hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
+        }
+
+        if (playerAbilities == null)
+        {
+            playerAbilities = GameObject.FindGameObjectWithTag("PlayerAbilities");
+        }
+        
+        if (playerAbilities != null && abilities == null)
+        {
+            abilities = playerAbilities.GetComponent<AbilitiesManager>();
+        }
+
+        if (prototype == null)
+        {
+            prototype = GameObject.FindGameObjectWithTag("Ability");
+        }
+        
+        if (prototype != null && prototypeEntry == null)
+        {
+            prototypeEntry = prototype.GetComponent<AbilityCard>();
+            prototypeEntry.gameObject.SetActive(false);
         }
     }
 

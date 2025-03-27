@@ -296,20 +296,23 @@ MonoBehaviour:
   doubleJump: {fileID: 6012857076992069775}
   grappler: {fileID: 5760858322609330397}
   porro: {fileID: 544084784083514227}
-  prototypeEntry: {fileID: 0}
   abilities:
   - displayName: Vampire
     description: Recuperas vida al matar.
     image: {fileID: 0}
+    abilityType: 0
   - displayName: Double Jump
     description: Tienes doble salto.
     image: {fileID: 0}
+    abilityType: 1
   - displayName: Grappler
     description: Tienes un gancho.
     image: {fileID: 0}
+    abilityType: 2
   - displayName: Joint
     description: Te puedes fumar un porro para ralentizar el tiempo.
     image: {fileID: 0}
+    abilityType: 3
 --- !u!1 &1299934034343764102
 GameObject:
   m_ObjectHideFlags: 0

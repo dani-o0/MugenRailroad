@@ -13,6 +13,9 @@ TagManager:
   - PlayerMoney
   - HudMoney
   - DoorGoNextLevel
+  - Ability
+  - AbilityEndPadding
+  - AbilitiesBackground
   layers:
   - Default
   - TransparentFX
