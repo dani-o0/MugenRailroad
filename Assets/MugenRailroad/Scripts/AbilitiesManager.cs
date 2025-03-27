@@ -24,7 +24,7 @@ public class AbilitiesManager : MonoBehaviour
             public string displayName;
 			[Multiline]
 			public string description;
-			public Image image;
+			public Sprite sprite;
             public AbilityType abilityType;
 
             #pragma warning restore 0649
@@ -89,7 +89,7 @@ public class AbilitiesManager : MonoBehaviour
         endPadding = EndPadding.GetComponent<Transform>();
         prototypeEntry.gameObject.SetActive (true);
 
-        //NeoFpsTimeScale.FreezeTime();
+        NeoFpsTimeScale.FreezeTime();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
@@ -126,7 +126,7 @@ public class AbilitiesManager : MonoBehaviour
             t.localScale = Vector3.one;
 
             // Set up info
-            abilitiesButtons [i].image = abilities [i].image;
+            abilitiesButtons [i].sprite = abilities [i].sprite;
             abilitiesButtons [i].name.text = abilities [i].displayName;
             abilitiesButtons [i].description.text = abilities [i].description;
 
