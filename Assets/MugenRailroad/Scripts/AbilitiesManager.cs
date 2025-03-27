@@ -126,7 +126,7 @@ public class AbilitiesManager : MonoBehaviour
             t.localScale = Vector3.one;
 
             // Set up info
-            abilitiesButtons [i].sprite = abilities [i].sprite;
+            abilitiesButtons [i].imageComponent.sprite = abilities [i].sprite;
             abilitiesButtons [i].name.text = abilities [i].displayName;
             abilitiesButtons [i].description.text = abilities [i].description;
 

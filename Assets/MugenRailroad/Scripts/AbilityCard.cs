@@ -6,8 +6,8 @@ using UnityEngine.Events;
 
 public class AbilityCard : MonoBehaviour
 {
-    public Sprite sprite;
-    private Image imageComponent;
+    private Sprite sprite;
+    public Image imageComponent;
     public Text name;
     public Text description;
     public System.Action onCardClicked;
@@ -25,21 +25,17 @@ public class AbilityCard : MonoBehaviour
             button = GetComponent<Button>();
         }
         
-        // Obtener el componente Image si existe
-        imageComponent = GetComponent<Image>();
-        if (imageComponent != null && sprite != null)
+        // Obtener el componente Image si no está asignado
+        if (imageComponent == null)
         {
-            imageComponent.sprite = sprite;
+            imageComponent = GetComponent<Image>();
         }
         
         // Configurar el evento onClick si se encontró un botón
         if (button != null)
         {
             button.onClick.AddListener(() => {
-                if (onCardClicked != null)
-                {
-                    onCardClicked.Invoke();
-                }
+                onCardClicked?.Invoke();
             });
         }
         else

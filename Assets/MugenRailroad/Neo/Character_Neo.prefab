@@ -299,19 +299,19 @@ MonoBehaviour:
   abilities:
   - displayName: Vampire
     description: Recuperas vida al matar.
-    sprite: {fileID: 21300000, guid: 5cc007e46ab8a93489cb0ce7fcd0566d, type: 3}
+    sprite: {fileID: 21300000, guid: 755dedf6c8594e244815e90740921233, type: 3}
     abilityType: 0
   - displayName: Double Jump
     description: Tienes doble salto.
-    sprite: {fileID: 21300000, guid: c5129322ff0518d48a69d1f5e7032939, type: 3}
+    sprite: {fileID: 21300000, guid: 846c4fc74aaf9a4479abd9f59b1a4fbb, type: 3}
     abilityType: 1
   - displayName: Grappler
     description: Tienes un gancho.
-    sprite: {fileID: 21300000, guid: d33f860435e2fdf438a553ab52a53442, type: 3}
+    sprite: {fileID: 21300000, guid: 430f830eeebea2e4e93be7b3b2411bf4, type: 3}
     abilityType: 2
   - displayName: Joint
     description: Te puedes fumar un porro para ralentizar el tiempo.
-    sprite: {fileID: 21300000, guid: 7a03160a0df6d6349bc72770f0e7fffc, type: 3}
+    sprite: {fileID: 21300000, guid: d347028941b6908409a2620363f1e3f5, type: 3}
     abilityType: 3
 --- !u!1 &1299934034343764102
 GameObject:
