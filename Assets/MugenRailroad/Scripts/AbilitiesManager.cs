@@ -130,12 +130,13 @@ public class AbilitiesManager : MonoBehaviour
             abilitiesButtons [i].name.text = abilities [i].displayName;
             abilitiesButtons [i].description.text = abilities [i].description;
 
-            // Configurar el callback para el clic en la carta
+            // Configurar el callback directamente en el botón
             int index = i; // Capturar el índice para el closure
-            abilitiesButtons[i].onCardClicked = () => {
+            abilitiesButtons[i].button.onClick.RemoveAllListeners(); // Limpiar listeners previos
+            abilitiesButtons[i].button.onClick.AddListener(() => {
                 Debug.Log($"Clic en habilidad: {abilities[index].abilityType}");
                 GrantAbility(abilities[index].abilityType);
-            };
+            });
             
             // Asegurarse de que el componente esté activo para recibir clics
             abilitiesButtons[i].gameObject.SetActive(true);
