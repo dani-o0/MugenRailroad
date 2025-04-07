@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using NeoFPS;
 
 namespace NeoFPS.Samples
 {
@@ -24,6 +25,12 @@ namespace NeoFPS.Samples
 
         private UnityAction m_OnYes = null;
         private UnityAction m_OnNo = null;
+        
+        // Referencia al PurchasablePickup que está mostrando este popup
+        private PurchasablePickup m_CurrentPurchasable = null;
+        
+        // Referencia al personaje que está interactuando
+        private ICharacter m_CurrentCharacter = null;
 
         public override void Initialise (BaseMenu menu)
 		{
@@ -53,7 +60,31 @@ namespace NeoFPS.Samples
 			m_Instance.menu.ShowPopup (null);
 			if (callback != null)
 			{
+				Debug.Log("ShopConfirmationPopup: Ejecutando acción del botón 'Sí'");
 				callback.Invoke ();
+			}
+			else
+			{
+				Debug.LogWarning("ShopConfirmationPopup: No se ha asignado una acción para el botón 'Sí'");
+				// Si no hay callback pero hay un PurchasablePickup, intentar comprar
+				TryPurchaseItem();
+			}
+		}
+		
+		/// <summary>
+		/// Método público que puede ser asignado desde el inspector para intentar comprar un item.
+		/// Este método utiliza las referencias guardadas de PurchasablePickup y ICharacter.
+		/// </summary>
+		public void TryPurchaseItem()
+		{
+			if (m_CurrentPurchasable != null && m_CurrentCharacter != null)
+			{
+				Debug.Log("ShopConfirmationPopup: Intentando comprar item desde el método asignado en el inspector");
+				m_CurrentPurchasable.TryPurchase(m_CurrentCharacter);
+			}
+			else
+			{
+				Debug.LogWarning("ShopConfirmationPopup: No se puede comprar el item porque no hay referencias válidas al PurchasablePickup o al ICharacter");
 			}
 		}
 
@@ -65,7 +96,12 @@ namespace NeoFPS.Samples
 			m_Instance.menu.ShowPopup (null);
 			if (callback != null)
 			{
+				Debug.Log("ShopConfirmationPopup: Ejecutando acción del botón 'No'");
 				callback.Invoke ();
+			}
+			else
+			{
+				Debug.LogWarning("ShopConfirmationPopup: No se ha asignado una acción para el botón 'No'");
 			}
 		}
 
@@ -79,7 +115,7 @@ namespace NeoFPS.Samples
 		/// <param name="noButtonText">Texto del botón "No" (por defecto "No")</param>
 		/// <param name="onYes">Acción a ejecutar cuando se presiona el botón "Sí"</param>
 		/// <param name="onNo">Acción a ejecutar cuando se presiona el botón "No"</param>
-		public static void ShowPopupWithTexture (string message, string secondaryText, Texture image, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopupWithTexture (string message, string secondaryText, Texture image, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo, PurchasablePickup purchasable = null, ICharacter character = null)
 		{
 			if (m_Instance == null)
 			{
@@ -91,7 +127,16 @@ namespace NeoFPS.Samples
 
 			m_Instance.m_OnYes = onYes;
 			m_Instance.m_OnNo = onNo;
-			m_Instance.m_MessageText.text = message;
+			
+			// Guardar referencias al PurchasablePickup y al ICharacter
+			m_Instance.m_CurrentPurchasable = purchasable;
+			m_Instance.m_CurrentCharacter = character;
+			
+			// Verificar que m_MessageText no sea null antes de asignar el texto
+			if (m_Instance.m_MessageText != null)
+				m_Instance.m_MessageText.text = message;
+			else
+				Debug.LogWarning("ShopConfirmationPopup: m_MessageText es null. El mensaje no se mostrará correctamente.");
 			
 			// Establecer texto secundario
 			if (m_Instance.m_SecondaryText != null)
@@ -115,7 +160,11 @@ namespace NeoFPS.Samples
 			if (m_Instance.m_NoButtonText != null && !string.IsNullOrEmpty(noButtonText))
 				m_Instance.m_NoButtonText.text = noButtonText;
 			
-			m_Instance.menu.ShowPopup (m_Instance);
+			// Verificar que menu no sea null antes de mostrar el popup
+			if (m_Instance.menu != null)
+				m_Instance.menu.ShowPopup(m_Instance);
+			else
+				Debug.LogError("ShopConfirmationPopup: menu es null. Asegúrate de que el popup esté correctamente inicializado.");
 		}
 
 		/// <summary>
@@ -128,7 +177,7 @@ namespace NeoFPS.Samples
 		/// <param name="noButtonText">Texto del botón "No" (por defecto "No")</param>
 		/// <param name="onYes">Acción a ejecutar cuando se presiona el botón "Sí"</param>
 		/// <param name="onNo">Acción a ejecutar cuando se presiona el botón "No"</param>
-		public static void ShowPopup (string message, string secondaryText, Sprite sprite, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopup (string message, string secondaryText, Sprite sprite, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo, PurchasablePickup purchasable = null, ICharacter character = null)
 		{
 			if (m_Instance == null)
 			{
@@ -140,7 +189,16 @@ namespace NeoFPS.Samples
 
 			m_Instance.m_OnYes = onYes;
 			m_Instance.m_OnNo = onNo;
-			m_Instance.m_MessageText.text = message;
+			
+			// Guardar referencias al PurchasablePickup y al ICharacter
+			m_Instance.m_CurrentPurchasable = purchasable;
+			m_Instance.m_CurrentCharacter = character;
+			
+			// Verificar que m_MessageText no sea null antes de asignar el texto
+			if (m_Instance.m_MessageText != null)
+				m_Instance.m_MessageText.text = message;
+			else
+				Debug.LogWarning("ShopConfirmationPopup: m_MessageText es null. El mensaje no se mostrará correctamente.");
 			
 			// Establecer texto secundario
 			if (m_Instance.m_SecondaryText != null)
@@ -164,39 +222,43 @@ namespace NeoFPS.Samples
 			if (m_Instance.m_NoButtonText != null && !string.IsNullOrEmpty(noButtonText))
 				m_Instance.m_NoButtonText.text = noButtonText;
 			
-			m_Instance.menu.ShowPopup (m_Instance);
+			// Verificar que menu no sea null antes de mostrar el popup
+			if (m_Instance.menu != null)
+				m_Instance.menu.ShowPopup(m_Instance);
+			else
+				Debug.LogError("ShopConfirmationPopup: menu es null. Asegúrate de que el popup esté correctamente inicializado.");
 		}
 
 		/// <summary>
 		/// Versión simplificada que usa textos predeterminados para los botones ("Sí", "No") con Texture
 		/// </summary>
-		public static void ShowPopupWithTexture (string message, string secondaryText, Texture image, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopupWithTexture (string message, string secondaryText, Texture image, UnityAction onYes, UnityAction onNo, PurchasablePickup purchasable = null, ICharacter character = null)
 		{
-			ShowPopupWithTexture(message, secondaryText, image, "Sí", "No", onYes, onNo);
+			ShowPopupWithTexture(message, secondaryText, image, "Sí", "No", onYes, onNo, purchasable, character);
 		}
 		
 		/// <summary>
 		/// Versión simplificada que usa textos predeterminados para los botones ("Sí", "No") con Sprite
 		/// </summary>
-		public static void ShowPopupWithSprite (string message, string secondaryText, Sprite sprite, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopupWithSprite (string message, string secondaryText, Sprite sprite, UnityAction onYes, UnityAction onNo, PurchasablePickup purchasable = null, ICharacter character = null)
 		{
-			ShowPopup(message, secondaryText, sprite, "Sí", "No", onYes, onNo);
+			ShowPopup(message, secondaryText, sprite, "Sí", "No", onYes, onNo, purchasable, character);
 		}
 		
 		/// <summary>
 		/// Versión simplificada sin imagen
 		/// </summary>
-		public static void ShowPopup (string message, string secondaryText, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopup (string message, string secondaryText, UnityAction onYes, UnityAction onNo, PurchasablePickup purchasable = null, ICharacter character = null)
 		{
-			ShowPopupWithTexture(message, secondaryText, null, "Sí", "No", onYes, onNo);
+			ShowPopupWithTexture(message, secondaryText, null, "Sí", "No", onYes, onNo, purchasable, character);
 		}
 		
 		/// <summary>
 		/// Versión más simplificada con solo un mensaje principal
 		/// </summary>
-		public static void ShowPopup (string message, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopup (string message, UnityAction onYes, UnityAction onNo, PurchasablePickup purchasable = null, ICharacter character = null)
 		{
-			ShowPopupWithTexture(message, "", null, "Sí", "No", onYes, onNo);
+			ShowPopupWithTexture(message, "", null, "Sí", "No", onYes, onNo, purchasable, character);
 		}
 	}
 }

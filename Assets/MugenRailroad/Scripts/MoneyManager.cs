@@ -77,4 +77,29 @@ public class MoneyManager : MonoBehaviour
     {
         return HudMoneyCounter != null && hudMoneyCounter != null;
     }
+    
+    // Obtener la cantidad de dinero actual del jugador
+    public int GetMoney()
+    {
+        return money;
+    }
+    
+    // Restar dinero al jugador
+    public void DeductMoney(int amount)
+    {
+        if (amount <= 0)
+            return;
+            
+        money -= amount;
+        
+        // Asegurarse de que el dinero no sea negativo
+        if (money < 0)
+            money = 0;
+            
+        // Actualizar el contador de dinero en la interfaz
+        if (hudMoneyCounter != null)
+        {
+            hudMoneyCounter.UpdateMoneyCounter(money);
+        }
+    }
 }
