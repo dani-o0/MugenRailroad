@@ -15,6 +15,8 @@ public class XpManager : MonoBehaviour
     private int playerLevel;
     private int abilityPoints;
 
+    public int AbilityPoints { get { return abilityPoints; } set { abilityPoints = value; } }
+
     private GameObject HudXpBar;
     private HudXpBar hudXpBar;
     

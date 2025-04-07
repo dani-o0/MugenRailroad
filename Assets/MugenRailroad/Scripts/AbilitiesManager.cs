@@ -4,6 +4,8 @@ using NeoFPS;
 using NeoFPS.Samples;
 using UnityEngine.UI;
 using System.Linq;
+using static AbilitiesMachine;
+using UnityEditor.Playables;
 
 public class AbilitiesManager : MonoBehaviour
 {
@@ -61,5 +63,28 @@ public class AbilitiesManager : MonoBehaviour
 
         if (porro == null)
             porro = FindObjectOfType<AbilityPorro>();
+    }
+
+    public void GarantAbility(AbilityType type)
+    {
+        switch (type)
+        {
+            case AbilityType.Joint:
+                if (porro != null)
+                    porro.SetState(true);
+                break;
+            case AbilityType.Vampire:
+                if (vampiro != null)
+                    vampiro.SetState(true);
+                break;
+            case AbilityType.DoubleJump:
+                if (doubleJump != null)
+                    doubleJump.SetState(true);
+                break;
+            case AbilityType.Grappler:
+                if (grappler != null)
+                    grappler.SetState(true);
+                break;
+        }
     }
 }
