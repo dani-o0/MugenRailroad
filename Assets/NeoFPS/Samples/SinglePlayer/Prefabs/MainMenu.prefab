@@ -14128,7 +14128,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114118876922371910}
   m_HandleRect: {fileID: 224167171626400546}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -22944,7 +22944,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_NewGameButton: {fileID: 4698605174531585954}
-  m_NewGameScene: DemoFacility_Scene
+  m_NewGameScene: TrainStation
   m_ContinueButton: {fileID: 114929562588181352}
   m_LoadButton: {fileID: 114630752405186192}
   m_SelectLevelButton: {fileID: 114066697287095480}
