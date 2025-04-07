@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using NeoFPS.Samples;
 
 /// <summary>
@@ -15,6 +16,84 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
         
         // Buscar y asignar los componentes UI si no están configurados
         FindAndAssignUIComponents(popup);
+        
+        // Conectar los botones con los métodos de acción
+        ConnectButtonsToActions(popup);
+    }
+    
+    /// <summary>
+    /// Conecta los botones Yes/No con los métodos de acción correspondientes
+    /// </summary>
+    private void ConnectButtonsToActions(ShopConfirmationPopup popup)
+    {
+        // Buscar los botones Yes/No en la jerarquía
+        Button yesButton = null;
+        Button noButton = null;
+        
+        // Buscar botones por nombre
+        Button[] buttons = GetComponentsInChildren<Button>(true);
+        foreach (Button button in buttons)
+        {
+            if (button.name.Contains("Yes") || button.name.Contains("Si") || button.name.Contains("Sí") || button.name.Contains("Confirm"))
+            {
+                yesButton = button;
+            }
+            else if (button.name.Contains("No") || button.name.Contains("Cancel"))
+            {
+                noButton = button;
+            }
+        }
+        
+        // Si no se encontraron por nombre, intentar buscar por el texto de los botones
+        if (yesButton == null || noButton == null)
+        {
+            foreach (Button button in buttons)
+            {
+                Text buttonText = button.GetComponentInChildren<Text>(true);
+                if (buttonText != null)
+                {
+                    string text = buttonText.text.ToLower();
+                    if (yesButton == null && (text.Contains("sí") || text.Contains("si") || text.Contains("yes") || text.Contains("ok")))
+                    {
+                        yesButton = button;
+                    }
+                    else if (noButton == null && (text.Contains("no") || text.Contains("cancel")))
+                    {
+                        noButton = button;
+                    }
+                }
+            }
+        }
+        
+        // Conectar el botón Yes con el método OnYesAction
+        if (yesButton != null)
+        {
+            // Limpiar listeners previos para evitar duplicados
+            yesButton.onClick.RemoveAllListeners();
+            
+            // Añadir el listener para OnYesAction
+            yesButton.onClick.AddListener(() => popup.OnYesAction());
+            Debug.Log("ShopConfirmationPopupHelper: Conectado botón Yes con OnYesAction");
+        }
+        else
+        {
+            Debug.LogWarning("ShopConfirmationPopupHelper: No se encontró el botón Yes para conectar con OnYesAction");
+        }
+        
+        // Conectar el botón No con el método OnNoAction
+        if (noButton != null)
+        {
+            // Limpiar listeners previos para evitar duplicados
+            noButton.onClick.RemoveAllListeners();
+            
+            // Añadir el listener para OnNoAction
+            noButton.onClick.AddListener(() => popup.OnNoAction());
+            Debug.Log("ShopConfirmationPopupHelper: Conectado botón No con OnNoAction");
+        }
+        else
+        {
+            Debug.LogWarning("ShopConfirmationPopupHelper: No se encontró el botón No para conectar con OnNoAction");
+        }
     }
     
     /// <summary>

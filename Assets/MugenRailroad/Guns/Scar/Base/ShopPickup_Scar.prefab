@@ -619,7 +619,7 @@ MonoBehaviour:
   m_TooltipName: Scar
   m_TooltipAction: Comprar
   m_InteractableOnStart: 1
-  m_HoldDuration: 0.5
+  m_HoldDuration: 1
   m_OnUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -634,8 +634,8 @@ MonoBehaviour:
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_Price: 100
-  m_Message: "\xBFQuieres comprar este objeto?"
-  m_SecondaryMessage: 'Precio: {0} monedas'
+  m_Message: Esta es la descripcion de la Scar base, a ver si se ve bien.
+  m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: 920555a73c8bd7b4a9b6259fe84783c4, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
 --- !u!114 &6395687574899089803

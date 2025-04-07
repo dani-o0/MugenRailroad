@@ -90,19 +90,24 @@ public class PurchasablePickup : InteractivePickup
         // Formatear el mensaje secundario con el precio
         string formattedSecondaryMessage = string.Format(m_SecondaryMessage, m_Price);
 
-        // Mostrar el popup de confirmación
+        // Crear una referencia local al character para usar en la lambda
+        ICharacter localCharacter = character;
+
+        // Mostrar el popup de confirmación pasando las referencias
         ShopConfirmationPopup.ShowPopup(
             m_Message,
             formattedSecondaryMessage,
             m_Image,
             "Comprar",
             "Cancelar",
-            () => TryPurchase(character), // Acción al confirmar
-            null // Acción al cancelar (no hacemos nada)
+            null, // Ya no necesitamos pasar la acción aquí, se usará TryPurchaseItem
+            null, // Acción al cancelar (no hacemos nada)
+            this, // Pasar referencia a este PurchasablePickup
+            localCharacter // Pasar referencia al character
         );
     }
 
-    private void TryPurchase(ICharacter character)
+    public void TryPurchase(ICharacter character)
     {
         // Verificar si el jugador tiene suficiente dinero
         if (HasSufficientFunds())
