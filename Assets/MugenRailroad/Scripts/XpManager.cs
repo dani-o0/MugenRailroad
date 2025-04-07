@@ -13,16 +13,11 @@ public class XpManager : MonoBehaviour
     public int initialXpToLevelUp;
     private int xpToLevelUp;
     private int playerLevel;
+    private int abilityPoints;
 
     private GameObject HudXpBar;
     private HudXpBar hudXpBar;
-    private GameObject playerAbilities;
-    private AbilitiesManager abilities;
-    private GameObject prototype;
-    private AbilityCard prototypeEntry;
     
-    
-
     private void Awake()
     {
         if (Instance == null)
@@ -66,7 +61,7 @@ public class XpManager : MonoBehaviour
             playerLevel++;
             this.xp -= xpToLevelUp;
             xpToLevelUp *= 2;
-            abilities.SelectAbilities(prototypeEntry);
+            abilityPoints++;
         }
         if (hudXpBar != null)
         {
@@ -86,27 +81,6 @@ public class XpManager : MonoBehaviour
         {
             hudXpBar = HudXpBar.GetComponent<HudXpBar>();
             hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
-        }
-
-        if (playerAbilities == null)
-        {
-            playerAbilities = GameObject.FindGameObjectWithTag("PlayerAbilities");
-        }
-        
-        if (playerAbilities != null && abilities == null)
-        {
-            abilities = playerAbilities.GetComponent<AbilitiesManager>();
-        }
-
-        if (prototype == null)
-        {
-            prototype = GameObject.FindGameObjectWithTag("Ability");
-        }
-        
-        if (prototype != null && prototypeEntry == null)
-        {
-            prototypeEntry = prototype.GetComponent<AbilityCard>();
-            prototypeEntry.gameObject.SetActive(false);
         }
     }
 
