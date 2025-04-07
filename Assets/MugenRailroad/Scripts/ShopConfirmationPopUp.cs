@@ -91,7 +91,12 @@ namespace NeoFPS.Samples
 
 			m_Instance.m_OnYes = onYes;
 			m_Instance.m_OnNo = onNo;
-			m_Instance.m_MessageText.text = message;
+			
+			// Verificar que m_MessageText no sea null antes de asignar el texto
+			if (m_Instance.m_MessageText != null)
+				m_Instance.m_MessageText.text = message;
+			else
+				Debug.LogWarning("ShopConfirmationPopup: m_MessageText es null. El mensaje no se mostrará correctamente.");
 			
 			// Establecer texto secundario
 			if (m_Instance.m_SecondaryText != null)
@@ -115,7 +120,11 @@ namespace NeoFPS.Samples
 			if (m_Instance.m_NoButtonText != null && !string.IsNullOrEmpty(noButtonText))
 				m_Instance.m_NoButtonText.text = noButtonText;
 			
-			m_Instance.menu.ShowPopup (m_Instance);
+			// Verificar que menu no sea null antes de mostrar el popup
+			if (m_Instance.menu != null)
+				m_Instance.menu.ShowPopup(m_Instance);
+			else
+				Debug.LogError("ShopConfirmationPopup: menu es null. Asegúrate de que el popup esté correctamente inicializado.");
 		}
 
 		/// <summary>
@@ -140,7 +149,12 @@ namespace NeoFPS.Samples
 
 			m_Instance.m_OnYes = onYes;
 			m_Instance.m_OnNo = onNo;
-			m_Instance.m_MessageText.text = message;
+			
+			// Verificar que m_MessageText no sea null antes de asignar el texto
+			if (m_Instance.m_MessageText != null)
+				m_Instance.m_MessageText.text = message;
+			else
+				Debug.LogWarning("ShopConfirmationPopup: m_MessageText es null. El mensaje no se mostrará correctamente.");
 			
 			// Establecer texto secundario
 			if (m_Instance.m_SecondaryText != null)
@@ -164,7 +178,11 @@ namespace NeoFPS.Samples
 			if (m_Instance.m_NoButtonText != null && !string.IsNullOrEmpty(noButtonText))
 				m_Instance.m_NoButtonText.text = noButtonText;
 			
-			m_Instance.menu.ShowPopup (m_Instance);
+			// Verificar que menu no sea null antes de mostrar el popup
+			if (m_Instance.menu != null)
+				m_Instance.menu.ShowPopup(m_Instance);
+			else
+				Debug.LogError("ShopConfirmationPopup: menu es null. Asegúrate de que el popup esté correctamente inicializado.");
 		}
 
 		/// <summary>
