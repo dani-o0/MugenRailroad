@@ -14,7 +14,8 @@ namespace NeoFPS.Samples
 	{
 		[SerializeField] private Text m_MessageText = null;
 		[SerializeField] private Text m_SecondaryText = null;
-		[SerializeField] private RawImage m_Image = null;
+		[SerializeField] private RawImage m_RawImage = null;
+		[SerializeField] private Image m_SpriteImage = null;
 		[SerializeField] private Text m_YesButtonText = null;
 		[SerializeField] private Text m_NoButtonText = null;
         [SerializeField] private bool m_DefaultResult = false; // false = No, true = Yes
@@ -73,12 +74,12 @@ namespace NeoFPS.Samples
 		/// </summary>
 		/// <param name="message">El mensaje principal a mostrar</param>
 		/// <param name="secondaryText">El texto secundario a mostrar</param>
-		/// <param name="image">La imagen a mostrar en el popup</param>
+		/// <param name="image">La imagen (Texture) a mostrar en el popup</param>
 		/// <param name="yesButtonText">Texto del botón "Sí" (por defecto "Sí")</param>
 		/// <param name="noButtonText">Texto del botón "No" (por defecto "No")</param>
 		/// <param name="onYes">Acción a ejecutar cuando se presiona el botón "Sí"</param>
 		/// <param name="onNo">Acción a ejecutar cuando se presiona el botón "No"</param>
-		public static void ShowPopup (string message, string secondaryText, Texture image, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo)
+		public static void ShowPopupWithTexture (string message, string secondaryText, Texture image, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo)
 		{
 			if (m_Instance == null)
 			{
@@ -96,9 +97,17 @@ namespace NeoFPS.Samples
 			if (m_Instance.m_SecondaryText != null)
 				m_Instance.m_SecondaryText.text = secondaryText;
 				
-			// Establecer imagen
-			if (m_Instance.m_Image != null)
-				m_Instance.m_Image.texture = image;
+			// Establecer imagen (Texture)
+			if (m_Instance.m_RawImage != null)
+			{
+				m_Instance.m_RawImage.texture = image;
+				
+				// Mostrar RawImage y ocultar SpriteImage
+				if (m_Instance.m_RawImage.gameObject.activeSelf == false)
+					m_Instance.m_RawImage.gameObject.SetActive(true);
+				if (m_Instance.m_SpriteImage != null && m_Instance.m_SpriteImage.gameObject.activeSelf == true)
+					m_Instance.m_SpriteImage.gameObject.SetActive(false);
+			}
 			
 			// Establecer textos de botones
 			if (m_Instance.m_YesButtonText != null && !string.IsNullOrEmpty(yesButtonText))
@@ -110,11 +119,68 @@ namespace NeoFPS.Samples
 		}
 
 		/// <summary>
-		/// Versión simplificada que usa textos predeterminados para los botones ("Sí", "No")
+		/// Muestra el popup con un sprite y dos textos, con botones de "Sí" y "No".
 		/// </summary>
-		public static void ShowPopup (string message, string secondaryText, Texture image, UnityAction onYes, UnityAction onNo)
+		/// <param name="message">El mensaje principal a mostrar</param>
+		/// <param name="secondaryText">El texto secundario a mostrar</param>
+		/// <param name="sprite">El sprite a mostrar en el popup</param>
+		/// <param name="yesButtonText">Texto del botón "Sí" (por defecto "Sí")</param>
+		/// <param name="noButtonText">Texto del botón "No" (por defecto "No")</param>
+		/// <param name="onYes">Acción a ejecutar cuando se presiona el botón "Sí"</param>
+		/// <param name="onNo">Acción a ejecutar cuando se presiona el botón "No"</param>
+		public static void ShowPopup (string message, string secondaryText, Sprite sprite, string yesButtonText, string noButtonText, UnityAction onYes, UnityAction onNo)
 		{
-			ShowPopup(message, secondaryText, image, "Sí", "No", onYes, onNo);
+			if (m_Instance == null)
+			{
+				Debug.LogError ("No image confirmation pop-up in current menu. Defaulting to negative response.");
+				if (onNo != null)
+					onNo.Invoke ();
+				return;
+			}
+
+			m_Instance.m_OnYes = onYes;
+			m_Instance.m_OnNo = onNo;
+			m_Instance.m_MessageText.text = message;
+			
+			// Establecer texto secundario
+			if (m_Instance.m_SecondaryText != null)
+				m_Instance.m_SecondaryText.text = secondaryText;
+				
+			// Establecer imagen (Sprite)
+			if (m_Instance.m_SpriteImage != null)
+			{
+				m_Instance.m_SpriteImage.sprite = sprite;
+				
+				// Mostrar SpriteImage y ocultar RawImage
+				if (m_Instance.m_SpriteImage.gameObject.activeSelf == false)
+					m_Instance.m_SpriteImage.gameObject.SetActive(true);
+				if (m_Instance.m_RawImage != null && m_Instance.m_RawImage.gameObject.activeSelf == true)
+					m_Instance.m_RawImage.gameObject.SetActive(false);
+			}
+			
+			// Establecer textos de botones
+			if (m_Instance.m_YesButtonText != null && !string.IsNullOrEmpty(yesButtonText))
+				m_Instance.m_YesButtonText.text = yesButtonText;
+			if (m_Instance.m_NoButtonText != null && !string.IsNullOrEmpty(noButtonText))
+				m_Instance.m_NoButtonText.text = noButtonText;
+			
+			m_Instance.menu.ShowPopup (m_Instance);
+		}
+
+		/// <summary>
+		/// Versión simplificada que usa textos predeterminados para los botones ("Sí", "No") con Texture
+		/// </summary>
+		public static void ShowPopupWithTexture (string message, string secondaryText, Texture image, UnityAction onYes, UnityAction onNo)
+		{
+			ShowPopupWithTexture(message, secondaryText, image, "Sí", "No", onYes, onNo);
+		}
+		
+		/// <summary>
+		/// Versión simplificada que usa textos predeterminados para los botones ("Sí", "No") con Sprite
+		/// </summary>
+		public static void ShowPopupWithSprite (string message, string secondaryText, Sprite sprite, UnityAction onYes, UnityAction onNo)
+		{
+			ShowPopup(message, secondaryText, sprite, "Sí", "No", onYes, onNo);
 		}
 		
 		/// <summary>
@@ -122,7 +188,7 @@ namespace NeoFPS.Samples
 		/// </summary>
 		public static void ShowPopup (string message, string secondaryText, UnityAction onYes, UnityAction onNo)
 		{
-			ShowPopup(message, secondaryText, null, "Sí", "No", onYes, onNo);
+			ShowPopupWithTexture(message, secondaryText, null, "Sí", "No", onYes, onNo);
 		}
 		
 		/// <summary>
@@ -130,7 +196,7 @@ namespace NeoFPS.Samples
 		/// </summary>
 		public static void ShowPopup (string message, UnityAction onYes, UnityAction onNo)
 		{
-			ShowPopup(message, "", null, "Sí", "No", onYes, onNo);
+			ShowPopupWithTexture(message, "", null, "Sí", "No", onYes, onNo);
 		}
 	}
 }
