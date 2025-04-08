@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using NeoFPS.Samples;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,7 +32,10 @@ public class AbilitiesMachine : MonoBehaviour
     public void GamebleAbilityPoint()
     {
         if (XpManager.Instance.AbilityPoints <= 0)
+        {
+            InfoPopup.ShowPopup("No tienes suficientes puntos de nivel para obtener una habilidad", null);
             return;
+        }
 
         XpManager.Instance.AbilityPoints--;
 
@@ -39,7 +43,7 @@ public class AbilitiesMachine : MonoBehaviour
 
         // Seleccionar la habilidad ganadora al principio
         selectedAbility = (AbilityType)Random.Range(0, abilityNames.Length);
-        Debug.Log($"¡Habilidad seleccionada: {selectedAbility}!");
+        Debug.Log($"Â¡Habilidad seleccionada: {selectedAbility}!");
 
         foreach (GameObject screen in screens)
         {
@@ -80,7 +84,7 @@ public class AbilitiesMachine : MonoBehaviour
             images[i].enabled = (i == resultIndex);
         }
 
-        Debug.Log($"Pantalla {screen.name} terminó con: {resultAbility}");
+        Debug.Log($"Pantalla {screen.name} terminÃ³ con: {resultAbility}");
 
         // Cuando termine esta pantalla, incrementamos el contador
         completedScreens++;
@@ -89,6 +93,7 @@ public class AbilitiesMachine : MonoBehaviour
         if (completedScreens >= screens.Length)
         {
             AbilitiesManager.Instance.GarantAbility(resultAbility);
+            // TODO: mostrar un popup personalizado con la informacion de la habilidad que ha obtenido el jugador
         }
     }
 
