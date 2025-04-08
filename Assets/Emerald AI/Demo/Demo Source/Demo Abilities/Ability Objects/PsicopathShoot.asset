@@ -43,10 +43,10 @@ MonoBehaviour:
     BulletObject: {fileID: 7177706834658424427, guid: 72597e2e9bf7ed64a93f5db8aba80cbd, type: 3}
     BulletObjectTimeout: 3
     BulletCollisionTimeout: 0.15
-    BulletSpeed: 30
+    BulletSpeed: 50
     CollisionCheckSpeed: 0.003
-    BulletSpreadX: 5
-    BulletSpreadY: 5
+    BulletSpreadX: 1
+    BulletSpreadY: 1
     TotalBullets: 1
     TimeBetweenBullets: 0.075
     MuzzleFlashEffect: {fileID: 8695401051225182231, guid: df78a39e89fd68c4a9faa6eebde98996, type: 3}

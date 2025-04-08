@@ -2008,7 +2008,7 @@ MonoBehaviour:
   IgnoredColliders: []
   CurrentObstruction: {fileID: 0}
   HeadTransform: {fileID: 8706002856115680132}
-  DetectionFrequency: 1
+  DetectionFrequency: 0.5
   DetectionLayerMask:
     serializedVersion: 2
     m_Bits: 8192
@@ -2018,11 +2018,11 @@ MonoBehaviour:
   PlayerTag: AI
   ObstructionDetectionFrequency: 0.1
   ObstructionDetectionUpdateTimer: 0
-  ObstructionSeconds: 1.5
+  ObstructionSeconds: 1
   StartingDetectionRadius: 0
-  DetectionRadius: 17
+  DetectionRadius: 30
   StartingChaseDistance: 0
-  FieldOfViewAngle: 129
+  FieldOfViewAngle: 360
   StartingFieldOfViewAngle: 0
   CurrentDetectionState: 1
   PickTargetType: 0
@@ -2261,9 +2261,9 @@ MonoBehaviour:
   WaypointsFoldout: 0
   WaypointsListFoldout: 0
   BackupFoldout: 0
-  MovementFoldout: 0
+  MovementFoldout: 1
   AlignmentFoldout: 0
-  TurnFoldout: 0
+  TurnFoldout: 1
 --- !u!114 &6090375217114107038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2369,9 +2369,9 @@ MonoBehaviour:
   OnFleeEvent:
     m_PersistentCalls:
       m_Calls: []
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   GeneralEventsFoldout: 0
-  CombatEventsFoldout: 1
+  CombatEventsFoldout: 0
 --- !u!114 &8161575047677138043
 MonoBehaviour:
   m_ObjectHideFlags: 0

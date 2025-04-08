@@ -836,7 +836,7 @@ MonoBehaviour:
   IgnoredColliders: []
   CurrentObstruction: {fileID: 0}
   HeadTransform: {fileID: 8747755553559443225}
-  DetectionFrequency: 1
+  DetectionFrequency: 0.5
   DetectionLayerMask:
     serializedVersion: 2
     m_Bits: 8192
@@ -846,9 +846,9 @@ MonoBehaviour:
   PlayerTag: AI
   ObstructionDetectionFrequency: 0.1
   ObstructionDetectionUpdateTimer: 0
-  ObstructionSeconds: 1.5
+  ObstructionSeconds: 1
   StartingDetectionRadius: 0
-  DetectionRadius: 11
+  DetectionRadius: 50
   StartingChaseDistance: 0
   FieldOfViewAngle: 360
   StartingFieldOfViewAngle: 0
@@ -868,7 +868,7 @@ MonoBehaviour:
   - FactionIndex: 1
     RelationType: 0
   AIFactionsList: 
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   DetectionFoldout: 1
   TagFoldout: 0
   FactionFoldout: 0

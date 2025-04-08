@@ -296,23 +296,6 @@ MonoBehaviour:
   doubleJump: {fileID: 6012857076992069775}
   grappler: {fileID: 5760858322609330397}
   porro: {fileID: 544084784083514227}
-  abilities:
-  - displayName: Vampire
-    description: Recuperas vida al matar.
-    sprite: {fileID: 21300000, guid: 755dedf6c8594e244815e90740921233, type: 3}
-    abilityType: 0
-  - displayName: Double Jump
-    description: Tienes doble salto.
-    sprite: {fileID: 21300000, guid: 846c4fc74aaf9a4479abd9f59b1a4fbb, type: 3}
-    abilityType: 1
-  - displayName: Grappler
-    description: Tienes un gancho.
-    sprite: {fileID: 21300000, guid: 430f830eeebea2e4e93be7b3b2411bf4, type: 3}
-    abilityType: 2
-  - displayName: Joint
-    description: Te puedes fumar un porro para ralentizar el tiempo.
-    sprite: {fileID: 21300000, guid: d347028941b6908409a2620363f1e3f5, type: 3}
-    abilityType: 3
 --- !u!1 &1299934034343764102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,11 +1290,11 @@ MonoBehaviour:
   m_LandingMinForce: 10
   m_LandingFullForce: 40
   m_FallDamageHandler: {fileID: 0}
-  m_BodyImpactDamage: 1
+  m_BodyImpactDamage: 0
   m_BodyMinForce: 25
   m_BodyFullForce: 100
   m_BodyDamageHandler: {fileID: 0}
-  m_HeadImpactDamage: 1
+  m_HeadImpactDamage: 0
   m_HeadMinForce: 7.5
   m_HeadFullForce: 20
   m_HeadDamageHandler: {fileID: 0}
@@ -1611,7 +1594,7 @@ MonoBehaviour:
   AttractReaction: {fileID: 0}
   EnemyRelationsOnly: 1
   TriggerSounds: []
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   AttractModifierFoldout: 0
 --- !u!114 &6638704691390504568
 MonoBehaviour:
