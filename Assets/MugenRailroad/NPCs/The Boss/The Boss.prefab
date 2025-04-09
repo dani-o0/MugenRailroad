@@ -1608,6 +1608,7 @@ GameObject:
   - component: {fileID: 2145911528841637258}
   - component: {fileID: 3246696745787452484}
   - component: {fileID: 2748676588033871931}
+  - component: {fileID: 2322723908431893328}
   - component: {fileID: 742726403284191142}
   - component: {fileID: 2174332449132428513}
   - component: {fileID: 9212236343917466198}
@@ -1693,6 +1694,18 @@ MonoBehaviour:
   m_OnCursorExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2322723908431893328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062180346989101864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4eb58b0cc615df4990ad63c3d1e68bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &742726403284191142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,9 +1734,9 @@ MonoBehaviour:
     onConfirmed:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-          m_MethodName: StartWagonMission
+        - m_Target: {fileID: 2322723908431893328}
+          m_TargetAssemblyTypeName: TheBossInteraction, Assembly-CSharp
+          m_MethodName: StartGame
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

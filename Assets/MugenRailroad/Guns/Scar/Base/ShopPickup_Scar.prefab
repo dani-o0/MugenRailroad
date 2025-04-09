@@ -421,7 +421,6 @@ GameObject:
   - component: {fileID: 4083879563289401876}
   - component: {fileID: 6395687574899089803}
   - component: {fileID: 6734761898969026718}
-  - component: {fileID: 195747769955215211}
   m_Layer: 22
   m_Name: ShopPickup_Scar
   m_TagString: Untagged
@@ -676,38 +675,6 @@ MonoBehaviour:
   m_BoxColliders:
   - {fileID: 5127027502977319583}
   m_CornerObject: {fileID: 1792054534762134, guid: b0c5328a0f7ef8e43be6068b33fa0de9, type: 3}
---- !u!114 &195747769955215211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969292314646714415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f12c4cc2c4614f9e0616ef942cf44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SaveName: 0
-  m_Position: 0
-  m_Rotation: 0
-  m_LocalScale: 0
-  m_FilterChildObjects: 0
-  m_ChildObjects: []
-  m_FilterNeoComponents: 0
-  m_NeoComponents: []
-  m_OtherComponents: []
-  m_Overrides: []
-  m_Children:
-    m_Keys: 1beadfba
-    m_Values:
-    - {fileID: 2178886862203232531}
-    m_GameObject: {fileID: 195747769955215211}
-  m_PrefabStrongID: -1826131146
-  expandChildObjects: 0
-  expandNeoComponents: 0
-  expandOtherComponents: 0
-  prefabGuid: 7f2b4046281ef46408731d7fc141934e
 --- !u!1 &1987393631404489547
 GameObject:
   m_ObjectHideFlags: 0
