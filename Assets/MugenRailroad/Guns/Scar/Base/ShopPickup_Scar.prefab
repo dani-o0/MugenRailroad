@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Item: {fileID: 6683438678609504921, guid: 5b137f82059c04e4da2a331a2972709e, type: 3}
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
+  m_PickupType: 0
   m_Price: 100
   m_Message: Esta es la descripcion de la Scar base, a ver si se ve bien.
   m_SecondaryMessage: '{0}'
