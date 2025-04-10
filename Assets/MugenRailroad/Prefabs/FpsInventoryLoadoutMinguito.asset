@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f932be5f2b3cb7648ac3bdbef2b0c892, type: 3}
-  m_Name: FpsInventoryLoadout
+  m_Name: FpsInventoryLoadoutMinguito
   m_EditorClassIdentifier: 
   m_Items:
-  - {fileID: 114918541887471148, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
+  - {fileID: 4992860669244042449, guid: a4264ba2ad29dd646b4e9467705fd51c, type: 3}
+  - {fileID: 114720571942937776, guid: dfe46eefaa9a7544ca7ee5e668df212c, type: 3}
+  - {fileID: 114235257556039404, guid: 64f2a695fbc7afe4cb28f1ba66c2b64d, type: 3}
+  - {fileID: 114491831698022604, guid: 6c688c81d559f0c4d9a19f7a8b9b4d36, type: 3}

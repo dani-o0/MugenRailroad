@@ -87,6 +87,16 @@ namespace NeoFPS.SinglePlayer
                 case DeathAction.MainMenu:
                     SceneManager.LoadScene(NeoSceneManager.defaultMainMenuSceneIndex);
                     break;
+                
+                // Return to main menu
+                case DeathAction.TrainStation:
+                    NeoSceneManager.LoadScene("TrainStation");
+                    GameObject obj = GameObject.Find("GameManager");
+                    if (obj != null)
+                    {
+                        Destroy(obj);
+                    }
+                    break;
 
                 // Continue from last save
                 case DeathAction.ContinueFromSave:

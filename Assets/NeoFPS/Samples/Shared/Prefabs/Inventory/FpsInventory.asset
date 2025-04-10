@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03728feff977aba48bca440927427c0e, type: 3}
-  m_Name: AmmoType_556mm
+  m_Script: {fileID: 11500000, guid: f932be5f2b3cb7648ac3bdbef2b0c892, type: 3}
+  m_Name: FpsInventory
   m_EditorClassIdentifier: 
-  m_ItemKey:
-    m_Value: 0
-  m_InventoryID: 19
-  m_PrintableName: 5.56mm
-  m_MaxQuantity: 999
+  m_Items: []
