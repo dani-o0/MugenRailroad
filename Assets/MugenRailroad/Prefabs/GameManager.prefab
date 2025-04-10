@@ -242,11 +242,10 @@ MonoBehaviour:
     expandNeoComponents: 0
     expandOtherComponents: 0
   m_Children:
-    m_Keys: 6df40c4ef6f654edd33b3d4d
+    m_Keys: d33b3d4d5cac887a
     m_Values:
-    - {fileID: 0}
-    - {fileID: 0}
     - {fileID: 4425958757291243304}
+    - {fileID: 6487900340028125055}
     m_GameObject: {fileID: 9210842190185032481}
   m_PrefabStrongID: 920038752
   expandChildObjects: 1
