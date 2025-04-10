@@ -19,6 +19,7 @@ namespace NeoFPS.SinglePlayer
             Respawn,
             ReloadScene,
             MainMenu,
+            TrainStation,
             ContinueFromSave,
             RespawnWithItems
         }
