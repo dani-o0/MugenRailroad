@@ -3108,7 +3108,7 @@ MonoBehaviour:
   IgnoredColliders: []
   CurrentObstruction: {fileID: 0}
   HeadTransform: {fileID: 6175550348906504344}
-  DetectionFrequency: 1
+  DetectionFrequency: 0.5
   DetectionLayerMask:
     serializedVersion: 2
     m_Bits: 8192
@@ -3118,11 +3118,11 @@ MonoBehaviour:
   PlayerTag: AI
   ObstructionDetectionFrequency: 0.1
   ObstructionDetectionUpdateTimer: 0
-  ObstructionSeconds: 1.5
+  ObstructionSeconds: 1
   StartingDetectionRadius: 0
-  DetectionRadius: 32
+  DetectionRadius: 50
   StartingChaseDistance: 0
-  FieldOfViewAngle: 191
+  FieldOfViewAngle: 360
   StartingFieldOfViewAngle: 0
   CurrentDetectionState: 1
   PickTargetType: 0
@@ -3247,7 +3247,7 @@ MonoBehaviour:
     CooldownIgnored: 0
     CooldownTimeStamp: 0
   LastAttacker: {fileID: 0}
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   DamageSettingsFoldout: 1
   CombatActionSettingsFoldout: 1
   SwitchWeaponSettingsFoldout: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   FootstepSoundsFoldout: 0
   InteractSoundsFoldout: 0
   EquipAndUnequipSoundsFoldout: 0
-  AttackSoundsFoldout: 1
+  AttackSoundsFoldout: 0
   InjuredSoundsFoldout: 0
   BlockSoundsFoldout: 0
   DeathSoundsFoldout: 0
