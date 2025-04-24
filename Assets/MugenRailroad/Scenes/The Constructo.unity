@@ -8555,6 +8555,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 621298120}
     m_Modifications:
+    - target: {fileID: 9157976030003933776, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
+      propertyPath: m_BoostVector.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157976030003933776, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
+      propertyPath: m_BoostVector.z
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 9157976030003933777, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
       propertyPath: m_Name
       value: BoostPad_Horizontal
@@ -8577,11 +8585,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157976030003933788, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9848078
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 9157976030003933788, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17364816
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 9157976030003933788, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8593,7 +8601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157976030003933788, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 20
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9157976030003933788, guid: 22390da421a9a7047bbeaeb345f79212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
