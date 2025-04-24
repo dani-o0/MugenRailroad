@@ -5,6 +5,16 @@ using NeoFPS;
 using NeoFPS.Samples;
 
 /// <summary>
+/// Tipos de objetos comprables disponibles
+/// </summary>
+public enum PickupType
+{
+    Base,
+    Golden,
+    Mugen
+}
+
+/// <summary>
 /// Script que permite comprar objetos interactivos. Al interactuar con el objeto,
 /// muestra un popup de confirmación y, si el jugador tiene suficiente dinero,
 /// le permite recoger el objeto y le resta el dinero correspondiente.
@@ -12,6 +22,18 @@ using NeoFPS.Samples;
 public class PurchasablePickup : InteractivePickup
 {
     [Header("Purchase Settings")]
+    [SerializeField, Tooltip("Tipo de objeto comprable")]
+    private PickupType m_PickupType = PickupType.Base;
+    
+    /// <summary>
+    /// Obtiene el tipo de objeto comprable.
+    /// </summary>
+    /// <returns>El tipo de objeto comprable (Base, Golden, Mugen)</returns>
+    public PickupType GetPickupType()
+    {
+        return m_PickupType;
+    }
+    
     [SerializeField, Tooltip("El precio del objeto en monedas")]
     private int m_Price = 100;
 
