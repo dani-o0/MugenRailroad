@@ -303,9 +303,10 @@ public class PickupSpawnManager : MonoBehaviour
     
     /// <summary>
     /// Distribuye los pickups entre los puntos de spawn disponibles.
-    /// Asegura que solo haya un pickup por punto de spawn como máximo.
+    /// Asegura que siempre haya un pickup en cada punto de spawn, reasignando
+    /// pickups si es necesario para maximizar la utilización de los puntos de spawn.
     /// </summary>
-    /// <param name="pickupsToSpawn">Lista de pickups que deben aparecer</param>
+    /// <param name="pickupsToSpawn">Lista de pickups que deben aparecer según las probabilidades</param>
     private void DistributePickupsToSpawnPoints(List<PurchasablePickup> pickupsToSpawn)
     {
         // Desactivar todos los pickups inicialmente
@@ -315,55 +316,106 @@ public class PickupSpawnManager : MonoBehaviour
                 pickup.gameObject.SetActive(false);
         }
         
-        // Si no hay pickups para mostrar, salir
-        if (pickupsToSpawn.Count == 0)
-            return;
-        
         // Crear una copia de la lista de puntos de spawn para trabajar con ella
         List<Transform> availableSpawnPoints = new List<Transform>(m_SpawnPoints);
         
         // Filtrar puntos de spawn nulos
         availableSpawnPoints.RemoveAll(sp => sp == null);
         
+        // Si no hay puntos de spawn disponibles, salir
+        if (availableSpawnPoints.Count == 0)
+            return;
+            
         // Mezclar aleatoriamente los puntos de spawn disponibles
         ShuffleList(availableSpawnPoints);
         
-        // Mezclar aleatoriamente los pickups a mostrar
-        ShuffleList(pickupsToSpawn);
-        
-        // Determinar cuántos pickups podemos mostrar (el mínimo entre pickups disponibles y puntos de spawn)
-        int pickupsToShow = Mathf.Min(pickupsToSpawn.Count, availableSpawnPoints.Count);
+        // Obtener el número de vagón actual para las probabilidades
+        int currentWagonNumber = m_GameManager.CurrentWagonNumber;
+        if (currentWagonNumber == 0) currentWagonNumber = 1;
         
         if (m_ShowDebugMessages)
         {
-            Debug.Log($"PickupSpawnManager: Distribuyendo {pickupsToShow} pickups en {availableSpawnPoints.Count} puntos de spawn");
+            Debug.Log($"PickupSpawnManager: Asignando pickups a {availableSpawnPoints.Count} puntos de spawn");
         }
         
-        // Distribuir los pickups en los puntos de spawn
-        for (int i = 0; i < pickupsToShow; i++)
+        // Lista para almacenar los pickups que se mostrarán finalmente
+        List<PurchasablePickup> finalPickupsToShow = new List<PurchasablePickup>();
+        
+        // Asignar un pickup a cada punto de spawn disponible
+        for (int i = 0; i < availableSpawnPoints.Count; i++)
         {
-            // Obtener el pickup y el punto de spawn
-            PurchasablePickup pickup = pickupsToSpawn[i];
             Transform spawnPoint = availableSpawnPoints[i];
+            PurchasablePickup assignedPickup = null;
             
-            // Posicionar el pickup en el punto de spawn
-            pickup.transform.position = spawnPoint.position;
-            
-            // Aplicar rotación base del punto de spawn y añadir 90 grados en Y y Z
-            Quaternion additionalRotation = Quaternion.Euler(0f, 90f, 90f);
-            pickup.transform.rotation = spawnPoint.rotation * additionalRotation;
-            
-            // Activar el pickup y asegurarse de que sea visible
-            pickup.gameObject.SetActive(true);
-            
-            // Verificar si el objeto tiene componentes visuales (MeshRenderer o SkinnedMeshRenderer)
-            MeshRenderer[] renderers = pickup.GetComponentsInChildren<MeshRenderer>(true);
-            SkinnedMeshRenderer[] skinnedRenderers = pickup.GetComponentsInChildren<SkinnedMeshRenderer>(true);
-            
-            if (m_ShowDebugMessages)
+            // Primero intentamos con los pickups que ya pasaron la verificación de probabilidad
+            if (pickupsToSpawn.Count > 0 && i < pickupsToSpawn.Count)
             {
-                Debug.Log($"PickupSpawnManager: {pickup.name} (Tipo: {pickup.GetPickupType()}) - Posicionado en {spawnPoint.name}");
-                Debug.Log($"PickupSpawnManager: {pickup.name} tiene {renderers.Length} MeshRenderers y {skinnedRenderers.Length} SkinnedMeshRenderers");
+                assignedPickup = pickupsToSpawn[i];
+            }
+            // Si no hay suficientes pickups que pasaron la verificación, intentamos con otros
+            else
+            {
+                // Crear una copia de la lista de pickups disponibles y mezclarla
+                List<PurchasablePickup> remainingPickups = new List<PurchasablePickup>(m_AvailablePickups);
+                // Eliminar los pickups que ya están asignados
+                foreach (PurchasablePickup p in finalPickupsToShow)
+                {
+                    remainingPickups.Remove(p);
+                }
+                
+                // Si aún quedan pickups disponibles, intentamos asignar uno
+                if (remainingPickups.Count > 0)
+                {
+                    // Mezclar la lista para obtener un pickup aleatorio
+                    ShuffleList(remainingPickups);
+                    
+                    // Intentar encontrar un pickup que pase la verificación de probabilidad
+                    foreach (PurchasablePickup pickup in remainingPickups)
+                    {
+                        if (ShouldSpawnPickup(pickup, currentWagonNumber))
+                        {
+                            assignedPickup = pickup;
+                            break;
+                        }
+                    }
+                    
+                    // Si ningún pickup pasó la verificación, simplemente tomamos el primero
+                    if (assignedPickup == null && remainingPickups.Count > 0)
+                    {
+                        assignedPickup = remainingPickups[0];
+                        
+                        if (m_ShowDebugMessages)
+                        {
+                            Debug.Log($"PickupSpawnManager: Asignando pickup {assignedPickup.name} (Tipo: {assignedPickup.GetPickupType()}) a {spawnPoint.name} a pesar de no pasar la verificación de probabilidad");
+                        }
+                    }
+                }
+            }
+            
+            // Si se asignó un pickup, lo posicionamos en el punto de spawn
+            if (assignedPickup != null)
+            {
+                finalPickupsToShow.Add(assignedPickup);
+                
+                // Posicionar el pickup en el punto de spawn
+                assignedPickup.transform.position = spawnPoint.position;
+                
+                // Aplicar rotación base del punto de spawn y añadir 90 grados en Y y Z
+                Quaternion additionalRotation = Quaternion.Euler(0f, 90f, 90f);
+                assignedPickup.transform.rotation = spawnPoint.rotation * additionalRotation;
+                
+                // Activar el pickup y asegurarse de que sea visible
+                assignedPickup.gameObject.SetActive(true);
+                
+                // Verificar si el objeto tiene componentes visuales (MeshRenderer o SkinnedMeshRenderer)
+                MeshRenderer[] renderers = assignedPickup.GetComponentsInChildren<MeshRenderer>(true);
+                SkinnedMeshRenderer[] skinnedRenderers = assignedPickup.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+                
+                if (m_ShowDebugMessages)
+                {
+                    Debug.Log($"PickupSpawnManager: {assignedPickup.name} (Tipo: {assignedPickup.GetPickupType()}) - Posicionado en {spawnPoint.name}");
+                    Debug.Log($"PickupSpawnManager: {assignedPickup.name} tiene {renderers.Length} MeshRenderers y {skinnedRenderers.Length} SkinnedMeshRenderers");
+                }
                 
                 // Activar todos los renderers en la jerarquía
                 foreach (var renderer in renderers)
@@ -377,8 +429,12 @@ public class PickupSpawnManager : MonoBehaviour
                 }
             }
         }
+        
+        if (m_ShowDebugMessages)
+        {
+            Debug.Log($"PickupSpawnManager: Se han asignado {finalPickupsToShow.Count} pickups a los puntos de spawn");
+        }
     }
-    
     /// <summary>
     /// Mezcla aleatoriamente los elementos de una lista.
     /// </summary>
