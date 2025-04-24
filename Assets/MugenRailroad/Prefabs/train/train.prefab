@@ -137,6 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6984586375859299124}
   - component: {fileID: 5814940455448106613}
+  - component: {fileID: 2629587299696816145}
   m_Layer: 0
   m_Name: train
   m_TagString: Untagged
@@ -183,6 +184,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &2629587299696816145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330278295120981533}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.679092, y: 4.965476, z: 4.457318}
+  m_Center: {x: -3.3016872, y: 1.9827371, z: -2.9486177}
 --- !u!1 &1369208945054789795
 GameObject:
   m_ObjectHideFlags: 0
