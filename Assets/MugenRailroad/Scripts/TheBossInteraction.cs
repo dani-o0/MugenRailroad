@@ -3,15 +3,26 @@ using UnityEngine;
 
 public class TheBossInteraction : MonoBehaviour
 {
+    private GameObject train;
     private Animator trainAnimator;
+    private GameObject trainCamera;
 
     private void Awake()
     {
-        trainAnimator = GameObject.Find("BeginMissionTrain").GetComponent<Animator>();
+        train = GameObject.Find("BeginMissionTrain");
+        if (train)
+        {
+            trainAnimator = train.GetComponent<Animator>();
+            trainCamera = train.transform.Find("Camera").gameObject;
+            trainCamera.SetActive(false);
+        }
+        else
+            Debug.LogWarning("No se puedo encontrar el tren en la escena - TheBossInteraction");
     }
     
     public void StartGame()
     {
+        trainCamera.SetActive(true);
         trainAnimator.SetTrigger("Enable");
         StartCoroutine(EsperarFinAnimacionTren());
     }
