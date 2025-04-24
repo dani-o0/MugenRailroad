@@ -381,7 +381,7 @@ MonoBehaviour:
   m_TooltipName: Mugen Scar
   m_TooltipAction: Comprar
   m_InteractableOnStart: 1
-  m_HoldDuration: 0
+  m_HoldDuration: 1
   m_OnUsed:
     m_PersistentCalls:
       m_Calls: []
