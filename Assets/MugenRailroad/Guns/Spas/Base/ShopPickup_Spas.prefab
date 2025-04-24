@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b801fa31aaf0d654791dc8ce4af546e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_WeaponPickup: {fileID: 850911932676689383}
+  m_WeaponPickup: {fileID: 3959916329059099142}
   m_AmmoObject: {fileID: 5174590019970477436}
   m_DisplayMesh: {fileID: 4047554291650136142}
 --- !u!114 &5202740568429488204
@@ -894,7 +894,6 @@ GameObject:
   - component: {fileID: 4666621772377071045}
   - component: {fileID: 7528205746858433750}
   - component: {fileID: 4668413373890394451}
-  - component: {fileID: 850911932676689383}
   - component: {fileID: 3959916329059099142}
   - component: {fileID: 8563889145855628711}
   - component: {fileID: 8174013777902120710}
@@ -1080,35 +1079,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13937502, y: 0.26500002, z: 1.07875}
   m_Center: {x: 0.00481249, y: -0.021749996, z: 0.18095833}
---- !u!114 &850911932676689383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6236462343108390971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be431f23d046cc34ab70572921114d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TooltipName: Spas
-  m_TooltipAction: pick up
-  m_InteractableOnStart: 1
-  m_HoldDuration: 0.5
-  m_OnUsed:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnCursorEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnCursorExit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Root: {fileID: 6044463665724050918}
-  m_Item: {fileID: 6339930185543889722, guid: 767d333935f5095498b2c98b028434b1, type: 3}
-  m_AdditionalItems: []
-  m_ConsumeOnPartial: 0
 --- !u!114 &3959916329059099142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RigidBody: {fileID: 4666621772377071045}
-  m_Pickup: {fileID: 850911932676689383}
+  m_Pickup: {fileID: 3959916329059099142}
   m_AmmoPickup: {fileID: 7875358411459972743}
   m_AmmoPickupDelay: 0.5
   m_PayloadSettings:
