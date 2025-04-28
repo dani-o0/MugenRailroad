@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b801fa31aaf0d654791dc8ce4af546e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_WeaponPickup: {fileID: 311409315625570868}
+  m_WeaponPickup: {fileID: -2426157566828946470}
   m_AmmoObject: {fileID: 155689747582650970}
   m_DisplayMesh: {fileID: 5665175002977087732}
 --- !u!114 &8685401196472593487
@@ -720,7 +720,6 @@ GameObject:
   - component: {fileID: 6957179899114587910}
   - component: {fileID: 5112221941160070213}
   - component: {fileID: 699576553841024428}
-  - component: {fileID: 311409315625570868}
   - component: {fileID: -2426157566828946470}
   - component: {fileID: 5161898754590840180}
   - component: {fileID: 1722414615527129997}
@@ -907,35 +906,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0855, y: 0.23874997, z: 0.3275}
   m_Center: {x: 0, y: -0.033999994, z: 0.01425001}
---- !u!114 &311409315625570868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7470148789222209216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be431f23d046cc34ab70572921114d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TooltipName: Mugen Glock
-  m_TooltipAction: pick up
-  m_InteractableOnStart: 1
-  m_HoldDuration: 0.5
-  m_OnUsed:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnCursorEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnCursorExit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Root: {fileID: 9177586722251653684}
-  m_Item: {fileID: 4992860669244042449, guid: 4c3bf235fe0d51640989a1a726b64196, type: 3}
-  m_AdditionalItems: []
-  m_ConsumeOnPartial: 0
 --- !u!114 &-2426157566828946470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,7 +954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RigidBody: {fileID: 6957179899114587910}
-  m_Pickup: {fileID: 311409315625570868}
+  m_Pickup: {fileID: -2426157566828946470}
   m_AmmoPickup: {fileID: 758578368061072915}
   m_AmmoPickupDelay: 0.5
   m_PayloadSettings:

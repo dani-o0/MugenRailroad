@@ -67,7 +67,15 @@ public class XpManager : MonoBehaviour
         }
         if (hudXpBar != null)
         {
-            hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
+            updateXpBar();
+        }
+    }
+
+    public void updateXpBar()
+    {
+        if (hudXpBar != null)
+        {
+            hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel, abilityPoints);
         }
     }
 
@@ -82,7 +90,7 @@ public class XpManager : MonoBehaviour
         if (HudXpBar!= null && hudXpBar == null)
         {
             hudXpBar = HudXpBar.GetComponent<HudXpBar>();
-            hudXpBar.UpdateXpBar(this.xp, xpToLevelUp, playerLevel);
+            updateXpBar();
         }
     }
 

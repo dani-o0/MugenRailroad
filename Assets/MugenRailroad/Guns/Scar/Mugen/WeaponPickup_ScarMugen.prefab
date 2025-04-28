@@ -459,11 +459,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 7384372676415405101}
     m_GameObject: {fileID: 3653168766012843552}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 663502093
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: ef5477eba5520a54aa716672e88e31de
 --- !u!1 &2417064193638331398
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,11 +843,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 7384372676415405101}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: 663502093
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: ef5477eba5520a54aa716672e88e31de
 --- !u!1 &3048736621842421985
 GameObject:
   m_ObjectHideFlags: 0
