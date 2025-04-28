@@ -16,6 +16,17 @@ public class AbilitiesMachine : MonoBehaviour
         Grappler
     }
 
+    [System.Serializable]
+    public class Ability
+    {
+        public string title;
+        public string description;
+        public AbilityType abilityType;
+        public Sprite sprite;
+    }
+
+    public List<Ability> abilities = new List<Ability>();
+
     private readonly string[] abilityNames = { "Joint", "Vampire", "DoubleJump", "Grappler" };
 
     private int completedScreens = 0;
@@ -94,7 +105,9 @@ public class AbilitiesMachine : MonoBehaviour
         if (completedScreens >= screens.Length)
         {
             AbilitiesManager.Instance.GarantAbility(resultAbility);
-            // TODO: mostrar un popup personalizado con la informacion de la habilidad que ha obtenido el jugador
+
+            // Mostrar un popup personalizado con la información de la habilidad obtenida
+            ShowAbilityPopup(resultAbility);
         }
     }
 
@@ -105,6 +118,22 @@ public class AbilitiesMachine : MonoBehaviour
         {
             Image image = background.Find(ability).GetComponent<Image>();
             image.enabled = value;
+        }
+    }
+
+    private void ShowAbilityPopup(AbilityType abilityType)
+    {
+        Ability ability = abilities.Find(a => a.abilityType == abilityType);
+        if (ability != null)
+        {
+            AbilityPopup.ShowPopup(ability.title, ability.description, ability.sprite, () =>
+            {
+                Debug.Log($"Popup cerrado para la habilidad: {ability.title}");
+            });
+        }
+        else
+        {
+            Debug.LogError($"No se encontró una habilidad con el tipo: {abilityType}");
         }
     }
 }
