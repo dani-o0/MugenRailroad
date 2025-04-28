@@ -38,6 +38,7 @@ public class AbilitiesMachine : MonoBehaviour
         }
 
         XpManager.Instance.AbilityPoints--;
+        XpManager.Instance.updateXpBar();
 
         completedScreens = 0;
 

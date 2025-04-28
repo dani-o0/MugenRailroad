@@ -11,6 +11,8 @@ public class HudXpBar : MonoBehaviour
     private Text XpLeftText = null;
     [SerializeField, Tooltip("El texto del nivel actual")]
     private Text LevelText = null;
+    [SerializeField, Tooltip("El texto de los puntos de habilidad")]
+    private Text AbilityPointsText = null;
 
     private float targetScale = 0f;
 
@@ -26,7 +28,7 @@ public class HudXpBar : MonoBehaviour
         
     }
 
-    public void UpdateXpBar(int actualXp, int maxXp, int level)
+    public void UpdateXpBar(int actualXp, int maxXp, int level, int abilityPoints)
     {
         targetScale = Mathf.Clamp01((float)actualXp / maxXp);
         var localScale = BarRect.localScale;
@@ -34,5 +36,6 @@ public class HudXpBar : MonoBehaviour
         BarRect.localScale = localScale;
         XpLeftText.text = "XP left: " + (maxXp - actualXp);
         LevelText.text = "Level: " + (level);
+        AbilityPointsText.text = abilityPoints.ToString();
     }
 }
