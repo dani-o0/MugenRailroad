@@ -3853,7 +3853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 12
+  m_Damage: 25
   m_BulletSize: 1
   m_ImpactForce: 15
 --- !u!114 &2530166834823447778
@@ -3870,7 +3870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageType: 4
   m_Explosion: {fileID: 114048289010296272, guid: 5dc982c5a92afcb4daebbeb20ca5ca6b, type: 3}
-  m_Damage: 5
+  m_Damage: 10
   m_MaxForce: 10
   m_NormalOffset: 0
 --- !u!114 &252565031335108323

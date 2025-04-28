@@ -3247,7 +3247,7 @@ MonoBehaviour:
     CooldownIgnored: 0
     CooldownTimeStamp: 0
   LastAttacker: {fileID: 0}
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   DamageSettingsFoldout: 1
   CombatActionSettingsFoldout: 1
   SwitchWeaponSettingsFoldout: 0

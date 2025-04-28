@@ -1335,8 +1335,10 @@ MonoBehaviour:
   m_OtherComponents: []
   m_Overrides: []
   m_Children:
-    m_Keys: 
-    m_Values: []
+    m_Keys: 521f711f5844e8b4
+    m_Values:
+    - {fileID: 2016930627524440628}
+    - {fileID: 835505466575575039}
     m_GameObject: {fileID: 8178412151099014147}
   m_PrefabStrongID: 0
   expandChildObjects: 1
@@ -1424,26 +1426,14 @@ MonoBehaviour:
   m_WieldableRootScale: 0.5
   m_DropTransform: {fileID: 1866180600933218640}
   m_DropVelocity: {x: 0, y: 2, z: 3}
-  m_HolsterAction: 0
-  m_EmptyAsBackup: 0
+  m_HolsterAction: 1
+  m_EmptyAsBackup: 1
   m_SlotCount: 30
   m_StartingSlotChoice: 0
   m_StartingOrder: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d000000
   m_AutoSwitchStyle: 0
-  m_BackupItem: {fileID: 114220906628037716, guid: fea32a3c49938a24c86df8b49a457398, type: 3}
-  m_StartingItems:
-  - {fileID: 4992860669244042449, guid: a4264ba2ad29dd646b4e9467705fd51c, type: 3}
-  - {fileID: 4992860669244042449, guid: 0ad97a05cb51ec644b19968854a6ebc6, type: 3}
-  - {fileID: 4992860669244042449, guid: 4c3bf235fe0d51640989a1a726b64196, type: 3}
-  - {fileID: 114720571942937776, guid: dfe46eefaa9a7544ca7ee5e668df212c, type: 3}
-  - {fileID: 6339930185543889722, guid: 767d333935f5095498b2c98b028434b1, type: 3}
-  - {fileID: 6339930185543889722, guid: 3338b39bade23cd4d883dd0ab2d9ef4f, type: 3}
-  - {fileID: 6339930185543889722, guid: 69506e1ca3a4a5248a89c6cd08797648, type: 3}
-  - {fileID: 114235257556039404, guid: 64f2a695fbc7afe4cb28f1ba66c2b64d, type: 3}
-  - {fileID: 6683438678609504921, guid: 5b137f82059c04e4da2a331a2972709e, type: 3}
-  - {fileID: 6683438678609504921, guid: d17bd77727cd58a4eaef393e3a37b36f, type: 3}
-  - {fileID: 6683438678609504921, guid: 4254d41b140d38445a4edeb82a3b43ae, type: 3}
-  - {fileID: 114491831698022604, guid: 6c688c81d559f0c4d9a19f7a8b9b4d36, type: 3}
+  m_BackupItem: {fileID: 0}
+  m_StartingItems: []
   m_DuplicateBehaviour: 0
 --- !u!114 &7737180592788707092
 MonoBehaviour:

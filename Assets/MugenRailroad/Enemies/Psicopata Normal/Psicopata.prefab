@@ -2289,7 +2289,7 @@ MonoBehaviour:
   HitEffectsList:
   - {fileID: 163734, guid: 0a5ac034133a7654a8565697adff5548, type: 3}
   - {fileID: 186584, guid: b85ef8139fbcfa746b2954a470627418, type: 3}
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   HealthFoldout: 1
 --- !u!114 &1445314473314682270
 MonoBehaviour:
