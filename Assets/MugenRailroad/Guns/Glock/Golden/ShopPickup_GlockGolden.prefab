@@ -932,7 +932,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Root: {fileID: 9177586722251653684}
-  m_Item: {fileID: 0}
+  m_Item: {fileID: 4992860669244042449, guid: 0ad97a05cb51ec644b19968854a6ebc6, type: 3}
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 1
