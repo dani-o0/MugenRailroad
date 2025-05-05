@@ -1042,9 +1042,9 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 1
   m_Price: 250
-  m_Message: "Fusil de asalto automatico mejorado ba\xF1ado en oro de 40 kilates,
+  m_Message: "Fusil de asalto autom\xE1tico mejorado ba\xF1ado en oro de 40 quilates,
     del cual las balas rebotan 3 veces por las paredes y suelos, tiene un cargador
-    de 30 balas tabien."
+    de 30 balas tambi\xE9n."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: 9a22d9d4074c4f341a252d7ab18a720e, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
