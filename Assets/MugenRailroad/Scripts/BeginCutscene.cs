@@ -43,7 +43,7 @@ public class BeginCutscene : MonoBehaviour
         if (obj.CompareTag("Player") && !cameraTriggered)
         {
             player = obj.gameObject;
-            Invoke("Begin", 0.3f);
+            Invoke("Begin", 0.5f);
         }
     }
 

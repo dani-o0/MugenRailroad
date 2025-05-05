@@ -30,7 +30,7 @@ namespace NeoFPS.SinglePlayer
         [Header("Loadout")]
 
         [SerializeField, Tooltip("An optional inventory loadout for the character on spawn (this will replace their starting items).")]
-        private FpsInventoryLoadout m_StartingLoadout = null;
+        public FpsInventoryLoadout m_StartingLoadout = null;
 
         [SerializeField, Tooltip("How should the loadout be applied to the character. Should it replace the character's starting items or be added alongside them.")]
         private bool m_ReplaceStartingItems = true;
