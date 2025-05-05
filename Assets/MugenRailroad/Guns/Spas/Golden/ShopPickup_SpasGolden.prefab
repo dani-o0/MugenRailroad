@@ -1361,7 +1361,9 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 1
   m_Price: 250
-  m_Message: "\xBFQuieres comprar este objeto?"
+  m_Message: Escopeta de corredera automatica pero se sobrecalienta, asi que ten
+    cuidado porque en tal caso no podras disparar durante un tiempo. No necesita
+    recargar.
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: 3742e8b82e0c96f4aaab2bc32ac84a07, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.

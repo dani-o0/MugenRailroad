@@ -1360,7 +1360,9 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 2
   m_Price: 500
-  m_Message: "\xBFQuieres comprar este objeto?"
+  m_Message: "Escopeta de corredera automatica que se sobrecalienta, con un disparo
+    alternativo que dispara una explosion que no te hace da\xF1o a ti, pero te empuja
+    y hace mucho da\xF1o a los enemigos."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: 14245c0c32dcc464f932fcf078022dd3, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
