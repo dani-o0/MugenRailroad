@@ -937,9 +937,9 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 2
   m_Price: 500
-  m_Message: "\xBFQuieres comprar este objeto? Esta pistola cuando deja el gatillo
-    pulsado y hace la rafaga con la peque\xF1a diferencia que las balas al entrar
-    en contacto con algo explotan y hacen da\xF1o extra."
+  m_Message: "Esta pistola cuando deja el gatillo pulsado y hace la rafaga con la
+    peque\xF1a diferencia que las balas al entrar en contacto con algo explotan y
+    hacen da\xF1o extra."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: 538fbe7278202844c993e6eb824619c1, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
