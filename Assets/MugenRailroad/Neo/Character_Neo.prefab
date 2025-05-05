@@ -238,17 +238,15 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 425693331570884023}
-    - {fileID: 1809177241467170962}
-    m_FilterNeoComponents: 0
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1
     expandChildObjects: 1
-    expandNeoComponents: 0
+    expandNeoComponents: 1
     expandOtherComponents: 0
   m_Children:
     m_Keys: 6b221c7dfab49720
@@ -339,12 +337,9 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 7995292814836724455}
-    - {fileID: 5326057895646956778}
-    - {fileID: 8641369555876957367}
-    m_FilterNeoComponents: 0
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
@@ -586,24 +581,11 @@ MonoBehaviour:
   m_FilterNeoComponents: 0
   m_NeoComponents: []
   m_OtherComponents: []
-  m_Overrides:
-  - m_SaveMode: 1
-    m_Position: 3
-    m_Rotation: 3
-    m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects: []
-    m_FilterNeoComponents: 2
-    m_NeoComponents: []
-    m_OverrideOtherComponents: 0
-    m_OtherComponents: []
-    expandOverride: 1
-    expandChildObjects: 1
-    expandNeoComponents: 1
-    expandOtherComponents: 0
+  m_Overrides: []
   m_Children:
-    m_Keys: 
-    m_Values: []
+    m_Keys: f508b758
+    m_Values:
+    - {fileID: 2034237746968612006}
     m_GameObject: {fileID: 3744473490900545551}
   m_PrefabStrongID: 0
   expandChildObjects: 0
@@ -1138,15 +1120,15 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 0
+    m_FilterChildObjects: 1
     m_ChildObjects: []
-    m_FilterNeoComponents: 0
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1
-    expandChildObjects: 0
-    expandNeoComponents: 0
+    expandChildObjects: 1
+    expandNeoComponents: 1
     expandOtherComponents: 0
   m_Children:
     m_Keys: 
@@ -1216,16 +1198,15 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 4252335199978609366}
-    m_FilterNeoComponents: 0
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1
     expandChildObjects: 1
-    expandNeoComponents: 0
+    expandNeoComponents: 1
     expandOtherComponents: 0
   m_Children:
     m_Keys: ef6dc5c0
@@ -2085,12 +2066,10 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 3607293312807072179}
-    m_FilterNeoComponents: 2
-    m_NeoComponents:
-    - {fileID: 544084784083514227}
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
+    m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1
@@ -2357,14 +2336,14 @@ MonoBehaviour:
     m_Position: 0
     m_Rotation: 0
     m_LocalScale: 0
-    m_FilterChildObjects: 0
+    m_FilterChildObjects: 1
     m_ChildObjects: []
-    m_FilterNeoComponents: 0
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1
-    expandChildObjects: 0
+    expandChildObjects: 1
     expandNeoComponents: 1
     expandOtherComponents: 0
   m_Children:
@@ -2506,10 +2485,9 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 4384827216869029815}
-    m_FilterNeoComponents: 0
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
@@ -2734,16 +2712,15 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 546565977727261567}
-    m_FilterNeoComponents: 0
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
     m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1
     expandChildObjects: 1
-    expandNeoComponents: 0
+    expandNeoComponents: 1
     expandOtherComponents: 0
   m_Children:
     m_Keys: dbf5239c
@@ -3543,6 +3520,7 @@ GameObject:
   - component: {fileID: 1388104406804937302}
   - component: {fileID: 6363263865723773956}
   - component: {fileID: 1696486891684997371}
+  - component: {fileID: 2034237746968612006}
   m_Layer: 0
   m_Name: WeaponSpring
   m_TagString: Untagged
@@ -3693,6 +3671,37 @@ MonoBehaviour:
   m_BobType: 0
   m_MinLerpSpeed: 0.5
   m_MaxLerpSpeed: 2
+--- !u!114 &2034237746968612006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836584838625076946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421f12c4cc2c4614f9e0616ef942cf44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SaveName: 0
+  m_Position: 0
+  m_Rotation: 0
+  m_LocalScale: 0
+  m_FilterChildObjects: 0
+  m_ChildObjects: []
+  m_FilterNeoComponents: 0
+  m_NeoComponents: []
+  m_OtherComponents: []
+  m_Overrides: []
+  m_Children:
+    m_Keys: 
+    m_Values: []
+    m_GameObject: {fileID: 2034237746968612006}
+  m_PrefabStrongID: 0
+  expandChildObjects: 0
+  expandNeoComponents: 0
+  expandOtherComponents: 0
+  prefabGuid: 
 --- !u!1 &8911089024593878838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3769,21 +3778,7 @@ MonoBehaviour:
   m_FilterNeoComponents: 0
   m_NeoComponents: []
   m_OtherComponents: []
-  m_Overrides:
-  - m_SaveMode: 1
-    m_Position: 3
-    m_Rotation: 3
-    m_LocalScale: 0
-    m_FilterChildObjects: 0
-    m_ChildObjects: []
-    m_FilterNeoComponents: 0
-    m_NeoComponents: []
-    m_OverrideOtherComponents: 0
-    m_OtherComponents: []
-    expandOverride: 1
-    expandChildObjects: 0
-    expandNeoComponents: 0
-    expandOtherComponents: 0
+  m_Overrides: []
   m_Children:
     m_Keys: 
     m_Values: []
@@ -4099,9 +4094,9 @@ MonoBehaviour:
   m_Position: 0
   m_Rotation: 0
   m_LocalScale: 0
-  m_FilterChildObjects: 1
+  m_FilterChildObjects: 0
   m_ChildObjects: []
-  m_FilterNeoComponents: 1
+  m_FilterNeoComponents: 0
   m_NeoComponents: []
   m_OtherComponents: []
   m_Overrides:
@@ -4109,12 +4104,10 @@ MonoBehaviour:
     m_Position: 3
     m_Rotation: 3
     m_LocalScale: 0
-    m_FilterChildObjects: 2
-    m_ChildObjects:
-    - {fileID: 3744473490900545551}
-    m_FilterNeoComponents: 2
-    m_NeoComponents:
-    - {fileID: 5760858322609330397}
+    m_FilterChildObjects: 1
+    m_ChildObjects: []
+    m_FilterNeoComponents: 1
+    m_NeoComponents: []
     m_OverrideOtherComponents: 0
     m_OtherComponents: []
     expandOverride: 1

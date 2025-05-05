@@ -19,10 +19,10 @@ public class AbilityGrappler : MonoBehaviour, INeoSerializableComponent
         if (toolGrappler == null)
         {
             toolGrappler = GameObject.Find("ToolGrappler");
+            if (toolGrappler == null) return;
         }
-        
-        if (toolGrappler)
-            toolGrappler.SetActive(state);
+
+        toolGrappler.SetActive(state);
     }
 
     public void SetState(bool state)
@@ -43,7 +43,20 @@ public class AbilityGrappler : MonoBehaviour, INeoSerializableComponent
     public void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo)
     {
         reader.TryReadValue(k_State, out state, false);
-        
-        toolGrappler.SetActive(state);
+
+        if (toolGrappler == null)
+        {
+            toolGrappler = GameObject.Find("ToolGrappler");
+        }
+
+        if (toolGrappler != null)
+        {
+            toolGrappler.SetActive(state);
+        }
+        else
+        {
+            Debug.LogWarning("ToolGrappler no encontrado al cargar estado del Grappler.");
+        }
     }
+
 }
