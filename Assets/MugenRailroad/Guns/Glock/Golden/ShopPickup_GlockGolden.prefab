@@ -937,7 +937,9 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 1
   m_Price: 250
-  m_Message: "\xBFQuieres comprar este objeto?"
+  m_Message: "Esta arma es la pistola mejorada ba\xF1ada en oro de 40 kilates, lo
+    que hace es que cuand dejas el gatillo pulsado vacia el cargador encima de un
+    enemigo."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: fa3379cc2ded8ae499b898fb2add8566, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
