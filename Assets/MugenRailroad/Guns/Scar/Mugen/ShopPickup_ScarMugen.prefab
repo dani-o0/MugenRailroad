@@ -397,8 +397,9 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 2
   m_Price: 500
-  m_Message: "Fusil de asalto automatico mejorado, del cual las balas rebotan 6 veces
-    por las paredes y suelos, 3 veces mas que la que esta ba\xF1ada en oro."
+  m_Message: "Fusil de asalto autom\xE1tico mejorado, del cual las balas rebotan
+    6 veces por las paredes y suelos, 3 veces m\xE1s que la que est\xE1 ba\xF1ada
+    en oro."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: a50833a7a3188f1459bf20f42af4aa6a, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.

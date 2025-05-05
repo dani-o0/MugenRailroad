@@ -1110,8 +1110,8 @@ MonoBehaviour:
   m_ConsumeOnPartial: 0
   m_PickupType: 0
   m_Price: 100
-  m_Message: Escopeta de corredera potente con bastante dispersion. Recarga los cartuchos
-    uno a uno.
+  m_Message: "Escopeta de corredera semiautom\xE1tica muy potente y con bastante
+    dispersi\xF3n de bala. Recarga los cartuchos uno a uno."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: 5eedbbbc86cbf5e4c990b858f2de5578, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.

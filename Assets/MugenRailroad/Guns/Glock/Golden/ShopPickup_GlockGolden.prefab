@@ -932,14 +932,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Root: {fileID: 9177586722251653684}
-  m_Item: {fileID: 0}
+  m_Item: {fileID: 4992860669244042449, guid: 0ad97a05cb51ec644b19968854a6ebc6, type: 3}
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 1
   m_Price: 250
-  m_Message: "Esta arma es la pistola mejorada ba\xF1ada en oro de 40 kilates, lo
-    que hace es que cuand dejas el gatillo pulsado vacia el cargador encima de un
-    enemigo."
+  m_Message: "Esta arma es la pistola mejorada ba\xF1ada en oro de 40 quilates. Lo
+    que hace es que, cuando dejas el gatillo pulsado, vac\xEDa el cargador encima
+    de un enemigo."
   m_SecondaryMessage: '{0}'
   m_Image: {fileID: 21300000, guid: fa3379cc2ded8ae499b898fb2add8566, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
