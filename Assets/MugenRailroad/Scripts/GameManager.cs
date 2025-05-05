@@ -1,5 +1,11 @@
+using System.Linq;
+using NeoCC;
+using NeoFPS;
+using NeoSaveGames;
 using UnityEngine;
 using NeoSaveGames.SceneManagement;
+using NeoSaveGames.Serialization;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,9 +30,8 @@ public class GameManager : MonoBehaviour
         WagonBoss,
     }
 
-    public GameState currentState;
-    public int currentWagonNumber = 0;
-    [SerializeField]
+    private GameState currentState;
+    private int currentWagonNumber = 0;
     private int maxWagons = 5;
 
     public GameState CurrentState => currentState;
@@ -67,26 +72,30 @@ public class GameManager : MonoBehaviour
         {
             currentState = GameState.WagonFight;
             currentWagonNumber = 1;
-
+            
+            FpsGameMode.SavePersistentData();
+            
             Scenes wagonScene = (Scenes)System.Enum.Parse(typeof(Scenes), "Wagon" + currentWagonNumber);
             NeoSceneManager.LoadScene(wagonScene.ToString());
         }
-
-        if (currentState == GameState.WagonFight)
+        else if (currentState == GameState.WagonFight)
         {
-            // En caso de que sea el ultimo vagon (Wagon5) cargamos el vagon del boss (WagonBoss) en vez de el siguiente wagon.
             if (currentWagonNumber == maxWagons)
             {
+                FpsGameMode.SavePersistentData();
+                
                 NeoSceneManager.LoadScene(Scenes.WagonBoss.ToString());
             }
             else
             {
+                FpsGameMode.SavePersistentData();
+                
                 Scenes wagonScene = (Scenes)System.Enum.Parse(typeof(Scenes), "Wagon" + currentWagonNumber);
                 NeoSceneManager.LoadScene(wagonScene.ToString());
             }
         }
     }
-    
+
     public void EnableExitDoor()
     {
         GameObject exitDoor = GameObject.FindGameObjectWithTag("ExitDoor");
@@ -104,6 +113,9 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log($"[GameManager] Transitioning from state {currentState} to Shop");
             currentState = GameState.Shop;
+            
+            FpsGameMode.SavePersistentData();
+            
             Debug.Log($"[GameManager] Current state is now {currentState}");
             NeoSceneManager.LoadScene(Scenes.WagonMerchant.ToString());
         }
