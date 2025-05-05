@@ -1929,8 +1929,8 @@ Transform:
   m_GameObject: {fileID: 3184734607746624613}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.193609, y: 0, z: 5.1931047}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.1935, y: -0.12091, z: 5.1951}
+  m_LocalScale: {x: 1.1326, y: 1.1326, z: 1.1326}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6095316578083746759}
@@ -2040,7 +2040,7 @@ MonoBehaviour:
   - FactionIndex: 1
     RelationType: 0
   AIFactionsList: 
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   DetectionFoldout: 1
   TagFoldout: 1
   FactionFoldout: 1

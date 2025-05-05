@@ -4715,6 +4715,10 @@ PrefabInstance:
       propertyPath: HideSettingsFoldout
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4816496213920408223, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
+      propertyPath: HitEffectPosOffset.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5628254820782085952, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
       propertyPath: HideSettingsFoldout
       value: 0
@@ -7696,6 +7700,10 @@ PrefabInstance:
     - target: {fileID: 7990703605718175775, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
       propertyPath: FieldOfViewAngle
       value: 139
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990703605718175775, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8012505417682081580, guid: db2f4bc7a3c43be4c8abf0029f30d142, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
