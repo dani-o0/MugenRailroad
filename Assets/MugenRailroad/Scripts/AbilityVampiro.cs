@@ -1,7 +1,9 @@
 using NeoFPS;
+using NeoSaveGames;
+using NeoSaveGames.Serialization;
 using UnityEngine;
 
-public class AbilityVampiro : MonoBehaviour
+public class AbilityVampiro : MonoBehaviour, INeoSerializableComponent
 {
     public int health = 10;
     
@@ -9,6 +11,8 @@ public class AbilityVampiro : MonoBehaviour
     private ICharacter c;
     private IHealthManager hm;
     private bool state;
+    
+    private static readonly NeoSerializationKey k_State = new NeoSerializationKey("vampiroState");
     
     void Start()
     {
@@ -31,6 +35,8 @@ public class AbilityVampiro : MonoBehaviour
     
     void Update()
     {
+        Debug.Log("Vampiro: " + state);
+        
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");
@@ -59,5 +65,15 @@ public class AbilityVampiro : MonoBehaviour
     public bool GetState()
     {
         return state;
+    }
+    
+    public void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode)
+    {
+        writer.WriteValue(k_State, state);
+    }
+
+    public void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo)
+    {
+        reader.TryReadValue(k_State, out state, false);
     }
 }

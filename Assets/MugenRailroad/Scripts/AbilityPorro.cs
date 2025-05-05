@@ -1,8 +1,10 @@
 using System.Collections;
+using NeoSaveGames;
+using NeoSaveGames.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AbilityPorro : MonoBehaviour
+public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
 {
     public GameObject porro;
     public Light fire;
@@ -10,7 +12,7 @@ public class AbilityPorro : MonoBehaviour
     public float cooldownTime = 10f; // Tiempo de cooldown de la habilidad
     public float lightDuration = 1.5f; // Duración de subida y bajada de la luz
     public float targetLightIntensity = 10f; // Intensidad máxima de la luz
-    
+
     private bool state;
     private Coroutine caloRoutine;
     private bool canCalo = true; // Verifica si puedes hacer otro calo
@@ -18,6 +20,8 @@ public class AbilityPorro : MonoBehaviour
     private Image overlayImage; // Imagen del overlay para el efecto de colores
     private Color originalColor; // Color original de la imagen del overlay
     private Camera playerCamera; // Cámara del jugador
+    
+    private static readonly NeoSerializationKey k_State = new NeoSerializationKey("porroState");
 
     private void Start()
     {
@@ -35,13 +39,16 @@ public class AbilityPorro : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("Porro: " + state);
+
+        porro.SetActive(state);
+
         if (Input.GetKeyDown(KeyCode.L) && canCalo && state)
             Calo();
     }
 
     public void SetState(bool state)
     {
-        porro.SetActive(state);
         this.state = state;
     }
 
@@ -56,6 +63,7 @@ public class AbilityPorro : MonoBehaviour
         {
             StopCoroutine(caloRoutine);
         }
+
         caloRoutine = StartCoroutine(CaloRoutine());
     }
 
@@ -74,6 +82,7 @@ public class AbilityPorro : MonoBehaviour
             elapsed += Time.unscaledDeltaTime; // Aseguramos que el tiempo no se vea afectado
             yield return null;
         }
+
         fire.intensity = targetLightIntensity;
 
         // Bajar intensidad
@@ -84,12 +93,13 @@ public class AbilityPorro : MonoBehaviour
             elapsed += Time.unscaledDeltaTime;
             yield return null;
         }
+
         fire.intensity = 3f;
 
         // Ahora que hemos terminado con la animación de la luz, podemos activar la ralentización y el efecto de "drogado"
         // Comienza la ralentización y el efecto de "drogado"
         StartCoroutine(DrogadoEffect());
-    
+
         // Ralentizar el juego, pero no el jugador
         Time.timeScale = 0.5f; // Ralentiza el juego al 50% de su velocidad normal
         Time.fixedDeltaTime = 0.02f * Time.timeScale; // Ajusta el deltaTime para las físicas
@@ -128,17 +138,21 @@ public class AbilityPorro : MonoBehaviour
             }
             else if (lerpTime < 0.66f)
             {
-                overlayImage.color = Color.Lerp(targetColor2, targetColor3, (lerpTime - 0.33f) * 3f); // Morado -> Amarillo
+                overlayImage.color =
+                    Color.Lerp(targetColor2, targetColor3, (lerpTime - 0.33f) * 3f); // Morado -> Amarillo
             }
             else
             {
-                overlayImage.color = Color.Lerp(targetColor3, targetColor, (lerpTime - 0.66f) * 3f); // Amarillo -> Verde
+                overlayImage.color =
+                    Color.Lerp(targetColor3, targetColor, (lerpTime - 0.66f) * 3f); // Amarillo -> Verde
             }
 
             // Sacudir la cámara aleatoriamente para dar la sensación de inestabilidad
             Vector3 originalPosition = playerCamera.transform.position;
-            Vector3 shakePosition = originalPosition + new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), 0);
-            playerCamera.transform.position = Vector3.Lerp(playerCamera.transform.position, shakePosition, Time.deltaTime * 5f);
+            Vector3 shakePosition =
+                originalPosition + new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), 0);
+            playerCamera.transform.position =
+                Vector3.Lerp(playerCamera.transform.position, shakePosition, Time.deltaTime * 5f);
 
             timeElapsed += Time.deltaTime;
             yield return null;
@@ -167,7 +181,7 @@ public class AbilityPorro : MonoBehaviour
         // Crear el Canvas
         overlayCanvas = new GameObject("OverlayCanvas").AddComponent<Canvas>();
         overlayCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        
+
         // Crear el componente CanvasScaler
         CanvasScaler scaler = overlayCanvas.gameObject.AddComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
@@ -177,11 +191,22 @@ public class AbilityPorro : MonoBehaviour
         overlayObject.transform.SetParent(overlayCanvas.transform);
         overlayObject.AddComponent<RectTransform>().anchoredPosition = Vector2.zero;
         overlayObject.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
-        
+
         overlayImage = overlayObject.AddComponent<Image>();
 
         // Configurar el color original del overlay (transparente inicialmente)
         originalColor = overlayImage.color;
         overlayImage.color = new Color(0, 0, 0, 0); // Inicialmente transparente
+    }
+
+    public void WriteProperties(INeoSerializer writer, NeoSerializedGameObject nsgo, SaveMode saveMode)
+    {
+        writer.WriteValue(k_State, state);
+    }
+
+    public void ReadProperties(INeoDeserializer reader, NeoSerializedGameObject nsgo)
+    {
+        reader.TryReadValue(k_State, out state, false);
+        porro.SetActive(state);
     }
 }
