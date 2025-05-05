@@ -676,9 +676,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 40
+  m_Damage: 20
   m_BulletSize: 1
-  m_ImpactForce: 20
+  m_ImpactForce: 30
 --- !u!114 &735076850186961455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6322,8 +6322,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageType: 4
   m_Explosion: {fileID: 114361292132502964, guid: bb2578b9c476bb243afbc27af3a0cfb4, type: 3}
-  m_Damage: 100
-  m_MaxForce: 20
+  m_Damage: 50
+  m_MaxForce: 25
   m_NormalOffset: 0
 --- !u!114 &7240044573826732792
 MonoBehaviour:
