@@ -13,6 +13,20 @@ namespace NeoFPS
         private CanvasGroup m_CanvasGroup = null;
 		private ICharacter m_Character = null;
 
+        [Header("Teleport Message")]
+        public Text teleportText;
+        [Header("UI Components")]
+        public Image backgroundImage;
+
+        private Coroutine messageRoutine = null;
+        private Coroutine fadeRoutine = null;
+
+        private readonly string[] messages = {
+            "Teletransportacion iniciada.",
+            "Teletransportacion iniciada..",
+            "Teletransportacion iniciada..."
+        };
+
         protected override void Awake()
         {
             base.Awake();
@@ -44,13 +58,77 @@ namespace NeoFPS
 				gameObject.SetActive (false);
 		}
 
-		void OnIsAliveChanged (ICharacter character, bool alive)
-		{
+		void OnIsAliveChanged(ICharacter character, bool alive)
+        {
             if (alive)
+            {
+                if (messageRoutine != null)
+                {
+                    StopCoroutine(messageRoutine);
+                    messageRoutine = null;
+                }
+
                 m_CanvasGroup.alpha = 0f;
+                gameObject.SetActive(false);
+            }
             else
+            {
+                gameObject.SetActive(true); // <--- Activa antes de iniciar la corutina
+
                 m_CanvasGroup.alpha = 1f;
-			gameObject.SetActive (!alive);
-		}
+
+                if (fadeRoutine != null)
+                    StopCoroutine(fadeRoutine);
+                fadeRoutine = StartCoroutine(FadeAndStartText());
+            }
+        }
+
+        IEnumerator FadeAndStartText()
+        {
+            if (teleportText != null)
+            teleportText.gameObject.SetActive(false); // Oculta el texto durante el fade
+
+            // Asegúrate que backgroundImage está asignada
+            if (backgroundImage != null)
+            {
+                Color startColor = new Color(0f, 0f, 0f, 0f); // Transparente
+                Color endColor = new Color(0f, 0f, 0f, 1f);   // Negro opaco
+
+                float duration = 2f;
+                float t = 0f;
+
+                while (t < duration)
+                {
+                    t += Time.deltaTime;
+                    float blend = Mathf.Clamp01(t / duration);
+                    backgroundImage.color = Color.Lerp(startColor, endColor, blend);
+                    yield return null;
+                }
+
+                // Cambio inmediato a blanco (pantalla "flash")
+                backgroundImage.color = Color.white;
+
+                // Ahora sí mostramos el texto
+                if (teleportText != null)
+                    teleportText.gameObject.SetActive(true);
+            }
+
+            // Esperar un frame para asegurar que el color blanco ya se aplicó
+            yield return null;
+
+            if (teleportText != null)
+                messageRoutine = StartCoroutine(CycleMessages());
+        }
+
+        IEnumerator CycleMessages()
+        {
+            int index = 0;
+            while (true)
+            {
+                teleportText.text = messages[index];
+                index = (index + 1) % messages.Length;
+                yield return new WaitForSeconds(0.15f);
+            }
+        }
 	}
 }
