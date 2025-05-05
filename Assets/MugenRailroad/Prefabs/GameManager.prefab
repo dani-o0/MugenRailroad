@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8078399174494197071}
   - component: {fileID: 317031273858232816}
-  - component: {fileID: 4425958757291243304}
   m_Layer: 0
   m_Name: MoneyManager
   m_TagString: PlayerMoney
@@ -45,37 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138d4306365b8034081006f4cd84b55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4425958757291243304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024125772632301412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f12c4cc2c4614f9e0616ef942cf44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SaveName: 0
-  m_Position: 0
-  m_Rotation: 0
-  m_LocalScale: 0
-  m_FilterChildObjects: 0
-  m_ChildObjects: []
-  m_FilterNeoComponents: 0
-  m_NeoComponents: []
-  m_OtherComponents: []
-  m_Overrides: []
-  m_Children:
-    m_Keys: 
-    m_Values: []
-    m_GameObject: {fileID: 4425958757291243304}
-  m_PrefabStrongID: 920038752
-  expandChildObjects: 0
-  expandNeoComponents: 0
-  expandOtherComponents: 0
-  prefabGuid: 11cc88359b792cc498bf9de06aa3e619
 --- !u!1 &1532559611029107116
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +54,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3619777132288330990}
   - component: {fileID: 6219416308412589387}
-  - component: {fileID: 6487900340028125055}
   m_Layer: 0
   m_Name: XPManager
   m_TagString: PlayerXP
@@ -122,37 +89,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialXpToLevelUp: 100
---- !u!114 &6487900340028125055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532559611029107116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f12c4cc2c4614f9e0616ef942cf44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SaveName: 0
-  m_Position: 0
-  m_Rotation: 0
-  m_LocalScale: 0
-  m_FilterChildObjects: 0
-  m_ChildObjects: []
-  m_FilterNeoComponents: 0
-  m_NeoComponents: []
-  m_OtherComponents: []
-  m_Overrides: []
-  m_Children:
-    m_Keys: 
-    m_Values: []
-    m_GameObject: {fileID: 6487900340028125055}
-  m_PrefabStrongID: 0
-  expandChildObjects: 0
-  expandNeoComponents: 0
-  expandOtherComponents: 0
-  prefabGuid: 
 --- !u!1 &3497316376106233686
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +99,6 @@ GameObject:
   m_Component:
   - component: {fileID: 615403353603174513}
   - component: {fileID: 1897024944274495329}
-  - component: {fileID: 9210842190185032481}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -200,55 +135,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3784df1b70496d43a16f017f997c942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
-  currentWagonNumber: 0
-  maxWagons: 5
---- !u!114 &9210842190185032481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3497316376106233686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f12c4cc2c4614f9e0616ef942cf44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SaveName: 0
-  m_Position: 0
-  m_Rotation: 0
-  m_LocalScale: 0
-  m_FilterChildObjects: 1
-  m_ChildObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  m_FilterNeoComponents: 1
-  m_NeoComponents: []
-  m_OtherComponents: []
-  m_Overrides:
-  - m_SaveMode: 1
-    m_Position: 0
-    m_Rotation: 0
-    m_LocalScale: 0
-    m_FilterChildObjects: 0
-    m_ChildObjects: []
-    m_FilterNeoComponents: 0
-    m_NeoComponents: []
-    m_OverrideOtherComponents: 0
-    m_OtherComponents: []
-    expandOverride: 0
-    expandChildObjects: 0
-    expandNeoComponents: 0
-    expandOtherComponents: 0
-  m_Children:
-    m_Keys: d33b3d4d5cac887a
-    m_Values:
-    - {fileID: 4425958757291243304}
-    - {fileID: 6487900340028125055}
-    m_GameObject: {fileID: 9210842190185032481}
-  m_PrefabStrongID: 920038752
-  expandChildObjects: 1
-  expandNeoComponents: 0
-  expandOtherComponents: 0
-  prefabGuid: 11cc88359b792cc498bf9de06aa3e619
