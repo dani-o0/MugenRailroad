@@ -37,7 +37,7 @@ public class PurchasablePickup : InteractivePickup
     [SerializeField, Tooltip("El precio del objeto en monedas")]
     private int m_Price = 100;
 
-    [SerializeField, Tooltip("El mensaje principal que se mostrará en el popup de confirmación")]
+    [SerializeField, TextArea, Tooltip("El mensaje principal que se mostrará en el popup de confirmación")]
     private string m_Message = "¿Quieres comprar este objeto?";
 
     [SerializeField, Tooltip("El mensaje secundario que se mostrará en el popup (puede incluir detalles del objeto)")]
