@@ -215,7 +215,7 @@ MonoBehaviour:
   m_SpawnOnStart: 1
   m_DeathAction: 3
   m_StartingLoadout: {fileID: 11400000, guid: 16706c6c06a582b4cab7b1e704860398, type: 2}
-  m_ReplaceStartingItems: 1
+  m_ReplaceStartingItems: 0
 --- !u!114 &114937191270799034
 MonoBehaviour:
   m_ObjectHideFlags: 0
