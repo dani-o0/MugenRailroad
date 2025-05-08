@@ -73,7 +73,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
             
             // Añadir el listener para OnYesAction
             yesButton.onClick.AddListener(() => popup.OnYesAction());
-            Debug.Log("ShopConfirmationPopupHelper: Conectado botón Yes con OnYesAction");
         }
         else
         {
@@ -88,7 +87,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
             
             // Añadir el listener para OnNoAction
             noButton.onClick.AddListener(() => popup.OnNoAction());
-            Debug.Log("ShopConfirmationPopupHelper: Conectado botón No con OnNoAction");
         }
         else
         {
@@ -119,7 +117,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
                 if (text.name.Contains("Message") || text.name.Contains("Title"))
                 {
                     messageTextField.SetValue(popup, text);
-                    Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_MessageText a " + text.name);
                     break;
                 }
             }
@@ -128,7 +125,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
             if (messageTextField.GetValue(popup) == null && texts.Length > 0)
             {
                 messageTextField.SetValue(popup, texts[0]);
-                Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_MessageText al primer Text disponible: " + texts[0].name);
             }
         }
         
@@ -142,7 +138,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
                 if (text.name.Contains("Secondary") || text.name.Contains("Description"))
                 {
                     secondaryTextField.SetValue(popup, text);
-                    Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_SecondaryText a " + text.name);
                     break;
                 }
             }
@@ -160,7 +155,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
                         if (texts2[i] != messageText)
                         {
                             secondaryTextField.SetValue(popup, texts2[i]);
-                            Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_SecondaryText a " + texts2[i].name);
                             break;
                         }
                     }
@@ -175,7 +169,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
             if (rawImages.Length > 0)
             {
                 rawImageField.SetValue(popup, rawImages[0]);
-                Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_RawImage a " + rawImages[0].name);
             }
         }
         
@@ -189,7 +182,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
                 if (!image.name.Contains("Button") && !image.name.Contains("Background"))
                 {
                     spriteImageField.SetValue(popup, image);
-                    Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_SpriteImage a " + image.name);
                     break;
                 }
             }
@@ -207,7 +199,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
                     if (buttonText != null)
                     {
                         yesButtonTextField.SetValue(popup, buttonText);
-                        Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_YesButtonText a " + buttonText.name);
                         break;
                     }
                 }
@@ -226,7 +217,6 @@ public class ShopConfirmationPopupHelper : MonoBehaviour
                     if (buttonText != null)
                     {
                         noButtonTextField.SetValue(popup, buttonText);
-                        Debug.Log("ShopConfirmationPopupHelper: Asignado automáticamente m_NoButtonText a " + buttonText.name);
                         break;
                     }
                 }

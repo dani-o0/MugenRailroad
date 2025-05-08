@@ -65,9 +65,7 @@ public class PickupSpawnManager : MonoBehaviour
     [SerializeField, Tooltip("Lista de puntos de spawn donde pueden aparecer los pickups (máximo un pickup por punto)")]
     private List<Transform> m_SpawnPoints = new List<Transform>();
     
-    [Header("Configuración de Debug")]
-    [SerializeField, Tooltip("Mostrar mensajes de debug en la consola")]
-    private bool m_ShowDebugMessages = true;
+    private bool m_ShowDebugMessages = false;
     
     private GameManager m_GameManager;
     

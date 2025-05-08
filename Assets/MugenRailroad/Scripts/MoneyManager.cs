@@ -45,11 +45,15 @@ public class MoneyManager : MonoBehaviour
         {
             InitializeComponents();
         }
+
+        if (money != 0 && GameManager.Instance.CurrentState == GameManager.GameState.TrainStation)
+        {
+            money = 0;
+        }
     }
 
     public void OnKillEnemy(int money)
     {
-        Debug.Log("Dinero conseguido: " + money);
         this.money += money;
         if (hudMoneyCounter != null)
         {

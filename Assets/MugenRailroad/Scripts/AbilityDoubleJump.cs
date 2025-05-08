@@ -30,9 +30,7 @@ public class AbilityDoubleJump : MonoBehaviour, INeoSerializableComponent
     }
     
     void Update()
-    {
-        Debug.Log("DoubleJump: " + state);
-        
+    {        
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");
