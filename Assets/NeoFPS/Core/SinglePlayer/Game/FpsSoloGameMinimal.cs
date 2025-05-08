@@ -90,7 +90,7 @@ namespace NeoFPS.SinglePlayer
                 
                 // Return to main menu
                 case DeathAction.TrainStation:
-                    NeoSceneManager.LoadScene("TrainStation");
+                    NeoSceneManager.LoadScene("TrainStationNoAnimation");
                     GameObject obj = GameObject.Find("GameManager");
                     if (obj != null)
                     {
