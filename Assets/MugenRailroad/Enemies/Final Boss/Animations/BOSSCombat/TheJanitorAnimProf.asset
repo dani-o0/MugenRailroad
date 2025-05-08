@@ -21,7 +21,7 @@ MonoBehaviour:
   FilePath: Assets/MugenRailroad/Enemies/Final Boss/Animations/BOSSCombat/TheJanitorController.overrideController
   AnimatorCullingMode: 0
   WalkFoldout: 1
-  RunFoldout: 0
+  RunFoldout: 1
   TurnFoldout: 0
   NonCombatDeathFoldout: 0
   NonCombatAnimationsFoldout: 1
@@ -73,7 +73,7 @@ MonoBehaviour:
       Mirror: 0
     WalkLeft:
       AnimationSpeed: 1
-      AnimationClip: {fileID: 0}
+      AnimationClip: {fileID: 7400000, guid: 04409761976b46a4a9cb0f0932519c02, type: 2}
       Mirror: 0
     WalkForward:
       AnimationSpeed: 1
@@ -81,24 +81,24 @@ MonoBehaviour:
       Mirror: 0
     WalkRight:
       AnimationSpeed: 1
-      AnimationClip: {fileID: 0}
-      Mirror: 0
+      AnimationClip: {fileID: 7400000, guid: 04409761976b46a4a9cb0f0932519c02, type: 2}
+      Mirror: 1
     WalkBack:
       AnimationSpeed: 0
       AnimationClip: {fileID: 0}
       Mirror: 0
     RunLeft:
-      AnimationSpeed: 0
+      AnimationSpeed: 1
       AnimationClip: {fileID: 0}
-      Mirror: 0
+      Mirror: 1
     RunForward:
-      AnimationSpeed: 0
+      AnimationSpeed: 1
       AnimationClip: {fileID: 0}
       Mirror: 0
     RunRight:
-      AnimationSpeed: 0
+      AnimationSpeed: 1
       AnimationClip: {fileID: 0}
-      Mirror: 0
+      Mirror: 1
     TurnLeft:
       AnimationSpeed: 1
       AnimationClip: {fileID: 0}
