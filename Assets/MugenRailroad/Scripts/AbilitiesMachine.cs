@@ -55,7 +55,6 @@ public class AbilitiesMachine : MonoBehaviour
 
         // Seleccionar la habilidad ganadora al principio
         selectedAbility = (AbilityType)Random.Range(0, abilityNames.Length);
-        Debug.Log($"¡Habilidad seleccionada: {selectedAbility}!");
 
         foreach (GameObject screen in screens)
         {
@@ -96,8 +95,6 @@ public class AbilitiesMachine : MonoBehaviour
             images[i].enabled = (i == resultIndex);
         }
 
-        Debug.Log($"Pantalla {screen.name} terminó con: {resultAbility}");
-
         // Cuando termine esta pantalla, incrementamos el contador
         completedScreens++;
 
@@ -128,12 +125,11 @@ public class AbilitiesMachine : MonoBehaviour
         {
             AbilityPopup.ShowPopup(ability.title, ability.description, ability.sprite, () =>
             {
-                Debug.Log($"Popup cerrado para la habilidad: {ability.title}");
             });
         }
         else
         {
-            Debug.LogError($"No se encontró una habilidad con el tipo: {abilityType}");
+
         }
     }
 }

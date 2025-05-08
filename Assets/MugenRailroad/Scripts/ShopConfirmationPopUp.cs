@@ -60,7 +60,6 @@ namespace NeoFPS.Samples
 			m_Instance.menu.ShowPopup (null);
 			if (callback != null)
 			{
-				Debug.Log("ShopConfirmationPopup: Ejecutando acción del botón 'Sí'");
 				callback.Invoke ();
 			}
 			else
@@ -79,7 +78,6 @@ namespace NeoFPS.Samples
 		{
 			if (m_CurrentPurchasable != null && m_CurrentCharacter != null)
 			{
-				Debug.Log("ShopConfirmationPopup: Intentando comprar item desde el método asignado en el inspector");
 				m_CurrentPurchasable.TryPurchase(m_CurrentCharacter);
 			}
 			else
@@ -96,7 +94,6 @@ namespace NeoFPS.Samples
 			m_Instance.menu.ShowPopup (null);
 			if (callback != null)
 			{
-				Debug.Log("ShopConfirmationPopup: Ejecutando acción del botón 'No'");
 				callback.Invoke ();
 			}
 			else

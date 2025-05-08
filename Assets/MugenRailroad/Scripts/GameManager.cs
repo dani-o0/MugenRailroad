@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     private GameState currentState;
     private int currentWagonNumber = 0;
-    private int maxWagons = 5;
+    private int maxWagons = 6;
 
     public GameState CurrentState => currentState;
     public int CurrentWagonNumber => currentWagonNumber;

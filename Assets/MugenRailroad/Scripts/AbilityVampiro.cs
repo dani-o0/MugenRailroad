@@ -34,9 +34,7 @@ public class AbilityVampiro : MonoBehaviour, INeoSerializableComponent
     }
     
     void Update()
-    {
-        Debug.Log("Vampiro: " + state);
-        
+    {        
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");

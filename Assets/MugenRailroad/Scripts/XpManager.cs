@@ -53,6 +53,13 @@ public class XpManager : MonoBehaviour
         {
             InitializeComponents();
         }
+
+        if ((xp != 0 || playerLevel != 1 || abilityPoints != 0) && GameManager.Instance.CurrentState == GameManager.GameState.TrainStation)
+        {
+            xp = 0;
+            playerLevel = 1;
+            abilityPoints = 0;
+        }
     }
 
     public void OnKillEnemy(int xp)

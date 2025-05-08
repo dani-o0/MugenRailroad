@@ -14,7 +14,6 @@ public class AbilityGrappler : MonoBehaviour, INeoSerializableComponent
 
     void Update()
     {
-        Debug.Log("Grappler: " + state);
         
         if (toolGrappler == null)
         {

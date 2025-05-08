@@ -39,8 +39,6 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
 
     private void Update()
     {
-        Debug.Log("Porro: " + state);
-
         porro.SetActive(state);
 
         if (Input.GetKeyDown(KeyCode.L) && canCalo && state)
