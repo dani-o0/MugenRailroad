@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         if (currentState == GameState.TrainStation)
         {
             currentState = GameState.WagonFight;
-            currentWagonNumber = 1;
+            currentWagonNumber = 5;
             
             FpsGameMode.SavePersistentData();
             
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.WagonFight)
         {
-            if (currentWagonNumber == maxWagons)
+            if (currentWagonNumber >= maxWagons)
             {
                 FpsGameMode.SavePersistentData();
                 
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
 
     public void OnExitDoor()
     {
-        if (currentWagonNumber < maxWagons)
+        if (currentWagonNumber <= maxWagons)
         {
             Debug.Log($"[GameManager] Transitioning from state {currentState} to Shop");
             currentState = GameState.Shop;
