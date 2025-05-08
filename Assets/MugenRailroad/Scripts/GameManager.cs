@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         Wagon4,
         Wagon5,
         WagonBoss,
+        TrainStationNoAnimation
     }
 
     private GameState currentState;
@@ -80,7 +81,7 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.WagonFight)
         {
-            if (currentWagonNumber == maxWagons)
+            if (currentWagonNumber >= maxWagons)
             {
                 FpsGameMode.SavePersistentData();
                 
@@ -109,7 +110,7 @@ public class GameManager : MonoBehaviour
 
     public void OnExitDoor()
     {
-        if (currentWagonNumber < maxWagons)
+        if (currentWagonNumber <= maxWagons)
         {
             Debug.Log($"[GameManager] Transitioning from state {currentState} to Shop");
             currentState = GameState.Shop;
@@ -124,7 +125,7 @@ public class GameManager : MonoBehaviour
             // TODO: dar la opcion a ir a la TrainStation o volver a empezar
             currentState = GameState.TrainStation;
             currentWagonNumber = 0;
-            NeoSceneManager.LoadScene(Scenes.TrainStation.ToString());
+            NeoSceneManager.LoadScene(Scenes.TrainStationNoAnimation.ToString());
         }
     }
 
