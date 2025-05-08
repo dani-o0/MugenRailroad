@@ -3633,7 +3633,7 @@ MonoBehaviour:
   StayNearStartingArea: 0
   BehaviorState: Non Combat
   HideSettingsFoldout: 0
-  BehaviorSettingsFoldout: 0
+  BehaviorSettingsFoldout: 1
   CustomSettingsFoldout: 0
 --- !u!114 &5866666021181671058
 MonoBehaviour:
@@ -3713,9 +3713,9 @@ MonoBehaviour:
   LastAttacker: {fileID: 0}
   HideSettingsFoldout: 0
   DamageSettingsFoldout: 1
-  CombatActionSettingsFoldout: 0
+  CombatActionSettingsFoldout: 1
   SwitchWeaponSettingsFoldout: 0
-  WeaponType1SettingsFoldout: 0
+  WeaponType1SettingsFoldout: 1
   WeaponType2SettingsFoldout: 0
 --- !u!114 &5866666021181671059
 MonoBehaviour:

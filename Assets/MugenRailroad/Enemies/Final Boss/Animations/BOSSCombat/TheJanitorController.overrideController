@@ -4750,7 +4750,7 @@ BlendTree:
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
-    m_Mirror: 0
+    m_Mirror: 1
   - serializedVersion: 2
     m_Motion: {fileID: 0}
     m_Threshold: 0
@@ -4766,7 +4766,7 @@ BlendTree:
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
-    m_Mirror: 0
+    m_Mirror: 1
   m_BlendParameter: Direction
   m_BlendParameterY: Speed
   m_MinThreshold: -90
@@ -5264,7 +5264,7 @@ BlendTree:
   m_Name: Walk
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 0}
+    m_Motion: {fileID: 7400000, guid: 04409761976b46a4a9cb0f0932519c02, type: 2}
     m_Threshold: -90
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -5280,13 +5280,13 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 0}
+    m_Motion: {fileID: 7400000, guid: 04409761976b46a4a9cb0f0932519c02, type: 2}
     m_Threshold: 90
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
-    m_Mirror: 0
+    m_Mirror: 1
   m_BlendParameter: Direction
   m_BlendParameterY: Speed
   m_MinThreshold: -90
