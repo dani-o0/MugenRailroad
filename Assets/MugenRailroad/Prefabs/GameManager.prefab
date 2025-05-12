@@ -284,4 +284,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 63477433cc425d94a8efe82aa9452eed, type: 3}
   - {fileID: 8300000, guid: 20bc726f09c696d46859060d11aeddb3, type: 3}
   cancionLobby: {fileID: 8300000, guid: 1b98bbec2f1183f49a687cf4832b66a4, type: 3}
+  cancionMerchant: {fileID: 8300000, guid: c743b898ad59b4443a6305b44d0661d4, type: 3}
   fadeDuration: 5
+  audioSource: {fileID: 0}
