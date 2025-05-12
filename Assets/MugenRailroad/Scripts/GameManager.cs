@@ -1,6 +1,7 @@
 using System.Linq;
 using NeoCC;
 using NeoFPS;
+using NeoFPS.Samples;
 using NeoSaveGames;
 using UnityEngine;
 using NeoSaveGames.SceneManagement;

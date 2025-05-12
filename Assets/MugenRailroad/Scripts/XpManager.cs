@@ -19,6 +19,7 @@ public class XpManager : MonoBehaviour
 
     private GameObject HudXpBar;
     private HudXpBar hudXpBar;
+    private LevelUpAnimation levelUpAnimation; // Referencia al script de animación de nivel superior
     
     private void Awake()
     {
@@ -68,6 +69,7 @@ public class XpManager : MonoBehaviour
         if (this.xp >= xpToLevelUp)
         {
             playerLevel++;
+            levelUpAnimation.PlayLevelUpAnimation(); // Llama a la animación de nivel superior
             this.xp -= xpToLevelUp;
             xpToLevelUp *= 2;
             abilityPoints++;
@@ -99,11 +101,27 @@ public class XpManager : MonoBehaviour
             hudXpBar = HudXpBar.GetComponent<HudXpBar>();
             updateXpBar();
         }
+
+        if (levelUpAnimation == null)
+        {
+            GameObject obj = GameObject.FindGameObjectWithTag("LevelUpAnimation");
+            if (obj != null)
+            {
+                try
+                {
+                    levelUpAnimation = obj.GetComponent<LevelUpAnimation>();
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("No se ha podido encontrar el componente LevelUpAnimation: " + e.Message);
+                }
+            }
+        }
     }
 
     // Funcion para comprobar si los componentes han sido inicializados
     private bool IsComponenetsInitialized()
     {
-        return HudXpBar != null && hudXpBar != null;
+        return HudXpBar != null && hudXpBar != null && levelUpAnimation != null;    
     }
 }

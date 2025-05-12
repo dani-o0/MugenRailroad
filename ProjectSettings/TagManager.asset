@@ -16,6 +16,7 @@ TagManager:
   - Ability
   - AbilityEndPadding
   - AbilitiesBackground
+  - LevelUpAnimation
   layers:
   - Default
   - TransparentFX
