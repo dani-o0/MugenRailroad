@@ -10,7 +10,10 @@ public class MusicManager : MonoBehaviour
 
     public List<AudioClip> canciones;
     public AudioClip cancionLobby;
+    public AudioClip cancionMerchant;
     public float fadeDuration = 2f;
+
+    public float oldVolume;
 
     public AudioSource audioSource;
     private AudioClip cancionActual;
@@ -65,6 +68,10 @@ public class MusicManager : MonoBehaviour
             {
                 yield return StartCoroutine(ReproducirLoopLobby());
             }
+            else if (estado == GameManager.GameState.Shop)
+            {
+                yield return StartCoroutine(ReproducirLoopShop());
+            }
             else if (DebeReproducirMusica())
             {
                 yield return StartCoroutine(ReproducirMusicaAleatoria());
@@ -83,12 +90,37 @@ public class MusicManager : MonoBehaviour
         {
             audioSource.clip = cancionLobby;
             audioSource.Play();
+
+            oldVolume = FpsSettings.audio.musicVolume;
+            FpsSettings.audio.musicVolume = 0.049f;
+            
             yield return StartCoroutine(FadeIn());
 
             float duracion = cancionLobby.length;
             float tiempo = 0f;
 
             while (tiempo < duracion - fadeDuration && GameManager.Instance.CurrentState == GameManager.GameState.TrainStation)
+            {
+                tiempo += Time.deltaTime;
+                yield return null;
+            }
+
+            yield return StartCoroutine(FadeOut());
+        }
+    }
+    
+    IEnumerator ReproducirLoopShop()
+    {
+        while (GameManager.Instance.CurrentState == GameManager.GameState.Shop)
+        {
+            audioSource.clip = cancionMerchant;
+            audioSource.Play();
+            yield return StartCoroutine(FadeIn());
+
+            float duracion = cancionMerchant.length;
+            float tiempo = 0f;
+
+            while (tiempo < duracion - fadeDuration && GameManager.Instance.CurrentState == GameManager.GameState.Shop)
             {
                 tiempo += Time.deltaTime;
                 yield return null;

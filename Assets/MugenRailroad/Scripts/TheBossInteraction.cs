@@ -1,11 +1,18 @@
 using System.Collections;
+using NeoFPS;
 using UnityEngine;
 
 public class TheBossInteraction : MonoBehaviour
 {
+    public AudioClip trainClip;
+    public AudioClip chuchuClip;
+    
     private GameObject train;
     private Animator trainAnimator;
     private GameObject trainCamera;
+
+    private AudioSource trainAudioSource;
+    private AudioSource chuChuAudioSource;
 
     private void Awake()
     {
@@ -14,6 +21,10 @@ public class TheBossInteraction : MonoBehaviour
         {
             trainAnimator = train.GetComponent<Animator>();
             trainCamera = train.transform.Find("Camera").gameObject;
+            
+            trainAudioSource = train.GetComponent<AudioSource>();
+            chuChuAudioSource = train.transform.Find("ChuChu").gameObject.GetComponent<AudioSource>();
+            
             trainCamera.SetActive(false);
         }
         else
@@ -24,6 +35,17 @@ public class TheBossInteraction : MonoBehaviour
     {
         trainCamera.SetActive(true);
         trainAnimator.SetTrigger("Enable");
+
+        trainAudioSource.clip = trainClip;
+        trainAudioSource.volume = FpsSettings.audio.effectsVolume;
+        trainAudioSource.loop = false;
+        trainAudioSource.Play();
+        
+        chuChuAudioSource.clip = chuchuClip;
+        chuChuAudioSource.volume = FpsSettings.audio.effectsVolume;
+        chuChuAudioSource.loop = false;
+        chuChuAudioSource.Play();
+        
         StartCoroutine(EsperarFinAnimacionTren());
     }
 
@@ -35,7 +57,8 @@ public class TheBossInteraction : MonoBehaviour
             yield return null;
             stateInfo = trainAnimator.GetCurrentAnimatorStateInfo(0);
         }
-        
+
+        FpsSettings.audio.musicVolume = MusicManager.Instance.oldVolume;
         GameManager.Instance.StartWagonMission();
     }
 }

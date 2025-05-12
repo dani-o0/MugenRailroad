@@ -20,8 +20,6 @@ public class BeginCutscene : MonoBehaviour
     private AudioHighPassFilter highPassFilter;
     private AudioDistortionFilter distortionFilter;
 
-    private float oldVolume;
-
     public AudioClip walkieOn;
     public AudioClip walkieOff;
     public AudioClip[] alejandroPutero;
@@ -79,12 +77,11 @@ public class BeginCutscene : MonoBehaviour
 
     private void Begin()
     {
+        FpsSettings.audio.musicVolume = MusicManager.Instance.oldVolume;
+        
         player.transform.position = new Vector3(-9.89000416f, 0.156999946f, 42.3300018f);
         player.SetActive(false);
         cutsceneCamera.SetActive(true);
-        
-        oldVolume = FpsSettings.audio.musicVolume;
-        FpsSettings.audio.musicVolume = 0.1f;
         
         cutsceneAnimator.SetTrigger("Enable");
         StartCoroutine(EsperarFinAnimacion());
@@ -137,12 +134,11 @@ public class BeginCutscene : MonoBehaviour
             stateInfo = walkieAnimator.GetCurrentAnimatorStateInfo(0);
         }
         
-        FpsSettings.audio.musicVolume = oldVolume;
-        
         walkie.SetActive(false);
         player.SetActive(true);
         CutsceneCamera.EndCutscene();
         done = true;
+        FpsSettings.audio.musicVolume = 0.0f;
     }
 
     IEnumerator ReproducirSecuenciaAudio()

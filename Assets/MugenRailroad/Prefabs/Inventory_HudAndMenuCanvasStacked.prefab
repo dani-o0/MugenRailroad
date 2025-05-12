@@ -66,7 +66,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Object Name
+  m_Text: Nombre del objeto
 --- !u!1 &41091128539213961
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Helmet:'
+  m_Text: 'Casco:'
 --- !u!1 &106923763739294110
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,8 +372,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -451,7 +451,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -463,7 +463,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Horizontal Mouse Sensitivity
+  m_Text: "Sensibilidad horizontal del rat\xF3n"
 --- !u!1 &185952710552571783
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PICK UP
+  m_Text: RECOJER
 --- !u!1 &186398884378120556
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +705,7 @@ MonoBehaviour:
   m_DescriptionText: {fileID: 4165485406481416037}
   m_ControlsText: []
   m_Label: Gamepad
-  m_Description: No Gamepad Connected
+  m_Description: No hay Gamepad conectado
   m_Indentable: {fileID: 0}
 --- !u!1 &209399278799218630
 GameObject:
@@ -774,7 +774,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 78da49df9b45c2c4391dce11b4934664, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 90
     m_FontStyle: 1
     m_BestFit: 0
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6041554936071138224}
   m_DescriptionText: {fileID: 7506090916706884710}
   m_ControlsText: []
-  m_Label: Master Volume
+  m_Label: Volumen maestro
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 3308767195597992685}
@@ -1197,7 +1197,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 321441951394202094}
   m_DescriptionText: {fileID: 7221485784797863877}
   m_ControlsText: []
-  m_Label: Resolution
+  m_Label: "Resoluci\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 4767460700606217327}
@@ -1427,7 +1427,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -2348,9 +2348,9 @@ RectTransform:
   - {fileID: 3864505087780009436}
   m_Father: {fileID: 7985998303607655414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -755}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -790.00006}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7153857700115648107
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6909323226081860079}
   m_DescriptionText: {fileID: 4822592224517093447}
   m_ControlsText: []
-  m_Label: Back
+  m_Label: Volver
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -2534,7 +2534,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -2690,7 +2690,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3169,7 +3169,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3181,7 +3181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: Presiona
 --- !u!1 &619710089232438825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,7 +3323,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3335,7 +3335,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hold
+  m_Text: Manten
 --- !u!1 &637969608760184002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,9 +3372,9 @@ RectTransform:
   - {fileID: 7614949832421905158}
   m_Father: {fileID: 7985998303607655414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -325}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -290.00006}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3698946496954095049
@@ -3462,7 +3462,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 43025954667351281}
   m_DescriptionText: {fileID: 7705192530478406704}
   m_ControlsText: []
-  m_Label: Graphics
+  m_Label: "Gr\xE1ficos"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -3561,7 +3561,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -3641,7 +3641,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3817,7 +3817,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3916,7 +3916,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -3928,7 +3928,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Invert Mouse
+  m_Text: "Invertir rat\xF3n"
 --- !u!1 &736524651261839646
 GameObject:
   m_ObjectHideFlags: 0
@@ -4449,7 +4449,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -4461,7 +4461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: Presione
 --- !u!1 &803311094357541816
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,7 +4529,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -4850,7 +4850,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -5101,7 +5101,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 78da49df9b45c2c4391dce11b4934664, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
@@ -5239,8 +5239,9 @@ MonoBehaviour:
   m_LabelText: {fileID: 5018359924469149851}
   m_DescriptionText: {fileID: 861653917231439633}
   m_ControlsText: []
-  m_Label: Apply Keyboard Defaults
-  m_Description: This will reset the keys based on the selected keyboard layout
+  m_Label: Aplicar valores predeterminados del teclado
+  m_Description: "Esto restablecer\xE1 las teclas en funci\xF3n de la distribuci\xF3n
+    de teclado seleccionada"
   m_Indentable: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
@@ -5387,7 +5388,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -5399,7 +5400,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Save
+  m_Text: Nuevo guardado
 --- !u!1 &906919497454908928
 GameObject:
   m_ObjectHideFlags: 0
@@ -5531,7 +5532,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
@@ -5543,7 +5544,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PRIMARY FIRE
+  m_Text: DISPARO PRIMARIO
 --- !u!1 &914876819660310110
 GameObject:
   m_ObjectHideFlags: 0
@@ -6206,8 +6207,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6218,7 +6219,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gameplay
+  m_Text: Jugabilidad
 --- !u!1 &1022871647273837626
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,7 +6401,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -6500,7 +6501,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -6766,7 +6767,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -6866,7 +6867,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -6965,7 +6966,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -7964,20 +7965,20 @@ MonoBehaviour:
   m_LabelText: {fileID: 5918406993325232434}
   m_DescriptionText: {fileID: 8722535924546541235}
   m_ControlsText: []
-  m_Label: Crosshair Colour
+  m_Label: "Color del ret\xEDculo"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 1358634004673822769}
   m_NextButton: {fileID: 9125524525681591250}
   m_Readout: {fileID: 7827225038701774155}
   m_Options:
-  - White
-  - Green
-  - Red
-  - Blue
-  - Cyan
+  - Blanco
+  - Verde
+  - Rojo
+  - Azul
+  - Cian
   - Magenta
-  - Yellow
+  - Amarillo
   m_Looping: 0
   m_StartingIndex: 0
   m_OnIndexChanged:
@@ -8049,8 +8050,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
-    m_FontSize: 64
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8061,7 +8062,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Salir
 --- !u!1 &1228772186252076692
 GameObject:
   m_ObjectHideFlags: 0
@@ -8280,7 +8281,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -8292,7 +8293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to
+  m_Text: para
 --- !u!1 &1264316542164580177
 GameObject:
   m_ObjectHideFlags: 0
@@ -8382,7 +8383,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6009046416772661404}
   m_DescriptionText: {fileID: 3321894724737926389}
   m_ControlsText: []
-  m_Label: Master Volume
+  m_Label: Volumen maestro
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 5110390753485687044}
@@ -8524,7 +8525,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 1483210919737666376}
   m_DescriptionText: {fileID: 3175515730874832568}
   m_ControlsText: []
-  m_Label: Horizontal FoV
+  m_Label: FoV horizontal
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 5835333043694289711}
@@ -8653,9 +8654,9 @@ RectTransform:
   - {fileID: 8932943147362223089}
   m_Father: {fileID: 3956064504452026090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1124.6428, y: -590.00006}
   m_SizeDelta: {x: 600, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3754047243099090753
@@ -8743,7 +8744,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 7502082579417200567}
   m_DescriptionText: {fileID: 1132227072242066953}
   m_ControlsText: []
-  m_Label: Show Credits
+  m_Label: "Cr\xE9ditos"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -8919,7 +8920,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -9074,7 +9075,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -9659,7 +9660,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -9759,7 +9760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -9771,7 +9772,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This will reset the keys based on the selected keyboard layout
+  m_Text: "Esto restablecer\xE1 las teclas en funci\xF3n de la distribuci\xF3n de
+    teclado seleccionada"
 --- !u!114 &6205336689738969056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9904,9 +9906,9 @@ RectTransform:
   - {fileID: 7232980587824530660}
   m_Father: {fileID: 3956064504452026090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1124.6428, y: -490.00006}
   m_SizeDelta: {x: 600, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5619926642153503628
@@ -9994,7 +9996,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 7243983718361956043}
   m_DescriptionText: {fileID: 4755612299129592847}
   m_ControlsText: []
-  m_Label: Main Menu
+  m_Label: "Men\xFA Principal"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -10240,8 +10242,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -10511,7 +10513,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -10590,7 +10592,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -10602,7 +10604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Master Volume
+  m_Text: Volumen maestro
 --- !u!1 &1589336755502915536
 GameObject:
   m_ObjectHideFlags: 0
@@ -10669,7 +10671,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -10681,7 +10683,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Smoothing
+  m_Text: "Suavizado del rat\xF3n"
 --- !u!1 &1591104457014282107
 GameObject:
   m_ObjectHideFlags: 0
@@ -10748,7 +10750,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -10760,7 +10762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Crosshair Colour
+  m_Text: "Color del ret\xEDculo"
 --- !u!1 &1608863092538131089
 GameObject:
   m_ObjectHideFlags: 0
@@ -11094,7 +11096,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -11106,7 +11108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Keyboard Layout
+  m_Text: "Disposici\xF3n del teclado"
 --- !u!1 &1613144657723092618
 GameObject:
   m_ObjectHideFlags: 0
@@ -11236,7 +11238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: 0, y: -406}
   m_SizeDelta: {x: 790, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &6991514494510777288
@@ -11290,7 +11292,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5335363124849414561}
   m_DescriptionText: {fileID: 8953486546757424523}
   m_ControlsText: []
-  m_Label: Master Volume
+  m_Label: Volumen maestro
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 7945565849820922808}
@@ -12803,7 +12805,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -12905,7 +12907,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6396181524629509301}
   m_DescriptionText: {fileID: 4604152026628468050}
   m_ControlsText: []
-  m_Label: Music Volume
+  m_Label: "Volumen de la m\xFAsica"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 45310055012506525}
@@ -12990,7 +12992,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -13167,7 +13169,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -13266,7 +13268,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -13436,7 +13438,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -13448,7 +13450,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ultra-Mega-Quality
+  m_Text: Calidad-ultra-mega
 --- !u!1 &1962962000199736854
 GameObject:
   m_ObjectHideFlags: 0
@@ -13516,7 +13518,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -13528,7 +13530,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you sure you want to quit?
+  m_Text: "\xBFSeguro que quieres salir?"
 --- !u!114 &6025073474752612882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13781,7 +13783,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -14013,7 +14015,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -14112,7 +14114,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -14354,9 +14356,9 @@ RectTransform:
   - {fileID: 8515825227310307886}
   m_Father: {fileID: 7985998303607655414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -669}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -690.00006}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1093786116172971061
@@ -14720,7 +14722,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -15003,7 +15005,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -15015,7 +15017,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Music Volume
+  m_Text: "Volumen de la m\xFAsica"
 --- !u!1 &2144144446835056666
 GameObject:
   m_ObjectHideFlags: 0
@@ -15539,7 +15541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -15551,7 +15553,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Saving Game...
+  m_Text: Guardando el juego...
 --- !u!1 &2225154444937873879
 GameObject:
   m_ObjectHideFlags: 0
@@ -15640,7 +15642,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 7389558867035045067}
   m_DescriptionText: {fileID: 2507593946733026406}
   m_ControlsText: []
-  m_Label: Auto Reload
+  m_Label: "Recarga autom\xE1tica"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 159425978002263480}
@@ -15692,7 +15694,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 290, y: 40}
+  m_SizeDelta: {x: 290, y: 71.255}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1972637600926351392
 MonoBehaviour:
@@ -15789,7 +15791,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -15801,7 +15803,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Master Volume
+  m_Text: Volumen maestro
 --- !u!1 &2249191872009820993
 GameObject:
   m_ObjectHideFlags: 0
@@ -15869,7 +15871,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -15968,7 +15970,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -16048,7 +16050,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -16977,7 +16979,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 3674243410835711544}
   m_DescriptionText: {fileID: 5596396246827793642}
   m_ControlsText: []
-  m_Label: Mouse Smoothing
+  m_Label: "Suavizado del rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 7124371351904705823}
@@ -17252,7 +17254,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -17351,7 +17353,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -17453,7 +17455,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 1969216677728889793}
   m_DescriptionText: {fileID: 3203093548194341753}
   m_ControlsText: []
-  m_Label: Ambience Volume
+  m_Label: Volumen de ambiente
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 2023832459318321852}
@@ -17709,14 +17711,14 @@ MonoBehaviour:
   m_LabelText: {fileID: 5795071340852676798}
   m_DescriptionText: {fileID: 560849850665045482}
   m_ControlsText: []
-  m_Label: Frame-Rate Cap
+  m_Label: "Limitaci\xF3n del frame-rate"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 3025237987194597224}
   m_NextButton: {fileID: 6195399877257591749}
   m_Readout: {fileID: 1961768824707570983}
   m_Options:
-  - Uncapped
+  - "Sin l\xEDmite"
   m_Looping: 0
   m_StartingIndex: 0
   m_OnIndexChanged:
@@ -18807,7 +18809,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 890e9ff9c08b99f4ea5b2936ea14a427, type: 3}
     m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
@@ -18962,7 +18964,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 890e9ff9c08b99f4ea5b2936ea14a427, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -18974,7 +18976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Overheated!
+  m_Text: "\xA1Sobrecalentado!"
 --- !u!1 &2740811563232317074
 GameObject:
   m_ObjectHideFlags: 0
@@ -19116,7 +19118,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -19128,7 +19130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Apply Keyboard Defaults
+  m_Text: Aplicar valores predeterminados del teclado
 --- !u!1 &2771856804994879058
 GameObject:
   m_ObjectHideFlags: 0
@@ -19195,8 +19197,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -19275,7 +19277,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -19534,7 +19536,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6000254047766500141}
   m_DescriptionText: {fileID: 7488764760363504700}
   m_ControlsText: []
-  m_Label: Mouse Sensitivity - V
+  m_Label: "Sensibilidad del rat\xF3n - V"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 1283440516252439243}
@@ -19696,7 +19698,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -20403,7 +20405,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -20967,7 +20969,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 9051961410677691441}
   m_DescriptionText: {fileID: 315045957108749930}
   m_ControlsText: []
-  m_Label: Mouse Acceleration Amount
+  m_Label: "Cantidad de aceleraci\xF3n del rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 5956015511572827146}
@@ -21051,7 +21053,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 890e9ff9c08b99f4ea5b2936ea14a427, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -21063,7 +21065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fully charged!
+  m_Text: "\xA1Cargado!"
 --- !u!1 &3096196570822445342
 GameObject:
   m_ObjectHideFlags: 0
@@ -21372,7 +21374,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -21384,7 +21386,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to drop object
+  m_Text: para soltar objeto
 --- !u!114 &7501606134516093641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21623,7 +21625,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -21875,7 +21877,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -22071,10 +22073,10 @@ RectTransform:
   - {fileID: 7126338478919995832}
   m_Father: {fileID: 8176301613014190011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 395, y: -85}
+  m_SizeDelta: {x: 790, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8855566154756714909
 MonoBehaviour:
@@ -22124,7 +22126,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 4923078390937027568}
   m_DescriptionText: {fileID: 7705929475340308863}
   m_ControlsText: []
-  m_Label: Movement
+  m_Label: Movimiento
   m_Description: 
   m_Indentable: {fileID: 0}
   m_ExpandButton: {fileID: 7126338478919995832}
@@ -22430,7 +22432,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -22442,7 +22444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use Gamepad
+  m_Text: Usar Gamepad
 --- !u!1 &3326882382039825856
 GameObject:
   m_ObjectHideFlags: 0
@@ -22586,7 +22588,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -22652,7 +22654,7 @@ RectTransform:
   m_Father: {fileID: 7813137518305785105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22761,7 +22763,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -22860,7 +22862,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -22872,7 +22874,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Effects Volume
+  m_Text: Volumen de efectos
 --- !u!1 &3387047658704746404
 GameObject:
   m_ObjectHideFlags: 0
@@ -22939,7 +22941,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -22951,7 +22953,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Invert Gamepad Look
+  m_Text: Invertir Gamepad
 --- !u!1 &3387732733476400639
 GameObject:
   m_ObjectHideFlags: 0
@@ -23094,7 +23096,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -23106,7 +23108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stamina
+  m_Text: Resistencia
 --- !u!1 &3403598781260579121
 GameObject:
   m_ObjectHideFlags: 0
@@ -23325,7 +23327,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -23496,7 +23498,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -23597,7 +23599,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 273626300416014754}
   m_DescriptionText: {fileID: 6870067054405655303}
   m_ControlsText: []
-  m_Label: Invert Mouse
+  m_Label: "Invertir rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 2785855496822014296}
@@ -23829,7 +23831,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -23908,7 +23910,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -24023,7 +24025,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -24035,7 +24037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fullscreen
+  m_Text: Pantalla completa
 --- !u!1 &3513608801302463306
 GameObject:
   m_ObjectHideFlags: 0
@@ -24183,7 +24185,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -24195,7 +24197,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Horizontal Analog Sensitivity
+  m_Text: "Sensibilidad anal\xF3gica horizontal"
 --- !u!1 &3534982113434999557
 GameObject:
   m_ObjectHideFlags: 0
@@ -24262,7 +24264,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
@@ -24684,7 +24686,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -25010,7 +25012,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25089,7 +25091,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25121,7 +25123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &446714730104848041
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25139,9 +25141,9 @@ RectTransform:
   - {fileID: 5092889078768430697}
   m_Father: {fileID: 7008203262058635793}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 725.1428, y: -568.255}
   m_SizeDelta: {x: 800, y: 125}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1253098961231544915
@@ -25429,7 +25431,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25508,7 +25510,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25662,7 +25664,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25741,7 +25743,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25896,7 +25898,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25908,7 +25910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head Bob
+  m_Text: Movimiento de cabeza
 --- !u!1 &3779384283140099887
 GameObject:
   m_ObjectHideFlags: 0
@@ -25976,7 +25978,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -25988,7 +25990,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Movement
+  m_Text: Movimiento
 --- !u!114 &7607357532259958316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26353,7 +26355,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -26517,7 +26519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 4673f89e4ba7c674dab1faf53104d2d6, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -26529,7 +26531,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Create a new save
+  m_Text: Crear un nuevo guardado
 --- !u!1 &3875083960307831547
 GameObject:
   m_ObjectHideFlags: 0
@@ -26643,7 +26645,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 320, y: 42}
+  m_SizeDelta: {x: 368.87, y: 42}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &764063615372511400
 CanvasRenderer:
@@ -26838,7 +26840,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -26917,7 +26919,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -27338,7 +27340,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -27350,7 +27352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Standard
+  m_Text: "Est\xE1ndar"
 --- !u!1 &4013652844784299856
 GameObject:
   m_ObjectHideFlags: 0
@@ -27568,7 +27570,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -27813,7 +27815,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
@@ -27825,7 +27827,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: USE
+  m_Text: USAR
 --- !u!1 &4065297069446547949
 GameObject:
   m_ObjectHideFlags: 0
@@ -27892,7 +27894,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
@@ -27972,7 +27974,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -27984,7 +27986,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DESCRIPTION
+  m_Text: "DESCRIPCI\xD3N"
 --- !u!114 &5744344074569884399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28071,7 +28073,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -28083,7 +28085,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gamepad Profile
+  m_Text: Perfil del Gamepad
 --- !u!1 &4111472775340543412
 GameObject:
   m_ObjectHideFlags: 0
@@ -28226,7 +28228,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -28238,7 +28240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to throw
+  m_Text: para lanzar
 --- !u!114 &3294536166158029150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28476,7 +28478,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -28689,7 +28691,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -28818,7 +28820,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000061035156}
-  m_SizeDelta: {x: -2, y: 0}
+  m_SizeDelta: {x: -2, y: -750}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3364110648932436149
 MonoBehaviour:
@@ -29067,7 +29069,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -29079,7 +29081,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reset Resolution Settings
+  m_Text: "Restablecer ajustes de resoluci\xF3n"
 --- !u!1 &4232169862735740198
 GameObject:
   m_ObjectHideFlags: 0
@@ -29146,7 +29148,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -29158,7 +29160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cannot Save At This Time
+  m_Text: No se puede guardar en este momento
 --- !u!1 &4245772653390897458
 GameObject:
   m_ObjectHideFlags: 0
@@ -29302,7 +29304,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -29314,7 +29316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Invert Mouse
+  m_Text: "Invertir rat\xF3n"
 --- !u!1 &4284601229756621456
 GameObject:
   m_ObjectHideFlags: 0
@@ -29459,7 +29461,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -29721,7 +29723,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -29733,7 +29735,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yes
+  m_Text: "S\xED"
 --- !u!1 &4330468842352418520
 GameObject:
   m_ObjectHideFlags: 0
@@ -29938,7 +29940,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -30297,7 +30299,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6580972466464496226}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.6607512
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -30368,7 +30370,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -30380,7 +30382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vertical Analog Sensitivity
+  m_Text: "Sensibilidad anal\xF3gica vertical"
 --- !u!1 &4462996114287090917
 GameObject:
   m_ObjectHideFlags: 0
@@ -30470,7 +30472,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 7567675414888790343}
   m_DescriptionText: {fileID: 3692273397424405989}
   m_ControlsText: []
-  m_Label: Head Bob
+  m_Label: Movimiento de cabeza
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 1784959686809193716}
@@ -30554,7 +30556,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -30566,7 +30568,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Frame-Rate Cap
+  m_Text: "Limitaci\xF3n del frame-rate"
 --- !u!1 &4484836740346923566
 GameObject:
   m_ObjectHideFlags: 0
@@ -30708,7 +30710,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -30720,7 +30722,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Apply Resolution Settings
+  m_Text: "Aplicar ajustes de resoluci\xF3n"
 --- !u!1 &4498684137681210576
 GameObject:
   m_ObjectHideFlags: 0
@@ -31189,7 +31191,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 67462961901113030}
   m_DescriptionText: {fileID: 6299130263760132587}
   m_ControlsText: []
-  m_Label: Mouse Sensitivity - H
+  m_Label: "Sensibilidad del rat\xF3n - H"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 2106972374133300853}
@@ -31451,10 +31453,10 @@ RectTransform:
   - {fileID: 1157043975118056401}
   m_Father: {fileID: 8176301613014190011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 395, y: -25}
+  m_SizeDelta: {x: 790, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26142420112804798
 MonoBehaviour:
@@ -31504,7 +31506,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 7632917605103993191}
   m_DescriptionText: {fileID: 7482740306168921102}
   m_ControlsText: []
-  m_Label: Reset To Defaults
+  m_Label: Restablecer valores por defecto
   m_Description: 
   m_Indentable: {fileID: 0}
   m_ExpandButton: {fileID: 1157043975118056401}
@@ -31579,7 +31581,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -31809,7 +31811,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -31821,7 +31823,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No Gamepad Connected
+  m_Text: No hay Gamepad conectado
 --- !u!114 &1125548896472411248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32104,7 +32106,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -32316,7 +32318,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -32395,7 +32397,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -32726,9 +32728,9 @@ MonoBehaviour:
   m_NextButton: {fileID: 1256527543026670850}
   m_Readout: {fileID: 2998387780469398397}
   m_Options:
-  - Disabled
-  - Every VBlank
-  - Every 2nd VBlank
+  - Desactivado
+  - Cada VBlank
+  - Cada 2 VBlank
   m_Looping: 0
   m_StartingIndex: 0
   m_OnIndexChanged:
@@ -32800,7 +32802,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 890e9ff9c08b99f4ea5b2936ea14a427, type: 3}
     m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
@@ -33264,7 +33266,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -33276,7 +33278,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Please enter a name:'
+  m_Text: 'Por favor, introduzca un nombre:'
 --- !u!114 &7925586969487918672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33535,7 +33537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3956064504452026090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33915,7 +33917,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -34495,8 +34497,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -34507,7 +34509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Graphics
+  m_Text: "Gr\xE1ficos"
 --- !u!1 &5049412138792090102
 GameObject:
   m_ObjectHideFlags: 0
@@ -34701,7 +34703,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
@@ -34713,7 +34715,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PICK UP
+  m_Text: RECOJER
 --- !u!1 &5084554189871626069
 GameObject:
   m_ObjectHideFlags: 0
@@ -34857,7 +34859,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -35505,9 +35507,9 @@ RectTransform:
   - {fileID: 7642736461369023301}
   m_Father: {fileID: 7985998303607655414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -497}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -490.00006}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5429133172286155942
@@ -35595,7 +35597,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5196641408798075022}
   m_DescriptionText: {fileID: 1013769544249313587}
   m_ControlsText: []
-  m_Label: Gameplay
+  m_Label: Jugabilidad
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -35680,7 +35682,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -35692,7 +35694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to rotate
+  m_Text: para rotar
 --- !u!114 &7366010888246825836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36119,9 +36121,9 @@ RectTransform:
   - {fileID: 5564131726068184259}
   m_Father: {fileID: 7985998303607655414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -411}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -390.00006}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4796220049974194983
@@ -36315,7 +36317,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5160875245189362680}
   m_DescriptionText: {fileID: 1035161866193866431}
   m_ControlsText: []
-  m_Label: Use Gamepad
+  m_Label: Usar Gamepad
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 3361948856064751162}
@@ -36396,7 +36398,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -36408,7 +36410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Sensitivity - V
+  m_Text: "Sensibilidad del rat\xF3n - V"
 --- !u!1 &5251325969006812204
 GameObject:
   m_ObjectHideFlags: 0
@@ -36619,7 +36621,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -36816,7 +36818,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 368990030415650075}
   m_DescriptionText: {fileID: 5865103033548562853}
   m_ControlsText: []
-  m_Label: Fullscreen
+  m_Label: Pantalla completa
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 6838773814050858880}
@@ -36972,7 +36974,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -36984,7 +36986,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ambience Volume
+  m_Text: Volumen de ambiente
 --- !u!1 &5342014797017282108
 GameObject:
   m_ObjectHideFlags: 0
@@ -37051,7 +37053,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -37063,7 +37065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yes
+  m_Text: "S\xED"
 --- !u!1 &5346838227079066873
 GameObject:
   m_ObjectHideFlags: 0
@@ -37131,7 +37133,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -37143,7 +37145,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DESCRIPTION
+  m_Text: "DESCRIPCI\xD3N"
 --- !u!114 &5778386759355872018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37305,7 +37307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -37317,7 +37319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Music Volume
+  m_Text: "Volumen de la m\xFAsica"
 --- !u!1 &5439130959142987055
 GameObject:
   m_ObjectHideFlags: 0
@@ -37967,8 +37969,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
-    m_FontSize: 64
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -37979,7 +37981,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: "Men\xFA Principal"
 --- !u!1 &5603695141115204393
 GameObject:
   m_ObjectHideFlags: 0
@@ -38123,7 +38125,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -38310,7 +38312,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -38322,7 +38324,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Forward
+  m_Text: Adelante
 --- !u!1 &5651031452056761864
 GameObject:
   m_ObjectHideFlags: 0
@@ -38580,11 +38582,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
-    m_FontSize: 64
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 64
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -38592,7 +38594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Settings
+  m_Text: Ajustes
 --- !u!1 &5703148500747612503
 GameObject:
   m_ObjectHideFlags: 0
@@ -38918,7 +38920,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -39254,9 +39256,9 @@ RectTransform:
   - {fileID: 4642861009308884083}
   m_Father: {fileID: 3956064504452026090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1124.6428, y: -690.00006}
   m_SizeDelta: {x: 600, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8782694159473632401
@@ -39344,7 +39346,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5110174650111966215}
   m_DescriptionText: {fileID: 5657971012272723599}
   m_ControlsText: []
-  m_Label: Back
+  m_Label: Salir
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -39669,7 +39671,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -39769,7 +39771,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -40059,7 +40061,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -40158,7 +40160,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -40170,7 +40172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Charge
+  m_Text: Carga
 --- !u!1 &5948886070851798033
 GameObject:
   m_ObjectHideFlags: 0
@@ -40912,7 +40914,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -40991,7 +40993,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41003,7 +41005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'XP left:'
+  m_Text: 'XP restante:'
 --- !u!1 &6045181189721279358
 GameObject:
   m_ObjectHideFlags: 0
@@ -41070,7 +41072,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41082,7 +41084,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resolution
+  m_Text: "Resoluci\xF3n"
 --- !u!1 &6084857528865681458
 GameObject:
   m_ObjectHideFlags: 0
@@ -41149,7 +41151,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41228,7 +41230,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 78da49df9b45c2c4391dce11b4934664, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
@@ -41240,11 +41242,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "Credits\n\nDevelopers:\n\nJuanma, Dani O. \u2013 Lead Programmer\nDani
-    P., Alejandro \u2013 Developers\n\nDesign:\n\nDani P., Alejandro \u2013 Level
-    Design\nJuanma \u2013 UI and Mechanics Design\n\nArt:\n\nDani P. \u2013 Character
-    and Environment Design\n\nTesters:\n\nDanis, Juanma, Alejandro \u2013 Testing
-    and Feedback\n\nSpecial Thanks:\n\nEnric\n\nGame Engine:\n\nUnity"
+  m_Text: "Cr\xE9ditos\r\n\r\nDesarrolladores:\r\n\r\nJuanma, Dani O. - Programador
+    Principal\r\n\r\nDani, Alejandro - Desarrolladores\r\n\r\nDise\xF1o:\r\n\r\nDani,
+    Alejandro - Dise\xF1o de Niveles\r\n\r\nJuanma - Dise\xF1o de Interfaz y Mec\xE1nicas\r\n\r\nArte:\r\n\r\nDani
+    - Dise\xF1o de Personajes y Entornos\r\n\r\nTesters:\r\n\r\nDanis, Juanma, Alejandro
+    - Pruebas y Retroalimentaci\xF3n\r\n\r\nAgradecimientos Especiales:\r\n\r\nEnric\r\n\r\nMotor
+    de Juego:\r\n\r\nUnity"
 --- !u!1 &6096124560263519342
 GameObject:
   m_ObjectHideFlags: 0
@@ -41311,7 +41314,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41323,7 +41326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Acceleration
+  m_Text: "Aceleraci\xF3n del rat\xF3n"
 --- !u!1 &6101225442377167663
 GameObject:
   m_ObjectHideFlags: 0
@@ -41540,7 +41543,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41696,7 +41699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41708,7 +41711,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oxygen
+  m_Text: "Ox\xEDgeno"
 --- !u!1 &6134261271227036486
 GameObject:
   m_ObjectHideFlags: 0
@@ -41851,7 +41854,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -41863,7 +41866,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Disabled
+  m_Text: Desactivado
 --- !u!1 &6148232391926221464
 GameObject:
   m_ObjectHideFlags: 0
@@ -42129,9 +42132,9 @@ RectTransform:
   - {fileID: 162369262167939841}
   m_Father: {fileID: 3956064504452026090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1124.6428, y: -390.00006}
   m_SizeDelta: {x: 600, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1297929485195046010
@@ -42219,7 +42222,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 4651104594915188677}
   m_DescriptionText: {fileID: 4376870339669442215}
   m_ControlsText: []
-  m_Label: Settings
+  m_Label: Ajustes
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -42670,7 +42673,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -42682,7 +42685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Horizontal FoV
+  m_Text: FoV horizontal
 --- !u!1 &6316452044350006857
 GameObject:
   m_ObjectHideFlags: 0
@@ -42837,7 +42840,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Janitor
+  m_Text: El Conserje
 --- !u!1 &6336278336157463948
 GameObject:
   m_ObjectHideFlags: 0
@@ -43440,7 +43443,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -43452,7 +43455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Level:'
+  m_Text: 'Nivel:'
 --- !u!1 &6383411375002467542
 GameObject:
   m_ObjectHideFlags: 0
@@ -43519,7 +43522,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -43826,7 +43829,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -43838,7 +43841,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shields
+  m_Text: Escudos
 --- !u!1 &6437332955393420502
 GameObject:
   m_ObjectHideFlags: 0
@@ -43956,7 +43959,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 320, y: 42}
+  m_SizeDelta: {x: 344.433, y: 42}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3135998697004781807
 CanvasRenderer:
@@ -44227,8 +44230,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
-    m_FontSize: 32
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -44239,7 +44242,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Volver
 --- !u!1 &6512661289803221973
 GameObject:
   m_ObjectHideFlags: 0
@@ -44423,8 +44426,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2422832742897234892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.33924878}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -44533,7 +44536,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -44633,7 +44636,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -44732,7 +44735,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -45111,7 +45114,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -45609,7 +45612,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -45621,7 +45624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Sensitivity - H
+  m_Text: "Sensibilidad del rat\xF3n - H"
 --- !u!1 &6740378946103313098
 GameObject:
   m_ObjectHideFlags: 0
@@ -45840,7 +45843,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -45852,7 +45855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Armour:'
+  m_Text: 'Armadura:'
 --- !u!1 &6803891443641751746
 GameObject:
   m_ObjectHideFlags: 0
@@ -45919,7 +45922,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -45931,7 +45934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quality Preset
+  m_Text: Preajuste de calidad
 --- !u!1 &6807591016920764558
 GameObject:
   m_ObjectHideFlags: 0
@@ -45998,7 +46001,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -46010,7 +46013,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Uncapped
+  m_Text: "Sin l\xEDmite"
 --- !u!1 &6818446344321880634
 GameObject:
   m_ObjectHideFlags: 0
@@ -46154,7 +46157,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -46392,7 +46395,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 8470807612743491841}
   m_DescriptionText: {fileID: 6837883398194034987}
   m_ControlsText: []
-  m_Label: Horizontal Analog Sensitivity
+  m_Label: "Sensibilidad anal\xF3gica horizontal"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 6701039672000493255}
@@ -46617,7 +46620,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -46891,7 +46894,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 3310890239475302000}
   m_DescriptionText: {fileID: 1059321808900513073}
   m_ControlsText: []
-  m_Label: Mouse Smoothing Amount
+  m_Label: "Cantidad de suavizado del rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 5919109121078110631}
@@ -47036,7 +47039,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 4384192546951553903}
   m_DescriptionText: {fileID: 4873192957784260210}
   m_ControlsText: []
-  m_Label: Effects Volume
+  m_Label: Volumen de efectos
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 6153712024867936235}
@@ -47272,7 +47275,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 890e9ff9c08b99f4ea5b2936ea14a427, type: 3}
     m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
@@ -47351,7 +47354,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -47666,7 +47669,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -48398,10 +48401,10 @@ RectTransform:
   - {fileID: 1455788469430181669}
   m_Father: {fileID: 8176301613014190011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -145}
+  m_SizeDelta: {x: 790, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &4097945315763832040
 MonoBehaviour:
@@ -48452,7 +48455,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 2557223196545272483}
   m_DescriptionText: {fileID: 4255229268983510774}
   m_ControlsText: []
-  m_Label: Forward
+  m_Label: Adelante
   m_Description: 
   m_Indentable: {fileID: 0}
   m_Buttons:
@@ -48715,7 +48718,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -48727,7 +48730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Information...
+  m_Text: "Informaci\xF3n..."
 --- !u!114 &1979350056693663628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48996,7 +48999,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 7809214378656766680}
   m_DescriptionText: {fileID: 620491643309550037}
   m_ControlsText: []
-  m_Label: Invert Gamepad Look
+  m_Label: Invertir Gamepad
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 1401528978269029927}
@@ -49078,7 +49081,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -49328,7 +49331,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -49340,7 +49343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Object is too heavy to pick up...
+  m_Text: El objeto es demasiado pesado para cogerlo...
 --- !u!1 &7269326626303895525
 GameObject:
   m_ObjectHideFlags: 0
@@ -49506,7 +49509,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6015207919136853887}
   m_DescriptionText: {fileID: 3590124919646577641}
   m_ControlsText: []
-  m_Label: Horizontal Mouse Sensitivity
+  m_Label: "Sensibilidad horizontal del rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 7341396437383492167}
@@ -49869,7 +49872,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -49881,9 +49884,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'pick up
-
-'
+  m_Text: recoger
 --- !u!114 &9132678623815949139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50121,7 +50122,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -50133,7 +50134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: White
+  m_Text: Blanco
 --- !u!1 &7353734882260875558
 GameObject:
   m_ObjectHideFlags: 0
@@ -50200,7 +50201,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -50212,7 +50213,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Auto Reload
+  m_Text: "Recarga autom\xE1tica"
 --- !u!1 &7359024103380584010
 GameObject:
   m_ObjectHideFlags: 0
@@ -50301,7 +50302,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5785026984529178044}
   m_DescriptionText: {fileID: 2537602680988893610}
   m_ControlsText: []
-  m_Label: Keyboard Layout
+  m_Label: "Disposici\xF3n del teclado"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 5748261830576780329}
@@ -50443,7 +50444,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 8653314927737692379}
   m_DescriptionText: {fileID: 7056595063689599328}
   m_ControlsText: []
-  m_Label: Reset Resolution Settings
+  m_Label: "Restablecer ajustes de resoluci\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -50667,7 +50668,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -50746,7 +50747,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -50900,7 +50901,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -50980,7 +50981,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -50992,7 +50993,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to grab object...
+  m_Text: para agarrar el objeto...
 --- !u!114 &7796305549526099373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51080,7 +51081,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -51901,7 +51902,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -52002,15 +52003,15 @@ MonoBehaviour:
   m_LabelText: {fileID: 2985907579112797924}
   m_DescriptionText: {fileID: 2450927147206222383}
   m_ControlsText: []
-  m_Label: Quality Preset
+  m_Label: Preajuste de calidad
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 4662342474826270438}
   m_NextButton: {fileID: 2913159342510565896}
   m_Readout: {fileID: 893896384861137019}
   m_Options:
-  - Ultra-Mega-Quality
-  - Potato Mode
+  - Calidad-ultra-mega
+  - Modo patata
   m_Looping: 0
   m_StartingIndex: 0
   m_OnIndexChanged:
@@ -52576,7 +52577,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -52588,7 +52589,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: Presione
 --- !u!1 &7708930363396012155
 GameObject:
   m_ObjectHideFlags: 0
@@ -52655,7 +52656,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -52667,7 +52668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: Presiona
 --- !u!1 &7710949134348813396
 GameObject:
   m_ObjectHideFlags: 0
@@ -52962,7 +52963,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -52974,7 +52975,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Head Bob
+  m_Text: Movimiento de cabeza
 --- !u!1 &7737655060994830909
 GameObject:
   m_ObjectHideFlags: 0
@@ -53154,7 +53155,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -53166,7 +53167,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reset To Defaults
+  m_Text: Restablecer valores por defecto
 --- !u!114 &6911961867601505136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53406,7 +53407,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -53506,7 +53507,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -53693,7 +53694,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 890e9ff9c08b99f4ea5b2936ea14a427, type: 3}
     m_FontSize: 24
     m_FontStyle: 2
     m_BestFit: 0
@@ -53705,7 +53706,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 'Introducir texto... '
 --- !u!1 &7830780758430630059
 GameObject:
   m_ObjectHideFlags: 0
@@ -53909,7 +53910,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -53988,7 +53989,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 78da49df9b45c2c4391dce11b4934664, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -54000,7 +54001,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: 'Press E to exit
+  m_Text: 'Presiona E para salir
 
 '
 --- !u!1 &7860166627564385852
@@ -54220,7 +54221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -54232,7 +54233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Information...
+  m_Text: "Informaci\xF3n... "
 --- !u!114 &4285961150263398286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54320,7 +54321,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -54441,7 +54442,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6777843207417999962}
   m_DescriptionText: {fileID: 2858436015011155997}
   m_ControlsText: []
-  m_Label: Invert Mouse
+  m_Label: "Invertir rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 3347905055763679216}
@@ -54522,7 +54523,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -54534,7 +54535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Master Volume
+  m_Text: Volumen maestro
 --- !u!1 &7920673198028245494
 GameObject:
   m_ObjectHideFlags: 0
@@ -54751,7 +54752,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -54830,7 +54831,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -54842,7 +54843,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Adrenaline
+  m_Text: Adrenalina
 --- !u!1 &7963771439083505220
 GameObject:
   m_ObjectHideFlags: 0
@@ -55388,7 +55389,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -56225,7 +56226,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 986889807630441256}
   m_DescriptionText: {fileID: 7920355134159080000}
   m_ControlsText: []
-  m_Label: Music Volume
+  m_Label: "Volumen de la m\xFAsica"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 7183735990312818768}
@@ -56276,7 +56277,7 @@ RectTransform:
   m_Father: {fileID: 3074600110465050284}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -56542,7 +56543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7852526501585729323
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56597,7 +56598,7 @@ MonoBehaviour:
   m_PrototypeDivider: {fileID: 8855566154756714909}
   m_PrototypeBinding: {fileID: 4097945315763832040}
   m_RebindableButtons: 010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
-  expandRebindableButtons: 0
+  expandRebindableButtons: 1
 --- !u!1 &8188406847377849840
 GameObject:
   m_ObjectHideFlags: 0
@@ -56634,7 +56635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -410.99994}
+  m_AnchoredPosition: {x: 0, y: -411}
   m_SizeDelta: {x: 790, y: 98}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5167896904699023712
@@ -56681,11 +56682,11 @@ MonoBehaviour:
   m_Style: {fileID: 11400000, guid: a70bb171115068b47ba7e73824554448, type: 2}
   m_Backgrounds:
   - {fileID: 8188907935004709369}
-  m_LabelText: {fileID: 0}
-  m_DescriptionText: {fileID: 0}
+  m_LabelText: {fileID: 7405044980239299798}
+  m_DescriptionText: {fileID: 3751085749653600116}
   m_ControlsText: []
-  m_Label: 
-  m_Description: 
+  m_Label: Nuevo guardado
+  m_Description: Crear un nuevo guardado
   m_Indentable: {fileID: 0}
   m_ThumbnailImage: {fileID: 456481065130845234}
   m_TitleText: {fileID: 7405044980239299798}
@@ -56800,15 +56801,15 @@ MonoBehaviour:
   m_LabelText: {fileID: 396110852690930535}
   m_DescriptionText: {fileID: 3372336280584273112}
   m_ControlsText: []
-  m_Label: Gamepad Profile
+  m_Label: Perfil del Gamepad
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 5190929620583865133}
   m_NextButton: {fileID: 2721161980217069233}
   m_Readout: {fileID: 82293733849960186}
   m_Options:
-  - Standard
-  - Alternative
+  - "Est\xE1ndar"
+  - Alternativo
   - Southpaw
   m_Looping: 0
   m_StartingIndex: 0
@@ -56881,7 +56882,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
@@ -56893,7 +56894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SECONDARY FIRE
+  m_Text: DISPARO SECUNDARIO
 --- !u!1 &8200233506405306760
 GameObject:
   m_ObjectHideFlags: 0
@@ -57111,8 +57112,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
-    m_FontSize: 64
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -57123,7 +57124,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Show Credits
+  m_Text: "Cr\xE9ditos"
 --- !u!1 &8214189661109150789
 GameObject:
   m_ObjectHideFlags: 0
@@ -57419,7 +57420,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -57431,7 +57432,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yes
+  m_Text: "S\xED"
 --- !u!1 &8263766191120058794
 GameObject:
   m_ObjectHideFlags: 0
@@ -57574,7 +57575,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -57586,7 +57587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vertical Mouse Sensitivity
+  m_Text: "Sensibilidad vertical del rat\xF3n"
 --- !u!1 &8285562983843316069
 GameObject:
   m_ObjectHideFlags: 0
@@ -57767,7 +57768,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -58056,7 +58057,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -58068,7 +58069,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Smoothing Amount
+  m_Text: "Cantidad de suavizado del rat\xF3n"
 --- !u!1 &8334850972882196393
 GameObject:
   m_ObjectHideFlags: 0
@@ -58363,7 +58364,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -58596,7 +58597,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5763133237783442499}
   m_DescriptionText: {fileID: 1814337363068372713}
   m_ControlsText: []
-  m_Label: Apply Resolution Settings
+  m_Label: "Aplicar ajustes de resoluci\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_OnClick:
@@ -58669,7 +58670,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -59074,7 +59075,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 88b366b464083d14bb38e497962e31f7, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -59153,7 +59154,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -59165,7 +59166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Acceleration Amount
+  m_Text: "Cantidad de aceleraci\xF3n del rat\xF3n"
 --- !u!1 &8478785130867599073
 GameObject:
   m_ObjectHideFlags: 0
@@ -59348,7 +59349,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -59360,7 +59361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Heat
+  m_Text: Calor
 --- !u!1 &8526212434741186117
 GameObject:
   m_ObjectHideFlags: 0
@@ -59590,7 +59591,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -59953,7 +59954,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -59965,7 +59966,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Field Of View
+  m_Text: "Campo de visi\xF3n"
 --- !u!1 &8594943675837436739
 GameObject:
   m_ObjectHideFlags: 0
@@ -60033,11 +60034,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
-    m_FontSize: 48
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 48
     m_Alignment: 5
     m_AlignByGeometry: 0
@@ -60179,9 +60180,9 @@ RectTransform:
   - {fileID: 155121780085918652}
   m_Father: {fileID: 7985998303607655414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -583}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -590.00006}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4597320099019341021
@@ -60375,7 +60376,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 1427451581980184750}
   m_DescriptionText: {fileID: 2486780876521341468}
   m_ControlsText: []
-  m_Label: Mouse Acceleration
+  m_Label: "Aceleraci\xF3n del rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_PrevButton: {fileID: 4209085647077537944}
@@ -60883,7 +60884,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e7621c975d79eaa4f92bcc51d2679a70, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -61375,7 +61376,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -61725,7 +61726,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 4291045852867124159}
   m_DescriptionText: {fileID: 8918819731909526439}
   m_ControlsText: []
-  m_Label: Vertical Analog Sensitivity
+  m_Label: "Sensibilidad anal\xF3gica vertical"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 8151679869575128319}
@@ -62038,7 +62039,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -62494,7 +62495,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -62596,7 +62597,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6618728064010078060}
   m_DescriptionText: {fileID: 180652616014813372}
   m_ControlsText: []
-  m_Label: Vertical Mouse Sensitivity
+  m_Label: "Sensibilidad vertical del rat\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 628723740347644351}
@@ -62769,7 +62770,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -62974,7 +62975,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -63280,7 +63281,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 6315406941740657947}
   m_DescriptionText: {fileID: 4381225767775514091}
   m_ControlsText: []
-  m_Label: Field Of View
+  m_Label: "Campo de visi\xF3n"
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 7358849690632260997}
@@ -63517,7 +63518,7 @@ MonoBehaviour:
   m_LabelText: {fileID: 5166153596955974098}
   m_DescriptionText: {fileID: 41966833471409017}
   m_ControlsText: []
-  m_Label: Head Bob
+  m_Label: Movimiento de cabeza
   m_Description: 
   m_Indentable: {fileID: 0}
   m_IncrementButton: {fileID: 5309246448054739816}
@@ -63715,7 +63716,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    m_Font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
