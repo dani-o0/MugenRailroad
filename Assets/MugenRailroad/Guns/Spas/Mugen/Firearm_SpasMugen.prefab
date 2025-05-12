@@ -6362,7 +6362,7 @@ MonoBehaviour:
   m_RoundsPerIncrement: 1
   m_UseExternalTriggers: 0
   m_ReloadStartDuration: 1
-  m_ReloadIncrementDuration: 1
+  m_ReloadIncrementDuration: 0.55
   m_ReloadEndDuration: 1
   m_ReloadAnimTrigger: Reload
   m_ReloadAnimCountProp: ReloadCount

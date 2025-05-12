@@ -659,7 +659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_Cooldown: 33
+  m_Cooldown: 20
   m_RepeatDelay: 0
   m_TriggerPressAnimKey: 
 --- !u!114 &4984628235316362378
@@ -714,7 +714,7 @@ MonoBehaviour:
   m_RoundsPerIncrement: 1
   m_UseExternalTriggers: 0
   m_ReloadStartDuration: 1
-  m_ReloadIncrementDuration: 1
+  m_ReloadIncrementDuration: 0.5
   m_ReloadEndDuration: 1
   m_ReloadAnimTrigger: Reload
   m_ReloadAnimCountProp: ReloadCount
