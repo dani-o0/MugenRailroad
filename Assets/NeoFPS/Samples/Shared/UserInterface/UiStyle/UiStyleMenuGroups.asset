@@ -25,7 +25,7 @@ MonoBehaviour:
     pressed: {r: 0.9764706, g: 1, b: 0, a: 0.39215687}
     disabled: {r: 0, g: 0, b: 0, a: 0.27450982}
   m_TextInfo:
-    font: {fileID: 12800000, guid: c2d08ca245586c6498973ba25e911001, type: 3}
+    font: {fileID: 12800000, guid: 2c498dc4f446e5246adf2a6873266532, type: 3}
     headerColour: {r: 1, g: 1, b: 1, a: 1}
     headerFontSize: 24
     descriptionColour: {r: 1, g: 1, b: 1, a: 0.54901963}
