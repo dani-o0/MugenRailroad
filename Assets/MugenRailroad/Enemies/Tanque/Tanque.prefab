@@ -819,7 +819,7 @@ MonoBehaviour:
   - No Type 1 Attack Animations
   Type2AttackBlankOptions:
   - No Type 2 Attack Animations
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   AnimationProfileFoldout: 1
 --- !u!114 &3273882216219945511
 MonoBehaviour:
@@ -982,7 +982,7 @@ MonoBehaviour:
     CooldownIgnored: 0
     CooldownTimeStamp: 0
   LastAttacker: {fileID: 0}
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   DamageSettingsFoldout: 0
   CombatActionSettingsFoldout: 0
   SwitchWeaponSettingsFoldout: 0
@@ -1124,7 +1124,7 @@ MonoBehaviour:
   HitEffectsList:
   - {fileID: 163734, guid: 0a5ac034133a7654a8565697adff5548, type: 3}
   - {fileID: 186584, guid: b85ef8139fbcfa746b2954a470627418, type: 3}
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   HealthFoldout: 1
 --- !u!114 &5785326861096405681
 MonoBehaviour:
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   OnFleeEvent:
     m_PersistentCalls:
       m_Calls: []
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   GeneralEventsFoldout: 0
   CombatEventsFoldout: 1
 --- !u!114 &5563032954043559140
