@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb8bef5ae6b3914587fb9a80434e6d9, type: 3}
-  m_Name: Spike Barrage (Aerial)
+  m_Script: {fileID: 11500000, guid: 08f6e2140fad9cc4bb236717104d750e, type: 3}
+  m_Name: BossSpikes
   m_EditorClassIdentifier: 
-  AbilityName: Rock Spike Barrage
-  AbilityDescription: Ability Description
+  AbilityName: Ice Shards
+  AbilityDescription: A bolt of fire that races towards the current target dealing
+    10 damage initially with 5 more damage each second for 3 seconds.
   AbilityIcon: {fileID: 2800000, guid: 225c0664134d17744b824ae6e345d539, type: 3}
   InfoSettingsFoldout: 0
   DerivedSettingsFoldout: 1
@@ -32,7 +33,7 @@ MonoBehaviour:
     LowHealthPercentage: 60
   ChargeSettings:
     Enabled: 0
-    ChargeEffect: {fileID: 0}
+    ChargeEffect: {fileID: 6390081730807346873, guid: 2317dd4e70f3f2647b48bd8a302b5979, type: 3}
     ChargeLength: 1
     ChargeSoundsList: []
   CreateSettings:
@@ -43,67 +44,71 @@ MonoBehaviour:
   ProjectileSettings:
     Enabled: 1
     SpawnProjectileEffect: {fileID: 0}
-    SpawnProjectileTimeoutSeconds: 1.5
+    SpawnProjectileTimeoutSeconds: 6
     SpawnProjectileSoundsList:
-    - {fileID: 8300000, guid: b6a15c3505177de4e8e8b1e159e205dc, type: 3}
-    ProjectileEffect: {fileID: 6904698915816178563, guid: b98c8a7b3e1e1f94591d5612d1b5a35f, type: 3}
+    - {fileID: 8300000, guid: e1d8e0db26d00c84e94ba0e5945a708e, type: 3}
+    ProjectileEffect: {fileID: 2736825120591149807, guid: a911ec1ecd0535d40a4647a12be2da50, type: 3}
     ProjectileTimeoutSeconds: 6
     TravelSound: {fileID: 0}
     EffectsToDisable:
-    - Trail
+    - Demo Trail
+    - Ice Shard Model
     LaunchProjectileEffect: {fileID: 0}
     LaunchProjectileTimeoutSeconds: 2
-    LaunchProjectileDelay: 0.33
-    LaunchProjectileSoundsList:
-    - {fileID: 8300000, guid: 6e975d277c5a14d42ace12b59d53e997, type: 3}
-    ImpactEffect: {fileID: 0}
+    LaunchProjectileDelay: 0.5
+    LaunchProjectileSoundsList: []
+    ImpactEffect: {fileID: 8695401051225182231, guid: ee14becc80c7bf540b78670d4e7009e0, type: 3}
     ImpactTimeoutSeconds: 6
     ImpactSoundsList:
     - {fileID: 8300000, guid: e1d8e0db26d00c84e94ba0e5945a708e, type: 3}
     - {fileID: 8300000, guid: b064c73b1ce3e184e8a81c0597eb1958, type: 3}
     - {fileID: 8300000, guid: 6e975d277c5a14d42ace12b59d53e997, type: 3}
-  HomingSettings:
-    Enabled: 0
-    HomingSeconds: 3
-    MinimumHomingDistance: 0
-    HomingSpeed: 2
-  AerialProjectileSettings:
+  GeneralProjectileSettings:
     Enabled: 1
-    AerialEffect: {fileID: 4694803240454653336, guid: f71d54aaf66c621468001053bd2db31d, type: 3}
-    AerialEffectTimeoutSeconds: 6
-    SpawnSource: 1
-    AimSource: 1
-    HeightOffset: 6
-    LaunchAngle: 0
-    Radius: 4
-    ProjectileSpeed: 25
-    TotalProjectiles: 10
-    TimeBetweenProjectiles: 0.075
-    AttachToTarget: 1
+    ProjectileSpeed: 10
+    ProjectileMaxLaunchAngle: 180
+    TotalProjectiles: 8
+    TimeBetweenProjectiles: 0.1
+    AttachToTarget: 0
+  HomingSettings:
+    Enabled: 1
+    HomingSeconds: 1.5
+    MinimumHomingDistance: 1
+    HomingSpeed: 2.5
   TargetTypeSettings:
     Enabled: 1
     TargetType: 0
+  SpreadSettings:
+    Enabled: 1
+    SpreadType: 1
+    MinSpreadX: 45
+    MaxSpreadX: -45
+    MinSpreadY: 20
+    MaxSpreadY: 0
+    SpreadAngleX: 180
+    TiltAngleY: 45
+    SpawnDistance: 1
   ColliderSettings:
     Enabled: 1
     CollidableLayers:
       serializedVersion: 2
       m_Bits: 3221233792
     ProjectileLayer: 2
-    CollisionTimeout: 10
-    ColliderRadius: 0.2
-    ZOffet: 1.5
+    CollisionTimeout: 0.75
+    ColliderRadius: 0.1
+    ZOffet: 0
   StunnedSettings:
     Enabled: 0
-    OddsToStun: 50
+    OddsToStun: 100
     StunLength: 3
   DamageSettings:
     Foldout: 1
     Enabled: 1
-    UseCriticalHits: 0
+    UseCriticalHits: 1
     UseDamageOverTime: 0
     BaseDamageSettings:
       UseRandomAmounts: 0
-      BaseAmount: 1
+      BaseAmount: 10
       MinAmount: 5
       MaxAmount: 10
       RagdollForce: 25

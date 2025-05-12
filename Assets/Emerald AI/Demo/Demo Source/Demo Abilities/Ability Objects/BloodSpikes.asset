@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb8bef5ae6b3914587fb9a80434e6d9, type: 3}
-  m_Name: Spike Barrage (Aerial)
+  m_Name: BloodSpikes
   m_EditorClassIdentifier: 
   AbilityName: Rock Spike Barrage
   AbilityDescription: Ability Description
@@ -23,7 +23,7 @@ MonoBehaviour:
     Enabled: 0
     CooldownLength: 1
   ConditionSettings:
-    Foldout: 1
+    Foldout: 0
     Enabled: 0
     ConditionType: 0
     ValueCompareType: 1
@@ -46,8 +46,8 @@ MonoBehaviour:
     SpawnProjectileTimeoutSeconds: 1.5
     SpawnProjectileSoundsList:
     - {fileID: 8300000, guid: b6a15c3505177de4e8e8b1e159e205dc, type: 3}
-    ProjectileEffect: {fileID: 6904698915816178563, guid: b98c8a7b3e1e1f94591d5612d1b5a35f, type: 3}
-    ProjectileTimeoutSeconds: 6
+    ProjectileEffect: {fileID: 6904698915816178563, guid: 85ca86c8855b57c4989610f746d208d9, type: 3}
+    ProjectileTimeoutSeconds: 5
     TravelSound: {fileID: 0}
     EffectsToDisable:
     - Trail
@@ -56,7 +56,7 @@ MonoBehaviour:
     LaunchProjectileDelay: 0.33
     LaunchProjectileSoundsList:
     - {fileID: 8300000, guid: 6e975d277c5a14d42ace12b59d53e997, type: 3}
-    ImpactEffect: {fileID: 0}
+    ImpactEffect: {fileID: 8695401051225182231, guid: 027d240d08555784dae7e5db281ab173, type: 3}
     ImpactTimeoutSeconds: 6
     ImpactSoundsList:
     - {fileID: 8300000, guid: e1d8e0db26d00c84e94ba0e5945a708e, type: 3}
@@ -73,11 +73,11 @@ MonoBehaviour:
     AerialEffectTimeoutSeconds: 6
     SpawnSource: 1
     AimSource: 1
-    HeightOffset: 6
+    HeightOffset: 5
     LaunchAngle: 0
-    Radius: 4
-    ProjectileSpeed: 25
-    TotalProjectiles: 10
+    Radius: 5
+    ProjectileSpeed: 30
+    TotalProjectiles: 40
     TimeBetweenProjectiles: 0.075
     AttachToTarget: 1
   TargetTypeSettings:
@@ -103,7 +103,7 @@ MonoBehaviour:
     UseDamageOverTime: 0
     BaseDamageSettings:
       UseRandomAmounts: 0
-      BaseAmount: 1
+      BaseAmount: 5
       MinAmount: 5
       MaxAmount: 10
       RagdollForce: 25
