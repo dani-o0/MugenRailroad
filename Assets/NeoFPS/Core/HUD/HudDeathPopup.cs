@@ -12,11 +12,14 @@ namespace NeoFPS
     {
         private CanvasGroup m_CanvasGroup = null;
 		private ICharacter m_Character = null;
+        private AudioSource m_AudioSource = null;
 
         [Header("Teleport Message")]
         public Text teleportText;
         [Header("UI Components")]
         public Image backgroundImage;
+        [Header("Die audio clip")]
+        public AudioClip dieClip;
 
         private Coroutine messageRoutine = null;
         private Coroutine fadeRoutine = null;
@@ -31,6 +34,7 @@ namespace NeoFPS
         {
             base.Awake();
             m_CanvasGroup = GetComponent<CanvasGroup>();
+            m_AudioSource = GetComponent<AudioSource>();
 		}
 
         protected override void OnDestroy()
@@ -73,6 +77,11 @@ namespace NeoFPS
             }
             else
             {
+                m_AudioSource.clip = dieClip;
+                m_AudioSource.volume = FpsSettings.audio.effectsVolume;
+                m_AudioSource.loop = false;
+                m_AudioSource.Play();
+
                 gameObject.SetActive(true); // <--- Activa antes de iniciar la corutina
 
                 m_CanvasGroup.alpha = 1f;
