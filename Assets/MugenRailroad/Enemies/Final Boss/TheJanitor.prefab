@@ -1217,21 +1217,21 @@ MonoBehaviour:
     AttackDataList:
     - AbilityObject: {fileID: 11400000, guid: 6b776434ce73cc0478a9701db1c4d080, type: 2}
       AttackAnimation: 0
-      AttackOdds: 50
+      AttackOdds: 40
       AttackDistance: 1
       TooCloseDistance: 0.5
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: ac543de38eb9c364c92c0f8ae32c8c06, type: 2}
       AttackAnimation: 1
-      AttackOdds: 50
+      AttackOdds: 40
       AttackDistance: 1.5
       TooCloseDistance: 0.5
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: ebac087f0adb4be46830f503f17bc6cd, type: 2}
       AttackAnimation: 2
-      AttackOdds: 50
+      AttackOdds: 40
       AttackDistance: 1.5
       TooCloseDistance: 0.5
       CooldownIgnored: 0

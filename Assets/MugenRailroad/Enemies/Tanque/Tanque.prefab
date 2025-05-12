@@ -1204,7 +1204,7 @@ MonoBehaviour:
   OnFleeEvent:
     m_PersistentCalls:
       m_Calls: []
-  HideSettingsFoldout: 0
+  HideSettingsFoldout: 1
   GeneralEventsFoldout: 0
   CombatEventsFoldout: 1
 --- !u!114 &5563032954043559140
