@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using NeoFPS;
 using NeoFPS.Samples;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AbilitiesMachine : MonoBehaviour
 {
+    public AudioClip machineAudioClip;
     public GameObject[] screens;
+    private AudioSource machineAudioSource;
 
     public enum AbilityType
     {
@@ -34,6 +37,8 @@ public class AbilitiesMachine : MonoBehaviour
 
     private void Start()
     {
+        machineAudioSource = GetComponent<AudioSource>();
+        
         foreach (GameObject screen in screens)
         {
             SetAllSpritesState(screen, false);
@@ -60,6 +65,11 @@ public class AbilitiesMachine : MonoBehaviour
         {
             StartCoroutine(SpinAbilities(screen, selectedAbility));
         }
+
+        machineAudioSource.clip = machineAudioClip;
+        machineAudioSource.volume = FpsSettings.audio.effectsVolume;
+        machineAudioSource.loop = false;
+        machineAudioSource.Play();
     }
 
     private IEnumerator SpinAbilities(GameObject screen, AbilityType resultAbility)
@@ -72,7 +82,7 @@ public class AbilitiesMachine : MonoBehaviour
             images[i] = background.Find(abilityNames[i]).GetComponent<Image>();
         }
 
-        float spinDuration = 2f;
+        float spinDuration = 3.9f;
         float elapsed = 0f;
         float interval = 0.1f;
 

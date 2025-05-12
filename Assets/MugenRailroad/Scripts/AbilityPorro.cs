@@ -1,4 +1,5 @@
 using System.Collections;
+using NeoFPS;
 using NeoSaveGames;
 using NeoSaveGames.Serialization;
 using UnityEngine;
@@ -10,8 +11,11 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
     public Light fire;
     public float effectDuration = 5f; // Duración del efecto de "drogado"
     public float cooldownTime = 10f; // Tiempo de cooldown de la habilidad
-    public float lightDuration = 1.5f; // Duración de subida y bajada de la luz
+    public float lightDuration = 3f; // Duración de subida y bajada de la luz
     public float targetLightIntensity = 10f; // Intensidad máxima de la luz
+    public AudioClip clipCalo;
+    public AudioClip clipDrogao;
+    public AudioClip clipSmokeWeed;
 
     private bool state;
     private Coroutine caloRoutine;
@@ -20,6 +24,7 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
     private Image overlayImage; // Imagen del overlay para el efecto de colores
     private Color originalColor; // Color original de la imagen del overlay
     private Camera playerCamera; // Cámara del jugador
+    private AudioSource porroAudioSource;
     
     private static readonly NeoSerializationKey k_State = new NeoSerializationKey("porroState");
 
@@ -35,6 +40,8 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
 
         // Crear Canvas y Overlay de forma dinámica
         CreateOverlay();
+
+        porroAudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -43,6 +50,11 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
 
         if (Input.GetKeyDown(KeyCode.L) && canCalo && state)
             Calo();
+        
+        if (NeoFpsTimeScale.isPaused)
+            porroAudioSource.Pause();
+        else
+            porroAudioSource.UnPause();
     }
 
     public void SetState(bool state)
@@ -71,6 +83,11 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
         canCalo = false;
 
         float initialIntensity = fire.intensity;
+        
+        porroAudioSource.clip = clipCalo;
+        porroAudioSource.volume = FpsSettings.audio.effectsVolume;
+        porroAudioSource.loop = false;
+        porroAudioSource.Play();
 
         // Subir intensidad
         float elapsed = 0f;
@@ -112,11 +129,24 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
         // Esperar a que termine el cooldown de la habilidad
         yield return new WaitForSeconds(cooldownTime); // Tiempo de cooldown de la habilidad
 
+        porroAudioSource.clip = clipSmokeWeed;
+        porroAudioSource.volume = FpsSettings.audio.effectsVolume;
+        porroAudioSource.loop = false;
+        porroAudioSource.Play();
+        
         canCalo = true; // Permitir usar la habilidad otra vez después del cooldown
     }
 
     private IEnumerator DrogadoEffect()
     {
+        porroAudioSource.clip = clipDrogao;
+        porroAudioSource.volume = FpsSettings.audio.effectsVolume;
+        porroAudioSource.loop = false;
+        porroAudioSource.Play();
+        
+        float oldMusicVolume = FpsSettings.audio.musicVolume;
+        FpsSettings.audio.musicVolume = 0.0f;
+        
         // Cambiar de color progresivamente entre verde neón y morado psicodélico
         Color targetColor = new Color(0.0f, 1.0f, 0.0f, 0.2f); // Verde neón (intenso)
         Color targetColor2 = new Color(0.5f, 0.0f, 0.5f, 0.2f); // Morado psicodélico
@@ -155,7 +185,9 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
             timeElapsed += Time.deltaTime;
             yield return null;
         }
-
+        
+        FpsSettings.audio.musicVolume = oldMusicVolume;
+        
         // Después de 10 segundos, desaparecer el overlay de la pantalla
         float fadeDuration = 1f; // Tiempo de desvanecimiento
         float fadeElapsed = 0f;
