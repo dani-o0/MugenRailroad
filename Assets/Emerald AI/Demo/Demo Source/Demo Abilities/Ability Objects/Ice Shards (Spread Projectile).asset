@@ -24,9 +24,13 @@ MonoBehaviour:
     Enabled: 0
     CooldownLength: 1
   ConditionSettings:
+    Foldout: 1
     Enabled: 0
     ConditionType: 0
-    OutnumberedThreshold: 3
+    ValueCompareType: 1
+    HighPriority: 0
+    DistanceFromTarget: 3
+    LowHealthPercentage: 60
   ChargeSettings:
     Enabled: 0
     ChargeEffect: {fileID: 6390081730807346873, guid: 2317dd4e70f3f2647b48bd8a302b5979, type: 3}
@@ -88,7 +92,7 @@ MonoBehaviour:
     Enabled: 1
     CollidableLayers:
       serializedVersion: 2
-      m_Bits: 3222265779
+      m_Bits: 3221233792
     ProjectileLayer: 2
     CollisionTimeout: 0.75
     ColliderRadius: 0.1
@@ -104,7 +108,7 @@ MonoBehaviour:
     UseDamageOverTime: 0
     BaseDamageSettings:
       UseRandomAmounts: 0
-      BaseAmount: 5
+      BaseAmount: 10
       MinAmount: 5
       MaxAmount: 10
       RagdollForce: 25
