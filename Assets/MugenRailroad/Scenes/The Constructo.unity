@@ -3498,6 +3498,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8176301613014190011, guid: c0c023ff0518f544abdc0ab2807c0d4f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00012207031
+      objectReference: {fileID: 0}
     - target: {fileID: 8970290846376727365, guid: c0c023ff0518f544abdc0ab2807c0d4f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4673,7 +4677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3103562577499314849, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3273882216219945511, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
       propertyPath: TagFoldout
@@ -5464,7 +5468,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 96d360bef0d21b540ac863b092a85822, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 283a2ad2ebf81ef429f94a7aa29be989, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1453886445
 Transform:
@@ -8946,7 +8950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3612583126686793469, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6586493731524578775, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: HideSettingsFoldout
