@@ -74,7 +74,7 @@ MonoBehaviour:
     WalkLeft:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     WalkForward:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
@@ -82,7 +82,7 @@ MonoBehaviour:
     WalkRight:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     WalkBack:
       AnimationSpeed: 0
       AnimationClip: {fileID: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
     RunLeft:
       AnimationSpeed: 4
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     RunForward:
       AnimationSpeed: 4
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
@@ -98,15 +98,15 @@ MonoBehaviour:
     RunRight:
       AnimationSpeed: 4
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     TurnLeft:
-      AnimationSpeed: 3
-      AnimationClip: {fileID: 7400000, guid: 2311344e95fdf0141a2b024cce73e04d, type: 2}
-      Mirror: 0
+      AnimationSpeed: 4
+      AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
+      Mirror: 1
     TurnRight:
-      AnimationSpeed: 3
-      AnimationClip: {fileID: 7400000, guid: 2311344e95fdf0141a2b024cce73e04d, type: 2}
-      Mirror: 0
+      AnimationSpeed: 4
+      AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
+      Mirror: 1
     HitList: []
     DeathList:
     - AnimationSpeed: 7
@@ -178,7 +178,7 @@ MonoBehaviour:
     WalkLeft:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     WalkForward:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
@@ -186,15 +186,15 @@ MonoBehaviour:
     WalkRight:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     WalkBack:
       AnimationSpeed: 3
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     RunLeft:
       AnimationSpeed: 4
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     RunForward:
       AnimationSpeed: 4
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
@@ -202,15 +202,15 @@ MonoBehaviour:
     RunRight:
       AnimationSpeed: 4
       AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
-      Mirror: 0
+      Mirror: 1
     TurnLeft:
-      AnimationSpeed: 4
-      AnimationClip: {fileID: 7400000, guid: 2311344e95fdf0141a2b024cce73e04d, type: 2}
-      Mirror: 0
+      AnimationSpeed: 5
+      AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
+      Mirror: 1
     TurnRight:
-      AnimationSpeed: 4
-      AnimationClip: {fileID: 7400000, guid: 2311344e95fdf0141a2b024cce73e04d, type: 2}
-      Mirror: 0
+      AnimationSpeed: 5
+      AnimationClip: {fileID: 7400000, guid: 3c29833cdc938b546bed73139d11b52d, type: 2}
+      Mirror: 1
     HitList: []
     DeathList:
     - AnimationSpeed: 7
