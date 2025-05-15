@@ -4677,7 +4677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3103562577499314849, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3273882216219945511, guid: 800df0b95a7956b4bb2f912c27803d4b, type: 3}
       propertyPath: TagFoldout
@@ -8950,6 +8950,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3612583126686793469, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279420321765278748, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
+      propertyPath: HideSettingsFoldout
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6586493731524578775, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
@@ -8970,7 +8974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7755844084335457768, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: HideSettingsFoldout
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7977401483588594214, guid: a84a2ccaa2c8d3b4ea0719bdafcb5d37, type: 3}
       propertyPath: HideSettingsFoldout
