@@ -3091,7 +3091,7 @@ MonoBehaviour:
   - No Type 1 Attack Animations
   Type2AttackBlankOptions:
   - No Type 2 Attack Animations
-  HideSettingsFoldout: 1
+  HideSettingsFoldout: 0
   AnimationProfileFoldout: 1
 --- !u!114 &7755844084335457768
 MonoBehaviour:
