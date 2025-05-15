@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/MugenRailroad/Scenes/TrainStation.unity
     guid: 62cabd4df288bbd489a6165a6a32bf16
   - enabled: 1
+    path: Assets/MugenRailroad/Scenes/TrainStationNoAnimation.unity
+    guid: a54747eaa51fe124ba197d68fe87ef34
+  - enabled: 1
     path: Assets/MugenRailroad/Scenes/Wagons/MerchantWagon/WagonMerchant.unity
     guid: 03b94beff28dc3b40b4db969af14e2b8
   - enabled: 1
