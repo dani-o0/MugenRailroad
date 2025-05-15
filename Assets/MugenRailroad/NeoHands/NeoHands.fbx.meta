@@ -3,7 +3,17 @@ guid: 389f350b6949d0f4886c1089a84b7331
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hand_right_S
+    second: {fileID: 2100000, guid: 7972a2dab9436b7438e2ab93715f6734, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: loner_sunrise_S
+    second: {fileID: 2100000, guid: 5b372004ee8522748b9d0837718d4b81, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
