@@ -941,7 +941,7 @@ MonoBehaviour:
     que hace es que, cuando dejas el gatillo pulsado, vac\xEDa el cargador encima
     de un enemigo."
   m_SecondaryMessage: '{0}'
-  m_Image: {fileID: 21300000, guid: fa3379cc2ded8ae499b898fb2add8566, type: 3}
+  m_Image: {fileID: 21300000, guid: 5e8bac097e6cc5b479fc8e6c6b781c8d, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
 --- !u!114 &5161898754590840180
 MonoBehaviour:
