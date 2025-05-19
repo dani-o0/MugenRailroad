@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 1
-  m_Price: 250
+  m_Price: 500
   m_Message: "Escopeta de corredera semiautom\xE1tica que se sobrecalienta dependiendo
     de las veces que dispares seguidas, cuantas m\xE1s veces seguidas m\xE1s se sobrecalienta,
     as\xED que ten cuidado porque en tal caso no podr\xE1s disparar durante un tiempo.

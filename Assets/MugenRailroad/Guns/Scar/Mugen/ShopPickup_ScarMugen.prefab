@@ -396,7 +396,7 @@ MonoBehaviour:
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 2
-  m_Price: 500
+  m_Price: 600
   m_Message: "Fusil de asalto autom\xE1tico mejorado, del cual las balas rebotan
     6 veces por las paredes y suelos, 3 veces m\xE1s que la que est\xE1 ba\xF1ada
     en oro."

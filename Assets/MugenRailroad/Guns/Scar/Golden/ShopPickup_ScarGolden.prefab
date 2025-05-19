@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 1
-  m_Price: 250
+  m_Price: 400
   m_Message: "Fusil de asalto autom\xE1tico mejorado ba\xF1ado en oro de 40 quilates,
     del cual las balas rebotan 3 veces por las paredes y suelos, tiene un cargador
     de 30 balas tambi\xE9n."

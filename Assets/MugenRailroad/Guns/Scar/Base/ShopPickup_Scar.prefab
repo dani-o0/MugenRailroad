@@ -633,7 +633,7 @@ MonoBehaviour:
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 0
-  m_Price: 100
+  m_Price: 200
   m_Message: "Fusil de asalto autom\xE1tico con gran cadencia. Tiene un cargador
     de 30 balas y un da\xF1o decente."
   m_SecondaryMessage: '{0}'

@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_AdditionalItems: []
   m_ConsumeOnPartial: 0
   m_PickupType: 0
-  m_Price: 100
+  m_Price: 250
   m_Message: "Escopeta de corredera semiautom\xE1tica muy potente y con bastante
     dispersi\xF3n de bala. Recarga los cartuchos uno a uno."
   m_SecondaryMessage: '{0}'
