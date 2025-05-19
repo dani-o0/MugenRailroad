@@ -132,8 +132,10 @@ Material:
     - _Mode: 0
     - _ObjectDithering: 1
     - _OcclusionStrength: 1
+    - _OutlineWidth: 0.03
     - _PanningSpeed: 1
     - _Parallax: 0.02
+    - _Progress: 0
     - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -151,5 +153,6 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlowCenter: {r: 0, g: 0, b: 0, a: 0}
     - _HazeMaxStrength: {r: 0.3, g: 0.3, b: 0, a: 0}
+    - _OutlineColor: {r: 0, g: 1, b: 1, a: 1}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
