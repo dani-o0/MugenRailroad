@@ -1146,6 +1146,7 @@ GameObject:
   - component: {fileID: 548217561588583260}
   - component: {fileID: 8129686071516631026}
   - component: {fileID: 7401196030898382770}
+  - component: {fileID: 1363578216864095390}
   - component: {fileID: 5591431417833687137}
   m_Layer: 22
   m_Name: WeaponPickup_SpasMugen
@@ -1381,6 +1382,21 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+--- !u!114 &1363578216864095390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8788080529976361113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f991b9f1d4fe5b40bb73e3d9a54a29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoxColliders:
+  - {fileID: 548217561588583260}
+  m_CornerObject: {fileID: 1792054534762134, guid: b0c5328a0f7ef8e43be6068b33fa0de9, type: 3}
 --- !u!114 &5591431417833687137
 MonoBehaviour:
   m_ObjectHideFlags: 0

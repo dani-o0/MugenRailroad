@@ -701,8 +701,9 @@ MonoBehaviour:
   m_OtherComponents: []
   m_Overrides: []
   m_Children:
-    m_Keys: 
-    m_Values: []
+    m_Keys: c2dc9d0f
+    m_Values:
+    - {fileID: 2178886862203232531}
     m_GameObject: {fileID: 3939400535746679063}
   m_PrefabStrongID: 0
   expandChildObjects: 0

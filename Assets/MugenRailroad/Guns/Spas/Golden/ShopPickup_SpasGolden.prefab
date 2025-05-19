@@ -1147,6 +1147,7 @@ GameObject:
   - component: {fileID: 3048757327235278487}
   - component: {fileID: 3908131742117004223}
   - component: {fileID: 8305777547001705702}
+  - component: {fileID: 3144986911360288373}
   - component: {fileID: 383610140917464458}
   m_Layer: 22
   m_Name: ShopPickup_SpasGolden
@@ -1420,6 +1421,21 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+--- !u!114 &3144986911360288373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472838902024170196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f991b9f1d4fe5b40bb73e3d9a54a29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoxColliders:
+  - {fileID: 6081232173430514304}
+  m_CornerObject: {fileID: 1792054534762134, guid: b0c5328a0f7ef8e43be6068b33fa0de9, type: 3}
 --- !u!114 &383610140917464458
 MonoBehaviour:
   m_ObjectHideFlags: 0
