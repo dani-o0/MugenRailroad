@@ -48,7 +48,7 @@ public class AbilityPorro : MonoBehaviour, INeoSerializableComponent
     {
         porro.SetActive(state);
 
-        if (Input.GetKeyDown(KeyCode.L) && canCalo && state)
+        if (Input.GetKeyDown(KeyCode.F) && canCalo && state)
             Calo();
         
         if (NeoFpsTimeScale.isPaused)
