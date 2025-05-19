@@ -1185,21 +1185,7 @@ MonoBehaviour:
   m_FilterNeoComponents: 0
   m_NeoComponents: []
   m_OtherComponents: []
-  m_Overrides:
-  - m_SaveMode: 1
-    m_Position: 0
-    m_Rotation: 0
-    m_LocalScale: 0
-    m_FilterChildObjects: 0
-    m_ChildObjects: []
-    m_FilterNeoComponents: 0
-    m_NeoComponents: []
-    m_OverrideOtherComponents: 0
-    m_OtherComponents: []
-    expandOverride: 1
-    expandChildObjects: 0
-    expandNeoComponents: 0
-    expandOtherComponents: 0
+  m_Overrides: []
   m_Children:
     m_Keys: 44ae2aaf
     m_Values:
