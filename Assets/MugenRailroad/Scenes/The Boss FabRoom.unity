@@ -1887,53 +1887,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheJanitor
       objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[0].AttackOdds
-      value: 20
+    - target: {fileID: 6681829613745930189, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[1].AttackOdds
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[2].AttackOdds
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[3].AttackOdds
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[4].AttackOdds
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[5].AttackOdds
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[0].AttackDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[1].AttackDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[2].AttackDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[0].TooCloseDistance
+    - target: {fileID: 6681829613745930189, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: BehaviorSettingsFoldout
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[1].TooCloseDistance
+    - target: {fileID: 7578399231764935165, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: TagFoldout
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
-      propertyPath: Type1Attacks.AttackDataList.Array.data[2].TooCloseDistance
+    - target: {fileID: 7578399231764935165, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: FactionFoldout
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578399231764935165, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: DetectionFoldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679745381655283875, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: HideSettingsFoldout
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

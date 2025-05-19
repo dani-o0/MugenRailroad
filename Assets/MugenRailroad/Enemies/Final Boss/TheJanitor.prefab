@@ -1218,42 +1218,42 @@ MonoBehaviour:
     AttackDataList:
     - AbilityObject: {fileID: 11400000, guid: 6b776434ce73cc0478a9701db1c4d080, type: 2}
       AttackAnimation: 0
-      AttackOdds: 40
-      AttackDistance: 1
-      TooCloseDistance: 0.5
+      AttackOdds: 20
+      AttackDistance: 3
+      TooCloseDistance: 1
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: ac543de38eb9c364c92c0f8ae32c8c06, type: 2}
       AttackAnimation: 1
-      AttackOdds: 40
-      AttackDistance: 1.5
-      TooCloseDistance: 0.5
+      AttackOdds: 20
+      AttackDistance: 3
+      TooCloseDistance: 1
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: ebac087f0adb4be46830f503f17bc6cd, type: 2}
       AttackAnimation: 2
-      AttackOdds: 40
-      AttackDistance: 1.5
-      TooCloseDistance: 0.5
+      AttackOdds: 20
+      AttackDistance: 3
+      TooCloseDistance: 1
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 2422f4c6b7706cd4a84b9762e1a91bdc, type: 2}
       AttackAnimation: 3
-      AttackOdds: 30
+      AttackOdds: 60
       AttackDistance: 10
       TooCloseDistance: 2
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 2651fadeee4461b43912b8d7720f87c0, type: 2}
       AttackAnimation: 4
-      AttackOdds: 30
+      AttackOdds: 50
       AttackDistance: 15
       TooCloseDistance: 0.5
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 3790c804b33cc6944b02e7ab9f2a6f5f, type: 2}
       AttackAnimation: 5
-      AttackOdds: 20
+      AttackOdds: 40
       AttackDistance: 20
       TooCloseDistance: 0.5
       CooldownIgnored: 0
@@ -1551,7 +1551,7 @@ AudioSource:
   m_GameObject: {fileID: 2725074807434658352}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243059815924327020, guid: a6f18d72e4ba7bb44a99c8b5e4d9703c, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
