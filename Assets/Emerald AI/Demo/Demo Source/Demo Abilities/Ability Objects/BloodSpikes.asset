@@ -103,7 +103,7 @@ MonoBehaviour:
     UseDamageOverTime: 0
     BaseDamageSettings:
       UseRandomAmounts: 0
-      BaseAmount: 5
+      BaseAmount: 25
       MinAmount: 5
       MaxAmount: 10
       RagdollForce: 25
