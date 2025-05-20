@@ -54,20 +54,6 @@ public class EnemySpawnManager : MonoBehaviour
 
     public void StartWave()
     {
-        if (currentWaveIndex >= wagonWaves.Length)
-        {
-            if (GameManager.Instance.CurrentWagonNumber >= GameManager.Instance.MaxWagons)
-            {
-                StartBossFight();
-            }
-            else
-            {
-                GameManager.Instance.IncrementWagonNumber();
-                GameManager.Instance.EnableExitDoor();
-            }
-            return;
-        }
-
         Debug.Log($"Starting wave {currentWaveIndex + 1} of {wagonWaves.Length} in wagon {GameManager.Instance.CurrentWagonNumber}");
         WaveConfig currentWave = wagonWaves[currentWaveIndex];
         activeEnemies.Clear();
@@ -135,7 +121,7 @@ public class EnemySpawnManager : MonoBehaviour
             }
             else
             {
-                StartBossFight();
+                GameManager.Instance.EnableExitDoor();
             }
         }
     }
@@ -144,16 +130,6 @@ public class EnemySpawnManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         StartWave();
-    }
-
-    private void StartBossFight()
-    {
-        // TODO: Spawnear el boss y sus cosas.
-    }
-
-    private void HandleBossDeath()
-    {
-        // TODO: Hacer todo el sistema del boss. Si tendra fases o lo que sea. Dejamos pendiente por decidir
     }
 
     private IEnumerator SpawnEnemyAfterEffect(GameObject enemyPrefab, Transform spawnPoint, float delay)
