@@ -44,11 +44,11 @@ MonoBehaviour:
     Foldout: 1
     Enabled: 1
     CastEffect: {fileID: 0}
-    CastEffectTimeoutSeconds: 4
+    CastEffectTimeoutSeconds: 1
     CastSounds: []
-    SummonEffect: {fileID: 4694803240454653336, guid: 9808d7dbae5e1294ba01ceb69f472ad6, type: 3}
-    SummonEffectTimeoutSeconds: 4
-    SummonEffectHeightOffset: 0.4
+    SummonEffect: {fileID: 3007539714265456126, guid: 716a7007fc9155f4c927ddd869b7d794, type: 3}
+    SummonEffectTimeoutSeconds: 1
+    SummonEffectHeightOffset: 0.02
     SummonSounds:
     - {fileID: 8300000, guid: 239578b311731b540b81066f4199d058, type: 3}
     SummonAmount: 1
