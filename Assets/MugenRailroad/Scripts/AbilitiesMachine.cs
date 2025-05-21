@@ -34,11 +34,12 @@ public class AbilitiesMachine : MonoBehaviour
 
     private int completedScreens = 0;
     private AbilityType selectedAbility;
+    private bool allAbilitiesUnlocked = false;
 
     private void Start()
     {
         machineAudioSource = GetComponent<AudioSource>();
-        
+
         foreach (GameObject screen in screens)
         {
             SetAllSpritesState(screen, false);
@@ -57,9 +58,29 @@ public class AbilitiesMachine : MonoBehaviour
         XpManager.Instance.updateXpBar();
 
         completedScreens = 0;
+        allAbilitiesUnlocked = false;
 
-        // Seleccionar la habilidad ganadora al principio
-        selectedAbility = (AbilityType)Random.Range(0, abilityNames.Length);
+        // Filtrar habilidades que el jugador NO tiene aún
+        List<AbilityType> availableAbilities = new List<AbilityType>();
+        foreach (AbilityType type in System.Enum.GetValues(typeof(AbilityType)))
+        {
+            if (!PlayerHasAbility(type))
+                availableAbilities.Add(type);
+        }
+
+        if (availableAbilities.Count == 0)
+        {
+            // Ya tiene todas las habilidades, pero igualmente haremos el spin
+            allAbilitiesUnlocked = true;
+
+            // Seleccionamos una habilidad aleatoria solo para mostrarla visualmente
+            selectedAbility = AbilityType.Joint;
+        }
+        else
+        {
+            // Seleccionar la habilidad ganadora entre las disponibles
+            selectedAbility = availableAbilities[Random.Range(0, availableAbilities.Count)];
+        }
 
         foreach (GameObject screen in screens)
         {
@@ -105,16 +126,23 @@ public class AbilitiesMachine : MonoBehaviour
             images[i].enabled = (i == resultIndex);
         }
 
-        // Cuando termine esta pantalla, incrementamos el contador
         completedScreens++;
 
-        // Si ya han terminado todas, damos la habilidad
         if (completedScreens >= screens.Length)
         {
-            AbilitiesManager.Instance.GarantAbility(resultAbility);
-
-            // Mostrar un popup personalizado con la información de la habilidad obtenida
-            ShowAbilityPopup(resultAbility);
+            if (allAbilitiesUnlocked)
+            {
+                // Dar dinero porque ya tiene todas las habilidades
+                int rewardAmount = 300;
+                MoneyManager.Instance.OnKillEnemy(rewardAmount);
+                InfoPopup.ShowPopup("¡Ya tienes todas las habilidades! Se te ha recompensado con $" + rewardAmount, null);
+            }
+            else
+            {
+                // Otorgar la habilidad normalmente
+                AbilitiesManager.Instance.GarantAbility(resultAbility);
+                ShowAbilityPopup(resultAbility);
+            }
         }
     }
 
@@ -133,13 +161,32 @@ public class AbilitiesMachine : MonoBehaviour
         Ability ability = abilities.Find(a => a.abilityType == abilityType);
         if (ability != null)
         {
-            AbilityPopup.ShowPopup(ability.title, ability.description, ability.sprite, () =>
-            {
-            });
+            AbilityPopup.ShowPopup(ability.title, ability.description, ability.sprite, () => { });
         }
-        else
+    }
+    
+    private bool PlayerHasAbility(AbilityType abilityType)
+    {
+        switch (abilityType)
         {
-
+            case AbilityType.Grappler:
+            {
+                return AbilitiesManager.Instance.grappler.GetState();
+            }
+            case AbilityType.Joint:
+            {
+                return AbilitiesManager.Instance.porro.GetState();
+            }
+            case AbilityType.Vampire:
+            {
+                return AbilitiesManager.Instance.vampiro.GetState();
+            }
+            case AbilityType.DoubleJump:
+            {
+                return AbilitiesManager.Instance.doubleJump.GetState();
+            }
         }
+        
+        return false;
     }
 }
