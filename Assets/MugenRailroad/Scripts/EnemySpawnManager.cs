@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -16,6 +16,7 @@ public class EnemySpawnManager : MonoBehaviour
         public int spawnCount;
         public Transform[] spawnPoints;
         public GameObject spawnEffectPrefab;
+        public BossHealthBar bossHealthBar;
     }
 
     [Serializable]
@@ -70,12 +71,12 @@ public class EnemySpawnManager : MonoBehaviour
                 if (enemyConfig.spawnEffectPrefab != null)
                 {
                     GameObject spawnEffect = Instantiate(enemyConfig.spawnEffectPrefab, selectedSpawnPoint.position, selectedSpawnPoint.rotation);
-                    StartCoroutine(SpawnEnemyAfterEffect(enemyConfig.enemyPrefab, selectedSpawnPoint, 2f));
+                    StartCoroutine(SpawnEnemyAfterEffect(enemyConfig.enemyPrefab, selectedSpawnPoint, 2f, enemyConfig));
                     Destroy(spawnEffect, 2.3f);
                 }
                 else
                 {
-                    SpawnEnemy(enemyConfig.enemyPrefab, selectedSpawnPoint);
+                    SpawnEnemy(enemyConfig.enemyPrefab, selectedSpawnPoint, enemyConfig);
                 }
 
                 availableSpawnPoints.RemoveAt(randomIndex);
@@ -132,13 +133,13 @@ public class EnemySpawnManager : MonoBehaviour
         StartWave();
     }
 
-    private IEnumerator SpawnEnemyAfterEffect(GameObject enemyPrefab, Transform spawnPoint, float delay)
+    private IEnumerator SpawnEnemyAfterEffect(GameObject enemyPrefab, Transform spawnPoint, float delay, EnemySpawnConfig config)
     {
         yield return new WaitForSeconds(delay);
-        SpawnEnemy(enemyPrefab, spawnPoint);
+        SpawnEnemy(enemyPrefab, spawnPoint, config);
     }
 
-    private void SpawnEnemy(GameObject enemyPrefab, Transform spawnPoint)
+    private void SpawnEnemy(GameObject enemyPrefab, Transform spawnPoint, EnemySpawnConfig config)
     {
         GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         activeEnemies.Add(enemy);
@@ -147,6 +148,12 @@ public class EnemySpawnManager : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.OnEnemyDeath += HandleEnemyDeath;
+        }
+
+        if (config.bossHealthBar != null)
+        {
+            config.bossHealthBar.enemy = enemy;
+            config.bossHealthBar.gameObject.SetActive(true);
         }
     }
 }
