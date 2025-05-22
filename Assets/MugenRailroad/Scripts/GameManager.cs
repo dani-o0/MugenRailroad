@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
     {
         TrainStation,
         WagonFight,
-        Shop
+        Shop,
+        Credits
     }
 
     public enum Scenes
@@ -29,7 +30,8 @@ public class GameManager : MonoBehaviour
         Wagon4,
         Wagon5,
         WagonBoss,
-        TrainStationNoAnimation
+        TrainStationNoAnimation,
+        CreditsWagon
     }
 
     private GameState currentState;
@@ -121,18 +123,21 @@ public class GameManager : MonoBehaviour
             Debug.Log($"[GameManager] Current state is now {currentState}");
             NeoSceneManager.LoadScene(Scenes.WagonMerchant.ToString());
         }
-        else
-        {
-            // TODO: dar la opcion a ir a la TrainStation o volver a empezar
-            currentState = GameState.TrainStation;
-            currentWagonNumber = 0;
-            NeoSceneManager.LoadScene(Scenes.TrainStationNoAnimation.ToString());
-        }
     }
 
     public void OnExitShop()
     {
         currentState = GameState.WagonFight;
         StartWagonMission();
+    }
+
+    public void OnExitBoss()
+    {
+        NeoSceneManager.LoadScene(Scenes.CreditsWagon.ToString());
+    }
+
+    public void OnExitCredits()
+    {
+        NeoSceneManager.LoadScene(Scenes.TrainStationNoAnimation.ToString());
     }
 }

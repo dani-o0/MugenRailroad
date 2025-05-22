@@ -119,13 +119,9 @@ public class EnemySpawnManager : MonoBehaviour
         else
         {
             Debug.Log("All waves completed in this wagon!");
-            if (GameManager.Instance.CurrentWagonNumber < GameManager.Instance.MaxWagons)
+            if (GameManager.Instance.CurrentWagonNumber <= GameManager.Instance.MaxWagons)
             {
                 GameManager.Instance.IncrementWagonNumber();
-                GameManager.Instance.EnableExitDoor();
-            }
-            else
-            {
                 GameManager.Instance.EnableExitDoor();
             }
         }
