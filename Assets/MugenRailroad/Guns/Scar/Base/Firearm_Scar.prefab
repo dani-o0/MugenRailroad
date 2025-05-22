@@ -546,11 +546,11 @@ MonoBehaviour:
   m_MoveAccuracyDamping: 0.5
   m_AirAccuracy: 0
   m_RaiseDelayType: 1
-  m_RaiseDuration: 0.5
+  m_RaiseDuration: 0.2
   m_RaiseAnimTrigger: Draw
   m_LowerDelayType: 1
   m_LowerAnimTrigger: Lower
-  m_DeselectDuration: 0.25
+  m_DeselectDuration: 0.2
   m_AimRelativeTransform: {fileID: 0}
   m_PersistMagCount: 0
   m_DryFireSound: {fileID: 0}
@@ -648,8 +648,8 @@ MonoBehaviour:
   m_MagazineSize: 30
   m_StartingMagazine: 30
   m_ReloadDelayType: 1
-  m_ReloadDuration: 3
-  m_BlockingDuration: 3.25
+  m_ReloadDuration: 2
+  m_BlockingDuration: 2
   m_ReloadAnimTrigger: Reload
   m_ReloadAudio: {fileID: 8300000, guid: 6d2abda95a30ec24b9fdfddf38f7d1ae, type: 3}
   m_Volume: 1
