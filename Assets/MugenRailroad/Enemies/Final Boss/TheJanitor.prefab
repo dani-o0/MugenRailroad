@@ -1216,32 +1216,32 @@ MonoBehaviour:
   WeaponTypeAmount: 0
   Type1Attacks:
     AttackListIndex: 0
-    AttackPickType: 0
+    AttackPickType: 2
     AttackDataList:
     - AbilityObject: {fileID: 11400000, guid: 2651fadeee4461b43912b8d7720f87c0, type: 2}
       AttackAnimation: 4
-      AttackOdds: 1
+      AttackOdds: 50
       AttackDistance: 15
-      TooCloseDistance: 0.5
+      TooCloseDistance: 2
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 2422f4c6b7706cd4a84b9762e1a91bdc, type: 2}
       AttackAnimation: 3
-      AttackOdds: 1
-      AttackDistance: 10
-      TooCloseDistance: 2
+      AttackOdds: 60
+      AttackDistance: 20
+      TooCloseDistance: 1
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 3790c804b33cc6944b02e7ab9f2a6f5f, type: 2}
       AttackAnimation: 5
-      AttackOdds: 100
-      AttackDistance: 20
+      AttackOdds: 40
+      AttackDistance: 40
       TooCloseDistance: 0.5
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 59b54bfed6b13094682c567bb8c52298, type: 2}
       AttackAnimation: 7
-      AttackOdds: 1
+      AttackOdds: 50
       AttackDistance: 10
       TooCloseDistance: 2
       CooldownIgnored: 0
