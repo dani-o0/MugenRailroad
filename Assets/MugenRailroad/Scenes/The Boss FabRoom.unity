@@ -1883,6 +1883,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1635623135591577015, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: Type1AttackEnumAnimations.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635623135591577015, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: Type1AttackEnumAnimations.Array.data[6]
+      value: TrowGranade
+      objectReference: {fileID: 0}
     - target: {fileID: 2725074807434658352, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
       propertyPath: m_Name
       value: TheJanitor
@@ -1894,6 +1902,18 @@ PrefabInstance:
     - target: {fileID: 6681829613745930189, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
       propertyPath: BehaviorSettingsFoldout
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: Type1Attacks.AttackDataList.Array.data[0].AttackOdds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: Type1Attacks.AttackDataList.Array.data[1].AttackOdds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078372789412124143, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
+      propertyPath: Type1Attacks.AttackDataList.Array.data[2].AttackOdds
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7578399231764935165, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
       propertyPath: TagFoldout
