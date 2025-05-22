@@ -638,7 +638,7 @@ MonoBehaviour:
   m_Message: "Fusil de asalto autom\xE1tico con gran cadencia. Tiene un cargador
     de 30 balas y un da\xF1o decente."
   m_SecondaryMessage: '{0}'
-  m_Image: {fileID: 21300000, guid: 920555a73c8bd7b4a9b6259fe84783c4, type: 3}
+  m_Image: {fileID: 21300000, guid: 87ff6095c3c7b2b47978b2ca2b2bdef9, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
 --- !u!114 &6395687574899089803
 MonoBehaviour:
@@ -705,11 +705,11 @@ MonoBehaviour:
     m_Values:
     - {fileID: 2178886862203232531}
     m_GameObject: {fileID: 3939400535746679063}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1826131146
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: 7f2b4046281ef46408731d7fc141934e
 --- !u!1 &1987393631404489547
 GameObject:
   m_ObjectHideFlags: 0
