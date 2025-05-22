@@ -42,7 +42,7 @@ MonoBehaviour:
     RigidbodyLayers:
       serializedVersion: 2
       m_Bits: 2
-    ExplosionRadius: 4
+    ExplosionRadius: 8
     ExplosionTime: 2
     ExplosionEffect: {fileID: 8695401051225182231, guid: 044755114a5c22e4595ff21885d2ff2a, type: 3}
     ExplosionTimeoutSeconds: 3
