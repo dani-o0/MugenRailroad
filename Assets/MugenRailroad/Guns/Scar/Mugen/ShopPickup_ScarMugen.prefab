@@ -401,7 +401,7 @@ MonoBehaviour:
     6 veces por las paredes y suelos, 3 veces m\xE1s que la que est\xE1 ba\xF1ada
     en oro."
   m_SecondaryMessage: '{0}'
-  m_Image: {fileID: 21300000, guid: 1400af7a74a29a84eb1ea7395b7ef094, type: 3}
+  m_Image: {fileID: 21300000, guid: bb241777605860645867919a800a4489, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
 --- !u!114 &1156091678677432975
 MonoBehaviour:

@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_ItemKey:
     m_Value: 0
   m_InventoryID: -1769329840
-  m_DisplayImage: {fileID: 21300000, guid: 1400af7a74a29a84eb1ea7395b7ef094, type: 3}
+  m_DisplayImage: {fileID: 21300000, guid: bb241777605860645867919a800a4489, type: 3}
   m_QuickSlot: 22
   m_MaxQuantity: 1
   m_DeselectAction: 0

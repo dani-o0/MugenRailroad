@@ -1046,7 +1046,7 @@ MonoBehaviour:
     del cual las balas rebotan 3 veces por las paredes y suelos, tiene un cargador
     de 30 balas tambi\xE9n."
   m_SecondaryMessage: '{0}'
-  m_Image: {fileID: 21300000, guid: 61ecadf7e2dad514598cf4fd1fcecb28, type: 3}
+  m_Image: {fileID: 21300000, guid: c6c4c52b0a8acde49b6dfa80c70d48d7, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
 --- !u!114 &4285556949608633439
 MonoBehaviour:
