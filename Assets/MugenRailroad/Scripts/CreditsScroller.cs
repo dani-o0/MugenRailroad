@@ -10,6 +10,7 @@ public class CreditScroller : MonoBehaviour
     public float scrollSpeed = 50f;   // Velocidad de scroll
     public float startY = -600f;      // Posición inicial Y (fuera de pantalla abajo)
     public float endY = 600f;         // Posición final Y (fuera de pantalla arriba)
+    public bool isUICredits = false; // Si es UI o no
 
     private Vector3 startPosition;
     private bool isScrolling = false;
@@ -20,7 +21,8 @@ public class CreditScroller : MonoBehaviour
         exitText.gameObject.SetActive(false); // Desactivar el texto de salida
         startPosition = new Vector3(creditPanel.anchoredPosition.x, startY, 0);
         creditPanel.anchoredPosition = startPosition;
-        gameObject.GetComponent<Image>().enabled = false;  // Desactivar la imagen del fondo de los créditos
+        if (isUICredits)
+            gameObject.GetComponent<Image>().enabled = false;  // Desactivar la imagen del fondo de los créditos
     }
 
     public void ShowCredits()
@@ -48,8 +50,14 @@ public class CreditScroller : MonoBehaviour
         }
 
         isScrolling = false;
-        gameObject.GetComponent<Image>().enabled = false;  // Desactivar la imagen del fondo de los créditos
+        if (isUICredits)
+            gameObject.GetComponent<Image>().enabled = false;  // Desactivar la imagen del fondo de los créditos
         creditPanel.gameObject.SetActive(false);
         exitText.gameObject.SetActive(false); // Desactivar el texto de salida
+    }
+    
+    public bool IsScrolling()
+    {
+        return isScrolling;
     }
 }

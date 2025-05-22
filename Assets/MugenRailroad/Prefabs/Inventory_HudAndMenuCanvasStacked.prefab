@@ -25143,7 +25143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 725.1428, y: -568.255}
+  m_AnchoredPosition: {x: 657.2129, y: -568.255}
   m_SizeDelta: {x: 800, y: 125}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1253098961231544915
@@ -36046,8 +36046,9 @@ MonoBehaviour:
   creditPanel: {fileID: 11168140545616723}
   exitText: {fileID: 8520562441943909450}
   scrollSpeed: 50
-  startY: -1250
-  endY: 1250
+  startY: -2000
+  endY: 2000
+  isUICredits: 1
 --- !u!1 &5217024482455853851
 GameObject:
   m_ObjectHideFlags: 0
@@ -41198,8 +41199,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -2008.9275}
-  m_SizeDelta: {x: -1200, y: 4017.855}
+  m_AnchoredPosition: {x: 0, y: -2000}
+  m_SizeDelta: {x: -800, y: 4000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3691685849196025592
 CanvasRenderer:
