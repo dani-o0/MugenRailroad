@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using EmeraldAI; // Asegúrate de incluir esto
 
-public class BossHealthBarController : MonoBehaviour
+public class BossHealthBar : MonoBehaviour
 {
     public Slider healthSlider;         // Slider principal de vida
     public Slider healthSliderDelayed;  // Slider que baja lentamente

@@ -1084,6 +1084,8 @@ MonoBehaviour:
   - Spikes
   - LluviaCuchillas
   - invoke
+  - TrowGranade
+  - rujido
   Type2AttackEnumAnimations: []
   Type1AttackBlankOptions:
   - No Type 1 Attack Animations
@@ -1214,48 +1216,34 @@ MonoBehaviour:
   WeaponTypeAmount: 0
   Type1Attacks:
     AttackListIndex: 0
-    AttackPickType: 0
+    AttackPickType: 2
     AttackDataList:
-    - AbilityObject: {fileID: 11400000, guid: 6b776434ce73cc0478a9701db1c4d080, type: 2}
-      AttackAnimation: 0
-      AttackOdds: 10
-      AttackDistance: 1
-      TooCloseDistance: 1
-      CooldownIgnored: 0
-      CooldownTimeStamp: 0
-    - AbilityObject: {fileID: 11400000, guid: ac543de38eb9c364c92c0f8ae32c8c06, type: 2}
-      AttackAnimation: 1
-      AttackOdds: 10
-      AttackDistance: 1
-      TooCloseDistance: 1
-      CooldownIgnored: 0
-      CooldownTimeStamp: 0
-    - AbilityObject: {fileID: 11400000, guid: ebac087f0adb4be46830f503f17bc6cd, type: 2}
-      AttackAnimation: 2
-      AttackOdds: 10
-      AttackDistance: 2
-      TooCloseDistance: 1
+    - AbilityObject: {fileID: 11400000, guid: 2651fadeee4461b43912b8d7720f87c0, type: 2}
+      AttackAnimation: 4
+      AttackOdds: 50
+      AttackDistance: 15
+      TooCloseDistance: 2
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 2422f4c6b7706cd4a84b9762e1a91bdc, type: 2}
       AttackAnimation: 3
-      AttackOdds: 80
-      AttackDistance: 10
-      TooCloseDistance: 2
-      CooldownIgnored: 0
-      CooldownTimeStamp: 0
-    - AbilityObject: {fileID: 11400000, guid: 2651fadeee4461b43912b8d7720f87c0, type: 2}
-      AttackAnimation: 4
-      AttackOdds: 70
-      AttackDistance: 15
-      TooCloseDistance: 0.5
+      AttackOdds: 60
+      AttackDistance: 20
+      TooCloseDistance: 1
       CooldownIgnored: 0
       CooldownTimeStamp: 0
     - AbilityObject: {fileID: 11400000, guid: 3790c804b33cc6944b02e7ab9f2a6f5f, type: 2}
       AttackAnimation: 5
-      AttackOdds: 90
-      AttackDistance: 20
+      AttackOdds: 40
+      AttackDistance: 40
       TooCloseDistance: 0.5
+      CooldownIgnored: 0
+      CooldownTimeStamp: 0
+    - AbilityObject: {fileID: 11400000, guid: 59b54bfed6b13094682c567bb8c52298, type: 2}
+      AttackAnimation: 7
+      AttackOdds: 50
+      AttackDistance: 10
+      TooCloseDistance: 2
       CooldownIgnored: 0
       CooldownTimeStamp: 0
   Type2Attacks:

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8adbcef431b91047a8f193c07acec97, type: 3}
   m_Name: TheJanitorAnimProf
   m_EditorClassIdentifier: 
-  EmeraldAnimationComponent: {fileID: 0}
+  EmeraldAnimationComponent: {fileID: 1635623135591577015, guid: c25996b54c1714d4fa2e3338a9f85994, type: 3}
   AIAnimator: {fileID: 9100000, guid: 3550e1ed3989164459e7135386cecf63, type: 2}
   AnimatorControllerGenerated: 1
   AnimationsUpdated: 0
@@ -286,6 +286,12 @@ MonoBehaviour:
       Mirror: 0
     - AnimationSpeed: 1
       AnimationClip: {fileID: 7400000, guid: a61db84749e70b346831695c6c5d74fc, type: 2}
+      Mirror: 0
+    - AnimationSpeed: 1
+      AnimationClip: {fileID: 7400000, guid: 757b1bca7ccef904591652706d7d1546, type: 2}
+      Mirror: 0
+    - AnimationSpeed: 2
+      AnimationClip: {fileID: 7400000, guid: e2057902f5bea954b8e86e92746d0aad, type: 2}
       Mirror: 0
   Type2Animations:
     IdleList: []
