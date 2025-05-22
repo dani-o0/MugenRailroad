@@ -50,7 +50,7 @@ MonoBehaviour:
     SummonEffectTimeoutSeconds: 1
     SummonEffectHeightOffset: 0.02
     SummonSounds:
-    - {fileID: 8300000, guid: 239578b311731b540b81066f4199d058, type: 3}
+    - {fileID: 8300000, guid: 37021abd7711a9342b949bf54534a03b, type: 3}
     SummonAmount: 1
     SummonPosition: 0
     SummonRadius: 2.25

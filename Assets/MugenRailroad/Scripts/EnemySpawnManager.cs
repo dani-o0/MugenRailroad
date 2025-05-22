@@ -35,6 +35,8 @@ public class EnemySpawnManager : MonoBehaviour
     public int CurrentWaveIndex => currentWaveIndex;
     public int TotalWaves => wagonWaves?.Length ?? 0;
 
+    public AudioSource spawnWaveAudioSource;
+
     private void Awake()
     {
         if (Instance == null)
@@ -55,6 +57,8 @@ public class EnemySpawnManager : MonoBehaviour
 
     public void StartWave()
     {
+        spawnWaveAudioSource.Play();
+        
         Debug.Log($"Starting wave {currentWaveIndex + 1} of {wagonWaves.Length} in wagon {GameManager.Instance.CurrentWagonNumber}");
         WaveConfig currentWave = wagonWaves[currentWaveIndex];
         activeEnemies.Clear();

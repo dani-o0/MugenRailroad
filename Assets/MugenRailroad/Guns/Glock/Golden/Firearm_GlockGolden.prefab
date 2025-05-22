@@ -3781,11 +3781,11 @@ MonoBehaviour:
   m_MoveAccuracyDamping: 0.5
   m_AirAccuracy: 0
   m_RaiseDelayType: 1
-  m_RaiseDuration: 0.5
+  m_RaiseDuration: 0.15
   m_RaiseAnimTrigger: Draw
   m_LowerDelayType: 1
   m_LowerAnimTrigger: Lower
-  m_DeselectDuration: 0.25
+  m_DeselectDuration: 0.15
   m_AimRelativeTransform: {fileID: 0}
   m_PersistMagCount: 0
   m_DryFireSound: {fileID: 0}
@@ -3852,7 +3852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 20
+  m_Damage: 30
   m_BulletSize: 1
   m_ImpactForce: 20
 --- !u!114 &252565031335108323
@@ -3889,7 +3889,7 @@ MonoBehaviour:
   m_StartingMagazine: 17
   m_ReloadDelayType: 1
   m_ReloadDuration: 1.5
-  m_BlockingDuration: 1.75
+  m_BlockingDuration: 1.5
   m_ReloadAnimTrigger: Reload
   m_ReloadAudio: {fileID: 8300000, guid: 08d0a938691a1d44eb628388e16da3df, type: 3}
   m_Volume: 1
