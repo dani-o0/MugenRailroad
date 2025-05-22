@@ -545,7 +545,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1025
   m_GrappleTags: []
-  m_MaxGrappleDistance: 10
+  m_MaxGrappleDistance: 20
   m_AimOffset: {x: 0, y: 0}
   m_TetherStart: {fileID: 5669881108918468522}
 --- !u!114 &6962156282601899517

@@ -606,11 +606,11 @@ MonoBehaviour:
   m_MoveAccuracyDamping: 0.5
   m_AirAccuracy: 0
   m_RaiseDelayType: 1
-  m_RaiseDuration: 0.5
+  m_RaiseDuration: 0.2
   m_RaiseAnimTrigger: Draw
   m_LowerDelayType: 1
   m_LowerAnimTrigger: Lower
-  m_DeselectDuration: 0.25
+  m_DeselectDuration: 0.2
   m_AimRelativeTransform: {fileID: 0}
   m_PersistMagCount: 0
   m_DryFireSound: {fileID: 0}
