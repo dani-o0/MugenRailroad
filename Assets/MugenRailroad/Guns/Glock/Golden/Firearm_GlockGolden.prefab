@@ -3852,7 +3852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 20
+  m_Damage: 30
   m_BulletSize: 1
   m_ImpactForce: 20
 --- !u!114 &252565031335108323
