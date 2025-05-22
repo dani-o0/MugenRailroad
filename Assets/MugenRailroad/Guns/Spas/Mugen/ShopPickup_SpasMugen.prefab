@@ -1366,7 +1366,7 @@ MonoBehaviour:
     que dispara una explosi\xF3n que no te hace da\xF1o a ti, pero te empuja y hace
     mucho da\xF1o a los enemigos."
   m_SecondaryMessage: '{0}'
-  m_Image: {fileID: 21300000, guid: 14245c0c32dcc464f932fcf078022dd3, type: 3}
+  m_Image: {fileID: 21300000, guid: abae2f622627d7c478b8c76e55a0ebd8, type: 3}
   m_InsufficientFundsMessage: No tienes suficiente dinero para comprar este objeto.
 --- !u!114 &7401196030898382770
 MonoBehaviour:
