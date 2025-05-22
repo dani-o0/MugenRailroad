@@ -75,7 +75,7 @@ MonoBehaviour:
     AimSource: 1
     HeightOffset: 5
     LaunchAngle: 0
-    Radius: 5
+    Radius: 4
     ProjectileSpeed: 30
     TotalProjectiles: 40
     TimeBetweenProjectiles: 0.075
@@ -98,12 +98,12 @@ MonoBehaviour:
     StunLength: 3
   DamageSettings:
     Foldout: 1
-    Enabled: 1
+    Enabled: 0
     UseCriticalHits: 0
     UseDamageOverTime: 0
     BaseDamageSettings:
       UseRandomAmounts: 0
-      BaseAmount: 25
+      BaseAmount: 30
       MinAmount: 5
       MaxAmount: 10
       RagdollForce: 25

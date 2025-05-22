@@ -67,7 +67,7 @@ MonoBehaviour:
     Enabled: 1
     ProjectileSpeed: 10
     ProjectileMaxLaunchAngle: 180
-    TotalProjectiles: 8
+    TotalProjectiles: 10
     TimeBetweenProjectiles: 0.1
     AttachToTarget: 0
   HomingSettings:
