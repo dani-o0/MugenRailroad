@@ -2370,8 +2370,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   HideSettingsFoldout: 0
-  GeneralEventsFoldout: 0
-  CombatEventsFoldout: 0
+  GeneralEventsFoldout: 1
+  CombatEventsFoldout: 1
 --- !u!114 &8161575047677138043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 1.5
   enemyXp: 50
-  enemyMoney: 25
+  enemyMoney: 100
 --- !u!95 &7020130107313302188
 Animator:
   serializedVersion: 5
