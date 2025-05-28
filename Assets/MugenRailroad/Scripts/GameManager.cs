@@ -133,11 +133,13 @@ public class GameManager : MonoBehaviour
 
     public void OnExitBoss()
     {
+        currentState = GameState.Credits;
         NeoSceneManager.LoadScene(Scenes.CreditsWagon.ToString());
     }
 
     public void OnExitCredits()
     {
+        currentState = GameState.TrainStation;
         NeoSceneManager.LoadScene(Scenes.TrainStationNoAnimation.ToString());
     }
 }
