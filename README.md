@@ -51,7 +51,7 @@ Encarnas a un huérfano con una mutación especial y un teletransportador que le
 - **Oleadas**: Combate contra enemigos con patrones únicos por vagón.
 - **Fases**: Cada 5 vagones se encuentra un jefe final; al derrotarlo, se reinicia el recorrido con mayor dificultad.
 - **Economía**:
-  - 💰 Monedas: Dentro del tren
+  - 💰 Dinero: Para comprar armas
   - ⭐ XP: Para subir de nivel y desbloquear habilidades
 
 ---
