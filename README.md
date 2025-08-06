@@ -100,10 +100,15 @@ Este proyecto se encuentra **completamente desarrollado y finalizado**. Fue crea
 
 ## 📜 Licencia
 
-Este proyecto está licenciado bajo la **Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)**.  
-Esto significa que puedes usar, modificar y compartir el proyecto libremente siempre que se dé atribución a los autores originales **y no se use con fines comerciales**.
+Este proyecto incluye:
 
-Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+- **Assets (arte, música, sonidos, modelos, etc.)** licenciados bajo **Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)**.  
+  Esto significa que puedes usar, modificar y compartir estos recursos libremente siempre que se dé atribución adecuada y no se utilicen con fines comerciales.
+
+- **Código fuente y ejecutables (juego compilado)** con restricción adicional: **no pueden usarse ni distribuirse con fines comerciales sin autorización expresa del autor**.  
+  Puedes usarlos para fines personales, educativos o de desarrollo no comercial.
+
+Consulta el archivo [LICENSE](./LICENSE) para más detalles y condiciones.
 
 ---
 
