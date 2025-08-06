@@ -118,4 +118,10 @@ Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 ---
 
+## 🙏 Agradecimientos especiales
+
+Queremos agradecer a nuestro profesor [**Enric Vergara**](https://github.com/donkikochan) por habernos proporcionado el asset de [**NeoFPS**](https://neofps.com/) para trabajar en el desarrollo del juego.
+
+---
+
 Gracias por visitar el proyecto, ¡esperamos que disfrutes del viaje en el MUGEN RAILROAD!
