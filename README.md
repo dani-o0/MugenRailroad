@@ -16,6 +16,15 @@ Desarrollado por:
 
 ---
 
+## 📥 Obtener el juego
+
+¿Quieres jugar a **MUGEN RAILROAD**?  
+Únete a nuestro servidor de Discord para descargar la última versión del juego.
+
+👉 [Únete aquí con este código de invitación](https://discord.gg/f3Tw2ckgqZ)
+
+---
+
 ## 🎮 Género y Plataforma
 
 - **Género**: FPS (First Person Shooter), Roguelike
